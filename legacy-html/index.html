@@ -1,0 +1,3175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home · Bharat HIE Portal</title>
+<meta name="description" content="Bharat HIE Portal: one health card, one login and connected care across hospitals, doctors, pharmacies, labs, blood banks and NGOs.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Ol+Chiki&family=Noto+Sans+Meetei+Mayek&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Page: Home. The markup below is the rendered page; the scripts at the bottom make it interactive. -->
+<div id="app">
+  <button class="skip" data-a="skip">
+   Skip to main content
+  </button>
+  <header class="hdr ov">
+   <div class="util">
+    <div class="wrapx util-in">
+     <select aria-label="Country" class="place" id="ctry" title="Country (196)">
+      <optgroup label="Asia">
+       <option value="AF">
+        🇦🇫 Afghanistan
+       </option>
+       <option value="AM">
+        🇦🇲 Armenia
+       </option>
+       <option value="AZ">
+        🇦🇿 Azerbaijan
+       </option>
+       <option value="BH">
+        🇧🇭 Bahrain
+       </option>
+       <option value="BD">
+        🇧🇩 Bangladesh
+       </option>
+       <option value="BT">
+        🇧🇹 Bhutan
+       </option>
+       <option value="BN">
+        🇧🇳 Brunei
+       </option>
+       <option value="KH">
+        🇰🇭 Cambodia
+       </option>
+       <option value="CN">
+        🇨🇳 China
+       </option>
+       <option value="GE">
+        🇬🇪 Georgia
+       </option>
+       <option selected value="IN">
+        🇮🇳 India
+       </option>
+       <option value="ID">
+        🇮🇩 Indonesia
+       </option>
+       <option value="IR">
+        🇮🇷 Iran
+       </option>
+       <option value="IQ">
+        🇮🇶 Iraq
+       </option>
+       <option value="IL">
+        🇮🇱 Israel
+       </option>
+       <option value="JP">
+        🇯🇵 Japan
+       </option>
+       <option value="JO">
+        🇯🇴 Jordan
+       </option>
+       <option value="KZ">
+        🇰🇿 Kazakhstan
+       </option>
+       <option value="KW">
+        🇰🇼 Kuwait
+       </option>
+       <option value="KG">
+        🇰🇬 Kyrgyzstan
+       </option>
+       <option value="LA">
+        🇱🇦 Laos
+       </option>
+       <option value="LB">
+        🇱🇧 Lebanon
+       </option>
+       <option value="MY">
+        🇲🇾 Malaysia
+       </option>
+       <option value="MV">
+        🇲🇻 Maldives
+       </option>
+       <option value="MN">
+        🇲🇳 Mongolia
+       </option>
+       <option value="MM">
+        🇲🇲 Myanmar
+       </option>
+       <option value="NP">
+        🇳🇵 Nepal
+       </option>
+       <option value="KP">
+        🇰🇵 North Korea
+       </option>
+       <option value="OM">
+        🇴🇲 Oman
+       </option>
+       <option value="PK">
+        🇵🇰 Pakistan
+       </option>
+       <option value="PS">
+        🇵🇸 Palestine
+       </option>
+       <option value="PH">
+        🇵🇭 Philippines
+       </option>
+       <option value="QA">
+        🇶🇦 Qatar
+       </option>
+       <option value="SA">
+        🇸🇦 Saudi Arabia
+       </option>
+       <option value="SG">
+        🇸🇬 Singapore
+       </option>
+       <option value="KR">
+        🇰🇷 South Korea
+       </option>
+       <option value="LK">
+        🇱🇰 Sri Lanka
+       </option>
+       <option value="SY">
+        🇸🇾 Syria
+       </option>
+       <option value="TW">
+        🇹🇼 Taiwan
+       </option>
+       <option value="TJ">
+        🇹🇯 Tajikistan
+       </option>
+       <option value="TH">
+        🇹🇭 Thailand
+       </option>
+       <option value="TL">
+        🇹🇱 Timor-Leste
+       </option>
+       <option value="TR">
+        🇹🇷 T&uuml;rkiye
+       </option>
+       <option value="TM">
+        🇹🇲 Turkmenistan
+       </option>
+       <option value="AE">
+        🇦🇪 United Arab Emirates
+       </option>
+       <option value="UZ">
+        🇺🇿 Uzbekistan
+       </option>
+       <option value="VN">
+        🇻🇳 Vietnam
+       </option>
+       <option value="YE">
+        🇾🇪 Yemen
+       </option>
+      </optgroup>
+      <optgroup label="Africa">
+       <option value="DZ">
+        🇩🇿 Algeria
+       </option>
+       <option value="AO">
+        🇦🇴 Angola
+       </option>
+       <option value="BJ">
+        🇧🇯 Benin
+       </option>
+       <option value="BW">
+        🇧🇼 Botswana
+       </option>
+       <option value="BF">
+        🇧🇫 Burkina Faso
+       </option>
+       <option value="BI">
+        🇧🇮 Burundi
+       </option>
+       <option value="CV">
+        🇨🇻 Cabo Verde
+       </option>
+       <option value="CM">
+        🇨🇲 Cameroon
+       </option>
+       <option value="CF">
+        🇨🇫 Central African Republic
+       </option>
+       <option value="TD">
+        🇹🇩 Chad
+       </option>
+       <option value="KM">
+        🇰🇲 Comoros
+       </option>
+       <option value="CG">
+        🇨🇬 Congo
+       </option>
+       <option value="CI">
+        🇨🇮 C&ocirc;te d'Ivoire
+       </option>
+       <option value="DJ">
+        🇩🇯 Djibouti
+       </option>
+       <option value="CD">
+        🇨🇩 DR Congo
+       </option>
+       <option value="EG">
+        🇪🇬 Egypt
+       </option>
+       <option value="GQ">
+        🇬🇶 Equatorial Guinea
+       </option>
+       <option value="ER">
+        🇪🇷 Eritrea
+       </option>
+       <option value="SZ">
+        🇸🇿 Eswatini
+       </option>
+       <option value="ET">
+        🇪🇹 Ethiopia
+       </option>
+       <option value="GA">
+        🇬🇦 Gabon
+       </option>
+       <option value="GM">
+        🇬🇲 Gambia
+       </option>
+       <option value="GH">
+        🇬🇭 Ghana
+       </option>
+       <option value="GN">
+        🇬🇳 Guinea
+       </option>
+       <option value="GW">
+        🇬🇼 Guinea-Bissau
+       </option>
+       <option value="KE">
+        🇰🇪 Kenya
+       </option>
+       <option value="LS">
+        🇱🇸 Lesotho
+       </option>
+       <option value="LR">
+        🇱🇷 Liberia
+       </option>
+       <option value="LY">
+        🇱🇾 Libya
+       </option>
+       <option value="MG">
+        🇲🇬 Madagascar
+       </option>
+       <option value="MW">
+        🇲🇼 Malawi
+       </option>
+       <option value="ML">
+        🇲🇱 Mali
+       </option>
+       <option value="MR">
+        🇲🇷 Mauritania
+       </option>
+       <option value="MU">
+        🇲🇺 Mauritius
+       </option>
+       <option value="MA">
+        🇲🇦 Morocco
+       </option>
+       <option value="MZ">
+        🇲🇿 Mozambique
+       </option>
+       <option value="NA">
+        🇳🇦 Namibia
+       </option>
+       <option value="NE">
+        🇳🇪 Niger
+       </option>
+       <option value="NG">
+        🇳🇬 Nigeria
+       </option>
+       <option value="RW">
+        🇷🇼 Rwanda
+       </option>
+       <option value="ST">
+        🇸🇹 S&atilde;o Tom&eacute; and Pr&iacute;ncipe
+       </option>
+       <option value="SN">
+        🇸🇳 Senegal
+       </option>
+       <option value="SC">
+        🇸🇨 Seychelles
+       </option>
+       <option value="SL">
+        🇸🇱 Sierra Leone
+       </option>
+       <option value="SO">
+        🇸🇴 Somalia
+       </option>
+       <option value="ZA">
+        🇿🇦 South Africa
+       </option>
+       <option value="SS">
+        🇸🇸 South Sudan
+       </option>
+       <option value="SD">
+        🇸🇩 Sudan
+       </option>
+       <option value="TZ">
+        🇹🇿 Tanzania
+       </option>
+       <option value="TG">
+        🇹🇬 Togo
+       </option>
+       <option value="TN">
+        🇹🇳 Tunisia
+       </option>
+       <option value="UG">
+        🇺🇬 Uganda
+       </option>
+       <option value="ZM">
+        🇿🇲 Zambia
+       </option>
+       <option value="ZW">
+        🇿🇼 Zimbabwe
+       </option>
+      </optgroup>
+      <optgroup label="Americas">
+       <option value="AG">
+        🇦🇬 Antigua and Barbuda
+       </option>
+       <option value="AR">
+        🇦🇷 Argentina
+       </option>
+       <option value="BS">
+        🇧🇸 Bahamas
+       </option>
+       <option value="BB">
+        🇧🇧 Barbados
+       </option>
+       <option value="BZ">
+        🇧🇿 Belize
+       </option>
+       <option value="BO">
+        🇧🇴 Bolivia
+       </option>
+       <option value="BR">
+        🇧🇷 Brazil
+       </option>
+       <option value="CA">
+        🇨🇦 Canada
+       </option>
+       <option value="CL">
+        🇨🇱 Chile
+       </option>
+       <option value="CO">
+        🇨🇴 Colombia
+       </option>
+       <option value="CR">
+        🇨🇷 Costa Rica
+       </option>
+       <option value="CU">
+        🇨🇺 Cuba
+       </option>
+       <option value="DM">
+        🇩🇲 Dominica
+       </option>
+       <option value="DO">
+        🇩🇴 Dominican Republic
+       </option>
+       <option value="EC">
+        🇪🇨 Ecuador
+       </option>
+       <option value="SV">
+        🇸🇻 El Salvador
+       </option>
+       <option value="GD">
+        🇬🇩 Grenada
+       </option>
+       <option value="GT">
+        🇬🇹 Guatemala
+       </option>
+       <option value="GY">
+        🇬🇾 Guyana
+       </option>
+       <option value="HT">
+        🇭🇹 Haiti
+       </option>
+       <option value="HN">
+        🇭🇳 Honduras
+       </option>
+       <option value="JM">
+        🇯🇲 Jamaica
+       </option>
+       <option value="MX">
+        🇲🇽 Mexico
+       </option>
+       <option value="NI">
+        🇳🇮 Nicaragua
+       </option>
+       <option value="PA">
+        🇵🇦 Panama
+       </option>
+       <option value="PY">
+        🇵🇾 Paraguay
+       </option>
+       <option value="PE">
+        🇵🇪 Peru
+       </option>
+       <option value="KN">
+        🇰🇳 Saint Kitts and Nevis
+       </option>
+       <option value="LC">
+        🇱🇨 Saint Lucia
+       </option>
+       <option value="VC">
+        🇻🇨 Saint Vincent and the Grenadines
+       </option>
+       <option value="SR">
+        🇸🇷 Suriname
+       </option>
+       <option value="TT">
+        🇹🇹 Trinidad and Tobago
+       </option>
+       <option value="US">
+        🇺🇸 United States
+       </option>
+       <option value="UY">
+        🇺🇾 Uruguay
+       </option>
+       <option value="VE">
+        🇻🇪 Venezuela
+       </option>
+      </optgroup>
+      <optgroup label="Europe">
+       <option value="AL">
+        🇦🇱 Albania
+       </option>
+       <option value="AD">
+        🇦🇩 Andorra
+       </option>
+       <option value="AT">
+        🇦🇹 Austria
+       </option>
+       <option value="BY">
+        🇧🇾 Belarus
+       </option>
+       <option value="BE">
+        🇧🇪 Belgium
+       </option>
+       <option value="BA">
+        🇧🇦 Bosnia and Herzegovina
+       </option>
+       <option value="BG">
+        🇧🇬 Bulgaria
+       </option>
+       <option value="HR">
+        🇭🇷 Croatia
+       </option>
+       <option value="CY">
+        🇨🇾 Cyprus
+       </option>
+       <option value="CZ">
+        🇨🇿 Czechia
+       </option>
+       <option value="DK">
+        🇩🇰 Denmark
+       </option>
+       <option value="EE">
+        🇪🇪 Estonia
+       </option>
+       <option value="FI">
+        🇫🇮 Finland
+       </option>
+       <option value="FR">
+        🇫🇷 France
+       </option>
+       <option value="DE">
+        🇩🇪 Germany
+       </option>
+       <option value="GR">
+        🇬🇷 Greece
+       </option>
+       <option value="HU">
+        🇭🇺 Hungary
+       </option>
+       <option value="IS">
+        🇮🇸 Iceland
+       </option>
+       <option value="IE">
+        🇮🇪 Ireland
+       </option>
+       <option value="IT">
+        🇮🇹 Italy
+       </option>
+       <option value="LV">
+        🇱🇻 Latvia
+       </option>
+       <option value="LI">
+        🇱🇮 Liechtenstein
+       </option>
+       <option value="LT">
+        🇱🇹 Lithuania
+       </option>
+       <option value="LU">
+        🇱🇺 Luxembourg
+       </option>
+       <option value="MT">
+        🇲🇹 Malta
+       </option>
+       <option value="MD">
+        🇲🇩 Moldova
+       </option>
+       <option value="MC">
+        🇲🇨 Monaco
+       </option>
+       <option value="ME">
+        🇲🇪 Montenegro
+       </option>
+       <option value="NL">
+        🇳🇱 Netherlands
+       </option>
+       <option value="MK">
+        🇲🇰 North Macedonia
+       </option>
+       <option value="NO">
+        🇳🇴 Norway
+       </option>
+       <option value="PL">
+        🇵🇱 Poland
+       </option>
+       <option value="PT">
+        🇵🇹 Portugal
+       </option>
+       <option value="RO">
+        🇷🇴 Romania
+       </option>
+       <option value="RU">
+        🇷🇺 Russia
+       </option>
+       <option value="SM">
+        🇸🇲 San Marino
+       </option>
+       <option value="RS">
+        🇷🇸 Serbia
+       </option>
+       <option value="SK">
+        🇸🇰 Slovakia
+       </option>
+       <option value="SI">
+        🇸🇮 Slovenia
+       </option>
+       <option value="ES">
+        🇪🇸 Spain
+       </option>
+       <option value="SE">
+        🇸🇪 Sweden
+       </option>
+       <option value="CH">
+        🇨🇭 Switzerland
+       </option>
+       <option value="UA">
+        🇺🇦 Ukraine
+       </option>
+       <option value="GB">
+        🇬🇧 United Kingdom
+       </option>
+       <option value="VA">
+        🇻🇦 Vatican City
+       </option>
+      </optgroup>
+      <optgroup label="Oceania">
+       <option value="AU">
+        🇦🇺 Australia
+       </option>
+       <option value="FJ">
+        🇫🇯 Fiji
+       </option>
+       <option value="KI">
+        🇰🇮 Kiribati
+       </option>
+       <option value="MH">
+        🇲🇭 Marshall Islands
+       </option>
+       <option value="FM">
+        🇫🇲 Micronesia
+       </option>
+       <option value="NR">
+        🇳🇷 Nauru
+       </option>
+       <option value="NZ">
+        🇳🇿 New Zealand
+       </option>
+       <option value="PW">
+        🇵🇼 Palau
+       </option>
+       <option value="PG">
+        🇵🇬 Papua New Guinea
+       </option>
+       <option value="WS">
+        🇼🇸 Samoa
+       </option>
+       <option value="SB">
+        🇸🇧 Solomon Islands
+       </option>
+       <option value="TO">
+        🇹🇴 Tonga
+       </option>
+       <option value="TV">
+        🇹🇻 Tuvalu
+       </option>
+       <option value="VU">
+        🇻🇺 Vanuatu
+       </option>
+      </optgroup>
+     </select>
+     <select aria-label="State or region" class="place" id="stsel" title="State / region">
+      <option value="all">
+       All states & UTs
+      </option>
+      <option value="Andhra Pradesh">
+       Andhra Pradesh
+      </option>
+      <option value="Arunachal Pradesh">
+       Arunachal Pradesh
+      </option>
+      <option value="Assam">
+       Assam
+      </option>
+      <option value="Bihar">
+       Bihar
+      </option>
+      <option value="Chhattisgarh">
+       Chhattisgarh
+      </option>
+      <option value="Goa">
+       Goa
+      </option>
+      <option value="Gujarat">
+       Gujarat
+      </option>
+      <option value="Haryana">
+       Haryana
+      </option>
+      <option value="Himachal Pradesh">
+       Himachal Pradesh
+      </option>
+      <option value="Jharkhand">
+       Jharkhand
+      </option>
+      <option value="Karnataka">
+       Karnataka
+      </option>
+      <option value="Kerala">
+       Kerala
+      </option>
+      <option value="Madhya Pradesh">
+       Madhya Pradesh
+      </option>
+      <option selected value="Maharashtra">
+       Maharashtra
+      </option>
+      <option value="Manipur">
+       Manipur
+      </option>
+      <option value="Meghalaya">
+       Meghalaya
+      </option>
+      <option value="Mizoram">
+       Mizoram
+      </option>
+      <option value="Nagaland">
+       Nagaland
+      </option>
+      <option value="Odisha">
+       Odisha
+      </option>
+      <option value="Punjab">
+       Punjab
+      </option>
+      <option value="Rajasthan">
+       Rajasthan
+      </option>
+      <option value="Sikkim">
+       Sikkim
+      </option>
+      <option value="Tamil Nadu">
+       Tamil Nadu
+      </option>
+      <option value="Telangana">
+       Telangana
+      </option>
+      <option value="Tripura">
+       Tripura
+      </option>
+      <option value="Uttar Pradesh">
+       Uttar Pradesh
+      </option>
+      <option value="Uttarakhand">
+       Uttarakhand
+      </option>
+      <option value="West Bengal">
+       West Bengal
+      </option>
+      <option value="Andaman and Nicobar Islands">
+       Andaman and Nicobar Islands
+      </option>
+      <option value="Chandigarh">
+       Chandigarh
+      </option>
+      <option value="Dadra and Nagar Haveli and Daman and Diu">
+       Dadra and Nagar Haveli and Daman and Diu
+      </option>
+      <option value="Delhi">
+       Delhi
+      </option>
+      <option value="Jammu and Kashmir">
+       Jammu and Kashmir
+      </option>
+      <option value="Ladakh">
+       Ladakh
+      </option>
+      <option value="Lakshadweep">
+       Lakshadweep
+      </option>
+      <option value="Puducherry">
+       Puducherry
+      </option>
+     </select>
+     <button aria-label="Language: English" class="lang" data-a="lang-open">
+      <svg aria-hidden="true" viewbox="0 0 24 24">
+       <circle cx="12" cy="12" r="9">
+       </circle>
+       <path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18">
+       </path>
+      </svg>
+      <span>
+       English
+      </span>
+      <svg aria-hidden="true" style="width:12px;height:12px" viewbox="0 0 24 24">
+       <path d="M6 9l6 6 6-6">
+       </path>
+      </svg>
+     </button>
+     <span class="top-sp">
+     </span>
+     <div class="gsearch" role="search">
+      <svg aria-hidden="true" viewbox="0 0 24 24">
+       <circle cx="11" cy="11" r="7">
+       </circle>
+       <path d="M20 20l-3.5-3.5">
+       </path>
+      </svg>
+      <input aria-label="Search services" autocomplete="off" id="gsearch" placeholder="Search services, e.g. dialysis, pharmacy, TB" type="search" value>
+     </div>
+     <button class="ubtn" data-a="login-admin">
+      Admin
+     </button>
+    </div>
+   </div>
+   <div class="pill-wrap">
+    <nav aria-label="Main" class="pillnav">
+     <button aria-label="Bharat HIE Portal, home" class="brand" data-a="home">
+      <img alt="India flag" class="brand-logo" src="assets/images/flags/in-9ead4319.webp">
+      <span class="brand-txt">
+       <span class="brand-hi" lang="hi">
+        भारत
+       </span>
+       <span class="brand-en">
+        HIE Portal
+       </span>
+      </span>
+     </button>
+     <div class="pn-links">
+      <button aria-current="page" data-a="home">
+       Home
+      </button>
+      <button data-a="about">
+       About us
+      </button>
+      <button data-a="jump" data-j="services">
+       Services
+      </button>
+      <button data-a="jump" data-j="how">
+       How it works
+      </button>
+      <button data-a="jump" data-j="providers">
+       For providers
+      </button>
+      <button data-a="as" data-r="admin" data-t="analytics">
+       Live analytics
+      </button>
+      <button data-a="jump" data-j="contact">
+       Contact
+      </button>
+      <button class="pn-find" data-a="find">
+       📍 Find healthcare near me
+      </button>
+      <span class="pn-more">
+       <button aria-expanded="false" data-a="more">
+        More &dtrif;
+       </button>
+      </span>
+     </div>
+     <div class="pn-cta">
+      <button class="pn-reg" data-a="open-reg">
+       Register
+      </button>
+      <button class="pn-login" data-a="open-login">
+       Log in
+      </button>
+     </div>
+    </nav>
+   </div>
+  </header>
+  <main class="wrapx" id="main" tabindex="-1">
+   <section aria-label="Video" class="vhero">
+    <video aria-label="Preventive health centre walkthrough" autoplay loop muted playsinline poster="assets/images/hero-poster/hero-poster-7a857612.jpg" preload="auto" src="assets/video/hero-video-8b6b51c7.mp4">
+    </video>
+   </section>
+   <div class="vh-ticker">
+    <div aria-label="WHO news" class="ticker" role="region">
+     <div class="wrapx tk-in">
+      <a class="tk-lab" href="https://www.who.int/news" rel="noopener" target="_blank">
+       <span aria-hidden="true" class="tk-dot">
+       </span>
+       WHO News
+      </a>
+      <div class="tk-view">
+       <div class="tk-track">
+        <a href="https://www.who.int/news/item/30-10-2026-barbados-eliminates-mother-to-child-transmission-of-hiv" rel="noopener" target="_blank">
+         <time>
+          30 Oct 2026
+         </time>
+         Barbados eliminates mother-to-child transmission of HIV
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/23-10-2026-who-and-enhypen-join-efforts-to-inspire-young-blood-donors-globally" rel="noopener" target="_blank">
+         <time>
+          23 Oct 2026
+         </time>
+         WHO and ENHYPEN join efforts to inspire young blood donors globally
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children" rel="noopener" target="_blank">
+         <time>
+          21 Oct 2026
+         </time>
+         New global framework launched to track increasing health risks of extreme heat for pregnant women, newborns and children
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/16-10-2026-interpol-and-who-sign-agreement-to-strengthen-global-health-and-security-protection" rel="noopener" target="_blank">
+         <time>
+          16 Oct 2026
+         </time>
+         INTERPOL and WHO sign agreement to strengthen global health and security protection
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/12-10-2026-who-welcomes-adoption-of-united-nations-political-declaration-on-pandemic-prevention-preparedness-and-response" rel="noopener" target="_blank">
+         <time>
+          12 Oct 2026
+         </time>
+         WHO welcomes adoption of United Nations political declaration on pandemic prevention, preparedness and response
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/12-10-2026-who-pandemic-hub-sets-ambitious-goal-to-detect-new-outbreaks-within-24-hours" rel="noopener" target="_blank">
+         <time>
+          12 Oct 2026
+         </time>
+         WHO Pandemic Hub sets ambitious goal to detect new outbreaks within 24 hours
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/09-10-2026-who-urges-shift-from-institutional-to-community-based-mental-health-care" rel="noopener" target="_blank">
+         <time>
+          9 Oct 2026
+         </time>
+         WHO urges shift from institutional to community-based mental health care
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths" rel="noopener" target="_blank">
+         <time>
+          8 Oct 2026
+         </time>
+         New global roadmap launched to tackle hypertension in pregnancy, a leading cause of maternal and newborn deaths
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity" rel="noopener" target="_blank">
+         <time>
+          7 Oct 2026
+         </time>
+         WHO issues first global guidelines on child and adolescent obesity
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings" rel="noopener" target="_blank">
+         <time>
+          30 Sep 2026
+         </time>
+         WHO releases new guidance to prevent heat-related illness at mass gatherings
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <span aria-hidden="true" class="tk-dup">
+         <a href="https://www.who.int/news/item/30-10-2026-barbados-eliminates-mother-to-child-transmission-of-hiv" rel="noopener" target="_blank">
+          <time>
+           30 Oct 2026
+          </time>
+          Barbados eliminates mother-to-child transmission of HIV
+         </a>
+         <span aria-hidden="true" class="tk-sep">
+          ◆
+         </span>
+         <a href="https://www.who.int/news/item/23-10-2026-who-and-enhypen-join-efforts-to-inspire-young-blood-donors-globally" rel="noopener" target="_blank">
+          <time>
+           23 Oct 2026
+          </time>
+          WHO and ENHYPEN join efforts to inspire young blood donors globally
+         </a>
+         <span aria-hidden="true" class="tk-sep">
+          ◆
+         </span>
+         <a href="https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children" rel="noopener" target="_blank">
+          <time>
+           21 Oct 2026
+          </time>
+          New global framework launched to track increasing health risks of extreme heat for pregnant women, newborns and children
+         </a>
+         <span aria-hidden="true" class="tk-sep">
+          ◆
+         </span>
+         <a href="https://www.who.int/news/item/16-10-2026-interpol-and-who-sign-agreement-to-strengthen-global-health-and-security-protection" rel="noopener" target="_blank">
+          <time>
+           16 Oct 2026
+          </time>
+          INTERPOL and WHO sign agreement to strengthen global health and security protection
+         </a>
+         <span aria-hidden="true" class="tk-sep">
+          ◆
+         </span>
+         <a href="https://www.who.int/news/item/12-10-2026-who-welcomes-adoption-of-united-nations-political-declaration-on-pandemic-prevention-preparedness-and-response" rel="noopener" target="_blank">
+          <time>
+           12 Oct 2026
+          </time>
+          WHO welcomes adoption of United Nations political declaration on pandemic prevention, preparedness and response
+         </a>
+         <span aria-hidden="true" class="tk-sep">
+          ◆
+         </span>
+         <a href="https://www.who.int/news/item/12-10-2026-who-pandemic-hub-sets-ambitious-goal-to-detect-new-outbreaks-within-24-hours" rel="noopener" target="_blank">
+          <time>
+           12 Oct 2026
+          </time>
+          WHO Pandemic Hub sets ambitious goal to detect new outbreaks within 24 hours
+         </a>
+         <span aria-hidden="true" class="tk-sep">
+          ◆
+         </span>
+         <a href="https://www.who.int/news/item/09-10-2026-who-urges-shift-from-institutional-to-community-based-mental-health-care" rel="noopener" target="_blank">
+          <time>
+           9 Oct 2026
+          </time>
+          WHO urges shift from institutional to community-based mental health care
+         </a>
+         <span aria-hidden="true" class="tk-sep">
+          ◆
+         </span>
+         <a href="https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths" rel="noopener" target="_blank">
+          <time>
+           8 Oct 2026
+          </time>
+          New global roadmap launched to tackle hypertension in pregnancy, a leading cause of maternal and newborn deaths
+         </a>
+         <span aria-hidden="true" class="tk-sep">
+          ◆
+         </span>
+         <a href="https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity" rel="noopener" target="_blank">
+          <time>
+           7 Oct 2026
+          </time>
+          WHO issues first global guidelines on child and adolescent obesity
+         </a>
+         <span aria-hidden="true" class="tk-sep">
+          ◆
+         </span>
+         <a href="https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings" rel="noopener" target="_blank">
+          <time>
+           30 Sep 2026
+          </time>
+          WHO releases new guidance to prevent heat-related illness at mass gatherings
+         </a>
+         <span aria-hidden="true" class="tk-sep">
+          ◆
+         </span>
+        </span>
+       </div>
+      </div>
+      <span class="tk-note">
+       Updated 2 Nov 2026
+      </span>
+     </div>
+    </div>
+   </div>
+   <section class="h3-vision wrapx">
+    <div class="h3-head">
+     <span class="h3-eye">
+      Preventive &middot; predictive &middot; connected care
+     </span>
+     <h1>
+      Healthcare that finds risk early and reaches every village in Maharashtra
+     </h1>
+    </div>
+    <div class="h3-vgrid">
+     <div class="h3-vtxt">
+      <span class="eyebrow">
+       Our vision
+      </span>
+      <h2>
+       A technology partner for preventive healthcare
+      </h2>
+      <p>
+       We support the national vision of the highest possible level of health and well-being for all, at all ages, by building the digital and village-level infrastructure for screening, early diagnosis and connected care.
+      </p>
+      <p class="muted">
+       Bharat HIE connects hospitals, doctors, pharmacies, labs, blood banks and NGOs on one Health Information Exchange. Citizens are screened early at the PHC/Sub-centre/Gram Panchayat and at home, high-risk cases are acted on within hours, and every record follows the citizen with consent.
+      </p>
+      <div class="row">
+       <button class="btn pri" data-a="open-reg">
+        Register now
+       </button>
+       <button class="btn" data-a="about">
+        Read more &rarr;
+       </button>
+       <button class="btn" data-a="as" data-r="admin" data-t="analytics">
+        Live analytics dashboard
+       </button>
+      </div>
+     </div>
+     <ol class="h3-steps">
+      <li style="--c:var(--grn)">
+       <span class="h3-ic">
+        <svg aria-hidden="true" viewbox="0 0 24 24">
+         <path d="M4 12h4l2-5 4 10 2-5h4">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <b>
+         01
+        </b>
+        Screen early
+       </span>
+      </li>
+      <li style="--c:var(--red)">
+       <span class="h3-ic">
+        <svg aria-hidden="true" viewbox="0 0 24 24">
+         <path d="M12 7v5l3 2M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <b>
+         02
+        </b>
+        Act within hours
+       </span>
+      </li>
+      <li style="--c:var(--teal)">
+       <span class="h3-ic">
+        <svg aria-hidden="true" viewbox="0 0 24 24">
+         <path d="M3 11l9-7 9 7v9H3zM9 20v-6h6v6">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <b>
+         03
+        </b>
+        Care at home
+       </span>
+      </li>
+      <li style="--c:var(--core)">
+       <span class="h3-ic">
+        <svg aria-hidden="true" viewbox="0 0 24 24">
+         <path d="M3 17l5-5 4 4 8-8M15 8h5v5">
+         </path>
+        </svg>
+       </span>
+       <span>
+        <b>
+         04
+        </b>
+        Monitor continuously
+       </span>
+      </li>
+     </ol>
+    </div>
+   </section>
+   <div class="hgrid">
+    <div class="hmain">
+     <div aria-label="Key figures" class="stats">
+      <div>
+       <b>
+        12.4 lakh
+       </b>
+       <span>
+        Citizens registered
+       </span>
+      </div>
+      <div>
+       <b>
+        1,486
+       </b>
+       <span>
+        Facilities connected
+       </span>
+      </div>
+      <div>
+       <b>
+        36
+       </b>
+       <span>
+        Districts live
+       </span>
+      </div>
+      <div>
+       <b>
+        3.8 lakh
+       </b>
+       <span>
+        Records exchanged this month
+       </span>
+      </div>
+      <div>
+       <b>
+        27 min
+       </b>
+       <span>
+        Avg. time to first call for red flags
+       </span>
+      </div>
+     </div>
+     <section class="sec" id="services">
+      <div class="sec-h">
+       <div>
+        <span class="wwo-eye">
+         What we offer
+        </span>
+       </div>
+      </div>
+      <div class="filters">
+       <button aria-pressed="true" class="chip" data-a="sg" data-g="all">
+        All
+       </button>
+       <button aria-pressed="false" class="chip" data-a="sg" data-g="A">
+        A &middot; Point of service
+       </button>
+       <button aria-pressed="false" class="chip" data-a="sg" data-g="B">
+        B &middot; Health system administration
+       </button>
+       <button aria-pressed="false" class="chip" data-a="sg" data-g="C">
+        C &middot; Registries & directories
+       </button>
+       <button aria-pressed="false" class="chip" data-a="sg" data-g="D">
+        D &middot; Data management
+       </button>
+       <button aria-pressed="false" class="chip" data-a="sg" data-g="E">
+        E &middot; Surveillance & response
+       </button>
+       <button aria-pressed="false" class="chip" data-a="sg" data-g="F">
+        F &middot; Wellness & allied services
+       </button>
+       <button aria-pressed="false" class="chip" data-a="sg" data-g="G">
+        G &middot; Government health programmes
+       </button>
+       <button aria-pressed="false" class="chip" data-a="sg" data-g="H">
+        H &middot; Bharat HIE Global Platform: body, mind & spirit
+       </button>
+       <button aria-pressed="false" class="chip" data-a="sg" data-g="I">
+        I &middot; Animal health programmes
+       </button>
+      </div>
+      <div class="ss-wrap">
+       <div class="ss-left">
+        <div class="ss-grp">
+         <h3>
+          <span class="mono" style="color:var(--core)">
+           A
+          </span>
+          &middot; Point of service
+          <span class="muted small">
+           (19)
+          </span>
+         </h3>
+         <div class="ss-tiles">
+          <button aria-pressed="true" class="ss-tile" data-a="svc-pick" data-s="phc">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/phc-e46aa54b.webp">
+           </span>
+           <b>
+            PHC/Sub-centre/Gram Panchayat / CHC
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="asha">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/asha-4d0649b7.webp">
+           </span>
+           <b>
+            ASHA / ANM workers
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="phr">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/phr-3538a38f.webp">
+           </span>
+           <b>
+            Citizen PHR app
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="bpo">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/bpo-12882222.webp">
+           </span>
+           <b>
+            BPO call centre / 104
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="consult">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/consult-461cc16d.webp">
+           </span>
+           <b>
+            e-Consultation / Telemedicine
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="clinic">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/clinic-2f74c272.webp">
+           </span>
+           <b>
+            Clinics & GPs
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="doctors">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/doctors-46b57ffe.webp">
+           </span>
+           <b>
+            Doctors & specialists
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="pharmacy">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/pharmacy-2c5da8bf.webp">
+           </span>
+           <b>
+            Pharmacies
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="lab">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/lab-fbbcf945.webp">
+           </span>
+           <b>
+            Pathology labs
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="radio">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/radio-734b0fc9.webp">
+           </span>
+           <b>
+            Radiology & imaging
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="govhosp">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/govhosp-d3891a96.webp">
+           </span>
+           <b>
+            Government hospitals
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="pvthosp">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/pvthosp-6f656d79.webp">
+           </span>
+           <b>
+            Private hospitals & nursing homes
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="specialty">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/specialty-09093fb1.webp">
+           </span>
+           <b>
+            Specialty centres
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="dental">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/dental-d4024848.webp">
+           </span>
+           <b>
+            Dental clinics
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="mental">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/mental-a891c500.webp">
+           </span>
+           <b>
+            Mental health services
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="ayush">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/ayush-7f684485.webp">
+           </span>
+           <b>
+            AYUSH hospitals & practitioners
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="physio">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/physio-a55dabd5.webp">
+           </span>
+           <b>
+            Physiotherapy & rehabilitation
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="homecare">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/homecare-f2fb2a35.webp">
+           </span>
+           <b>
+            Home, palliative & elderly care
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="device">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/device-2076425c.webp">
+           </span>
+           <b>
+            Remote monitoring devices
+           </b>
+          </button>
+         </div>
+        </div>
+        <div class="ss-grp">
+         <h3>
+          <span class="mono" style="color:var(--core)">
+           B
+          </span>
+          &middot; Health system administration
+          <span class="muted small">
+           (8)
+          </span>
+         </h3>
+         <div class="ss-tiles">
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="scheme">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/scheme-c7d78726.webp">
+           </span>
+           <b>
+            Insurance & govt schemes
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="blood">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/blood-7a261cb7.webp">
+           </span>
+           <b>
+            Blood banks
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="billing">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/billing-439192a5.webp">
+           </span>
+           <b>
+            Admission & billing desk
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="supply">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/supply-8d169e9f.webp">
+           </span>
+           <b>
+            Drug supply & warehouses
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="program">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/program-83fe977d.webp">
+           </span>
+           <b>
+            Health programme monitoring
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="hr">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/hr-b6fe0663.webp">
+           </span>
+           <b>
+            Health workforce (HR)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="training">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/training-c4b3158c.webp">
+           </span>
+           <b>
+            Training & medical colleges
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="research">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/research-f521017b.webp">
+           </span>
+           <b>
+            Research institutes
+           </b>
+          </button>
+         </div>
+        </div>
+        <div class="ss-grp">
+         <h3>
+          <span class="mono" style="color:var(--core)">
+           C
+          </span>
+          &middot; Registries & directories
+          <span class="muted small">
+           (8)
+          </span>
+         </h3>
+         <div class="ss-tiles">
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="abha">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/abha-4c9e70c9.webp">
+           </span>
+           <b>
+            ABHA / eHS identity
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="immun">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/immun-117cdac4.webp">
+           </span>
+           <b>
+            Immunization records
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="crvs">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/crvs-748f1da2.webp">
+           </span>
+           <b>
+            Birth & death registration
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="mpi">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/mpi-15314633.webp">
+           </span>
+           <b>
+            Master patient index
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="hfr">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/hfr-51366e47.webp">
+           </span>
+           <b>
+            Health facility registry (HFR)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="hpr">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/hpr-5b5718c9.webp">
+           </span>
+           <b>
+            Health professional registry (HPR)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="term">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/term-075ba8d0.webp">
+           </span>
+           <b>
+            Medical terminology
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="census">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/census-5cf58e2e.webp">
+           </span>
+           <b>
+            Census & population data
+           </b>
+          </button>
+         </div>
+        </div>
+        <div class="ss-grp">
+         <h3>
+          <span class="mono" style="color:var(--core)">
+           D
+          </span>
+          &middot; Data management
+          <span class="muted small">
+           (6)
+          </span>
+         </h3>
+         <div class="ss-tiles">
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="shr">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/shr-d5bf7ba2.webp">
+           </span>
+           <b>
+            Shared health record
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="engine">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/engine-3e2dc322.webp">
+           </span>
+           <b>
+            HIE interoperability engine
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="analytics">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/analytics-93864ebb.webp">
+           </span>
+           <b>
+            AI / ML analytics & KPO
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="dash">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/dash-272bc8e1.webp">
+           </span>
+           <b>
+            Government dashboards (HMIS)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="gis">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/gis-e9296047.webp">
+           </span>
+           <b>
+            GIS health mapping
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="env">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/env-21f9dcc9.webp">
+           </span>
+           <b>
+            Environmental health
+           </b>
+          </button>
+         </div>
+        </div>
+        <div class="ss-grp">
+         <h3>
+          <span class="mono" style="color:var(--core)">
+           E
+          </span>
+          &middot; Surveillance & response
+          <span class="muted small">
+           (4)
+          </span>
+         </h3>
+         <div class="ss-tiles">
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="amb">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/amb-795c94ef.webp">
+           </span>
+           <b>
+            Ambulance (108)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="cc">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/cc-317cb134.webp">
+           </span>
+           <b>
+            Command Centre
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="surv">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/surv-b49c4ec0.webp">
+           </span>
+           <b>
+            Disease surveillance (IDSP / IHIP)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="ngo">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/ngo-ba44c633.webp">
+           </span>
+           <b>
+            NGOs
+           </b>
+          </button>
+         </div>
+        </div>
+        <div class="ss-grp">
+         <h3>
+          <span class="mono" style="color:var(--core)">
+           F
+          </span>
+          &middot; Wellness & allied services
+          <span class="muted small">
+           (4)
+          </span>
+         </h3>
+         <div class="ss-tiles">
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="yogactr">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/yogactr-e910adbf.webp">
+           </span>
+           <b>
+            Yoga centres
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="nutra">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/nutra-27d7f698.webp">
+           </span>
+           <b>
+            Nutraceutical suppliers
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="spiritual">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/spiritual-3ba0edf8.webp">
+           </span>
+           <b>
+            Spiritual healing centres
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="stemcell">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/stemcell-78228fc5.webp">
+           </span>
+           <b>
+            Stem cell labs
+           </b>
+          </button>
+         </div>
+        </div>
+        <div class="ss-grp">
+         <h3>
+          <span class="mono" style="color:var(--core)">
+           G
+          </span>
+          &middot; Government health programmes
+          <span class="muted small">
+           (20)
+          </span>
+         </h3>
+         <div class="ss-tiles">
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="npncd">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/npncd-1b65ba8e.webp">
+           </span>
+           <b>
+            Non-Communicable Diseases (NP-NCD)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="ntep">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/ntep-9b7e1c0e.webp">
+           </span>
+           <b>
+            TB Elimination (NTEP)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="nvbdcp">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/nvbdcp-b135570b.webp">
+           </span>
+           <b>
+            Vector Borne Disease Control (NVBDCP)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="polio">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/polio-aa0a214f.webp">
+           </span>
+           <b>
+            Pulse Polio
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="nipi">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/nipi-ef4360ff.webp">
+           </span>
+           <b>
+            Anaemia & Nutrition (National Iron Plus)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="nphce">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/homecare-f2fb2a35.webp">
+           </span>
+           <b>
+            Health Care of the Elderly (NPHCE)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="nmhp">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/mental-a891c500.webp">
+           </span>
+           <b>
+            Mental Health (NMHP)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="pmndp">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/pmndp-c083044f.webp">
+           </span>
+           <b>
+            National Dialysis Programme (PMNDP)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="npcbvi">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/npcbvi-c0b25a21.webp">
+           </span>
+           <b>
+            Blindness & Visual Impairment (NPCBVI)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="nohp">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/nohp-2e6c8c6a.webp">
+           </span>
+           <b>
+            Oral Health (NOHP)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="nppcd">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/nppcd-d0048019.webp">
+           </span>
+           <b>
+            Deafness Prevention & Control (NPPCD)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="nacp">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/nacp-484b2857.webp">
+           </span>
+           <b>
+            HIV / AIDS Control (NACP)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="nvhcp">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/nvhcp-9933481b.webp">
+           </span>
+           <b>
+            Viral Hepatitis Control (NVHCP)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="nrcp">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/nrcp-61674c41.webp">
+           </span>
+           <b>
+            Rabies Control (NRCP)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="snake">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/snake-401ddc91.webp">
+           </span>
+           <b>
+            Snakebite Prevention & Control
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="ntcp">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/ntcp-7081d028.webp">
+           </span>
+           <b>
+            Tobacco Control (NTCP)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="nlep">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/nlep-1853ff93.webp">
+           </span>
+           <b>
+            Leprosy Eradication (NLEP)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="nppcf">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/nppcf-938395f1.webp">
+           </span>
+           <b>
+            Fluorosis Prevention & Control (NPPCF)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="niddcp">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/niddcp-faa03a73.webp">
+           </span>
+           <b>
+            Iodine Deficiency Disorders (NIDDCP)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="amr">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/amr-2e2b2f27.webp">
+           </span>
+           <b>
+            AMR Containment
+           </b>
+          </button>
+         </div>
+        </div>
+        <div class="ss-grp">
+         <h3>
+          <span class="mono" style="color:var(--core)">
+           H
+          </span>
+          &middot; Bharat HIE Global Platform: body, mind & spirit
+          <span class="muted small">
+           (24)
+          </span>
+         </h3>
+         <div class="ss-tiles">
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="doorcheck">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/doorcheck-a38e530f.webp">
+           </span>
+           <b>
+            Health Check-up at Doorstep
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="meddel">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/meddel-8c7cc84e.webp">
+           </span>
+           <b>
+            Medicine Delivery at Doorstep
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="meddir">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/meddir-17346f58.webp">
+           </span>
+           <b>
+            Medicine Directory
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="dignurse">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/dignurse-4f9c0f2c.webp">
+           </span>
+           <b>
+            Digital Nurse 24/7
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="matru">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/matru-c2d54f12.webp">
+           </span>
+           <b>
+            Matrujyoti: Mother & Child Tracking
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="nutri">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/nutri-660ce2d0.webp">
+           </span>
+           <b>
+            AI Nutrition Calculator
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="organ">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/organ-8459881a.webp">
+           </span>
+           <b>
+            Organ Donor Program & Post-Transplant Support
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="genetic">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/genetic-4108f33b.webp">
+           </span>
+           <b>
+            Genetic Mapping & Immune Testing
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="hcoin">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/hcoin-81a23704.webp">
+           </span>
+           <b>
+            Health Coin & Health Loan
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="crowd">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/crowd-9a5525c1.webp">
+           </span>
+           <b>
+            Health Crowdfunding (NGO)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="secure">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/secure-c3cebc2f.webp">
+           </span>
+           <b>
+            Security & Compliance (Blockchain)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="videos">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/videos-6e1a9f12.webp">
+           </span>
+           <b>
+            Health & Wealth Expert Videos
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="sexed">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/sexed-b29897a0.webp">
+           </span>
+           <b>
+            Sex Education Awareness
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="pet">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/pet-2582707d.webp">
+           </span>
+           <b>
+            My Pet: Care & Awareness
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="ecom">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/ecom-684b7731.webp">
+           </span>
+           <b>
+            eCommerce Platform
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="fmcg">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/fmcg-debfbb12.webp">
+           </span>
+           <b>
+            FMCG Grocery Offers
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="jobs">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/jobs-c0793290.webp">
+           </span>
+           <b>
+            AI-based Jobs
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="ewealth">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/ewealth-6f33a804.webp">
+           </span>
+           <b>
+            eWealth: Financial Literacy
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="lms">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/lms-29458f20.webp">
+           </span>
+           <b>
+            Education: Learning Management System
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="agri">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/agri-bf32de75.webp">
+           </span>
+           <b>
+            Agriculture Awareness & Solutions
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="schoolbus">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/schoolbus-506b49b7.webp">
+           </span>
+           <b>
+            School Bus Security & Tracking
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="aarti">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/aarti-dee0281d.webp">
+           </span>
+           <b>
+            Ashrams & Temples: Live Aarti
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="ott">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/ott-e6a4952c.webp">
+           </span>
+           <b>
+            OTT Entertainment Platform
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="matri">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/matri-806b5899.webp">
+           </span>
+           <b>
+            Matrimony (Free)
+           </b>
+          </button>
+         </div>
+        </div>
+        <div class="ss-grp">
+         <h3>
+          <span class="mono" style="color:var(--core)">
+           I
+          </span>
+          &middot; Animal health programmes
+          <span class="muted small">
+           (18)
+          </span>
+         </h3>
+         <div class="ss-tiles">
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="mvu">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/mvu-aa6bcd2f.webp">
+           </span>
+           <b>
+            Mobile Veterinary Units (1962)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="pashu">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/pashu-d9732fc8.webp">
+           </span>
+           <b>
+            Pashu Aushadhi
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="lsd">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/lsd-f91f9f56.webp">
+           </span>
+           <b>
+            Lumpy Skin Disease
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="fmd">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/fmd-a0e6dfe6.webp">
+           </span>
+           <b>
+            Foot and Mouth Disease (NADCP)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="zoonotic">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/zoonotic-f83ec287.webp">
+           </span>
+           <b>
+            Rabies & Zoonotic Diseases (One Health)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="brucella">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/brucella-32aa989c.webp">
+           </span>
+           <b>
+            Bovine Brucellosis (NADCP)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="ppr">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/ppr-03ca411b.webp">
+           </span>
+           <b>
+            PPR in Sheep & Goats (CADCP)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="poultry">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/poultry-4c07c1ff.webp">
+           </span>
+           <b>
+            Poultry Diseases
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="csf">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/csf-62812a69.webp">
+           </span>
+           <b>
+            Classical Swine Fever (CADCP)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="ascad">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/ascad-b4f21c6b.webp">
+           </span>
+           <b>
+            Other Animal Diseases (ASCAD)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="animsurv">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/animsurv-93106782.webp">
+           </span>
+           <b>
+            Animal Disease Surveillance
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="npdd">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/npdd-af989f7a.webp">
+           </span>
+           <b>
+            Dairy Development (NPDD)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="sdcfpo">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/hr-b6fe0663.webp">
+           </span>
+           <b>
+            Dairy Cooperatives & FPOs (SDCFPO)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="gokul">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/gokul-4cdb186f.webp">
+           </span>
+           <b>
+            Rashtriya Gokul Mission
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="nlm">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/nlm-d93f6ed5.webp">
+           </span>
+           <b>
+            National Livestock Mission
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="ahidf">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/ahidf-62687a8c.webp">
+           </span>
+           <b>
+            Animal Husbandry Infrastructure Fund (AHIDF)
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="lcss">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/lcss-6a036db9.webp">
+           </span>
+           <b>
+            Livestock Census & Sample Survey
+           </b>
+          </button>
+          <button aria-pressed="false" class="ss-tile" data-a="svc-pick" data-s="slaughter">
+           <span class="ic ic-img">
+            <img alt loading="lazy" src="assets/images/service-icons/slaughter-212af9ae.webp">
+           </span>
+           <b>
+            Slaughter Houses
+           </b>
+          </button>
+         </div>
+        </div>
+       </div>
+       <aside aria-live="polite" class="ss-panel">
+        <div class="ss-top">
+         <span class="ic ic-img">
+          <img alt loading="lazy" src="assets/images/service-icons/phc-e46aa54b.webp">
+         </span>
+         <div>
+          <h2>
+           PHC/Sub-centre/Gram Panchayat / CHC
+          </h2>
+          <p>
+           Ayushman Arogya Mandir network
+          </p>
+         </div>
+        </div>
+        <div class="ss-body">
+         <p class="ss-txt">
+          PHC/Sub-centre/Gram Panchayat / CHC is connected to Bharat HIE, so records, orders and referrals move with the citizen's consent. Point of service &middot; opens the Doctor dashboard.
+         </p>
+         <div class="ss-stats">
+          <div>
+           <b>
+            1,912
+           </b>
+           <span>
+            centres
+           </span>
+          </div>
+          <div>
+           <b>
+            29,610
+           </b>
+           <span>
+            Records this month
+           </span>
+          </div>
+         </div>
+         <ul class="ss-feat">
+          <li>
+           Linked to the citizen's ABHA / eHS health card
+          </li>
+          <li>
+           Receives e-Prescriptions, test orders and referrals
+          </li>
+          <li>
+           Red, yellow and green flags shared in real time
+          </li>
+          <li>
+           Follow-up and monitoring on one shared record
+          </li>
+         </ul>
+         <div class="panel sec">
+          <h3>
+           Service providers &middot; Maharashtra
+          </h3>
+          <div class="tbl-wrap pv-t">
+           <table>
+            <thead>
+             <tr>
+              <th>
+               Provider
+              </th>
+              <th>
+               Address
+              </th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+              <td>
+               <b>
+                Directorate of Health Services, Maharashtra
+               </b>
+              </td>
+              <td>
+               Arogya Bhavan, St. George's Hospital Compound, P. D'Mello Road, Mumbai 400001
+              </td>
+             </tr>
+             <tr>
+              <td>
+               <b>
+                National Health Mission, Maharashtra (State Health Society)
+               </b>
+              </td>
+              <td>
+               Arogya Bhavan, St. George's Hospital Compound, P. D'Mello Road, Mumbai 400001
+              </td>
+             </tr>
+            </tbody>
+           </table>
+          </div>
+          <p class="small">
+           Full official directory:
+           <a href="https://facility.abdm.gov.in/" rel="noopener" target="_blank">
+            Health Facility Registry search (ABDM) &nearrow;
+           </a>
+          </p>
+          <p class="small muted">
+           Public institutions with their published addresses. Login IDs and passwords are not published.
+          </p>
+         </div>
+         <div class="row">
+          <button class="btn pri" data-a="mod" data-s="phc">
+           📊 Open dashboard &rarr;
+          </button>
+          <button class="btn" data-a="as" data-r="doctor">
+           Open as Doctor
+          </button>
+          <button class="btn" data-a="svc" data-s="phc">
+           View details
+          </button>
+         </div>
+         <p class="small muted">
+          Inside: ❤️ Health risk check &middot; 💉 Vaccination tracker &middot; 🧾 Scheme eligibility
+         </p>
+        </div>
+       </aside>
+      </div>
+     </section>
+     <section class="sec" id="how">
+      <div class="sec-h">
+       <div>
+        <h2>
+         How it works: one citizen, start to finish
+        </h2>
+        <p class="muted" style="max-width:72ch">
+         Follow Sunita Patil, 52, from Wagholi in Pune, from the day she is screened at her local PHC/Sub-centre/Gram Panchayat to the day her blood pressure is back to normal. Click any step to see who acts, what the system does, what Sunita receives and what data moves.
+        </p>
+       </div>
+      </div>
+      <div class="stats jstats">
+       <div>
+        <b>
+         14
+        </b>
+        <span>
+         Steps
+        </span>
+       </div>
+       <div>
+        <b>
+         9
+        </b>
+        <span>
+         Providers involved
+        </span>
+       </div>
+       <div>
+        <b>
+         27 min
+        </b>
+        <span>
+         Flag to first call
+        </span>
+       </div>
+       <div>
+        <b>
+         3.5 hrs
+        </b>
+        <span>
+         Flag to doctor
+        </span>
+       </div>
+       <div>
+        <b>
+         44 days
+        </b>
+        <span>
+         Red to green
+        </span>
+       </div>
+      </div>
+      <div class="phases">
+       <button class="ph cur" data-a="jph" data-i="0">
+        <span class="mono">
+         1
+        </span>
+        Screen
+       </button>
+       <button class="ph" data-a="jph" data-i="1">
+        <span class="mono">
+         2
+        </span>
+        Detect
+       </button>
+       <button class="ph" data-a="jph" data-i="2">
+        <span class="mono">
+         3
+        </span>
+        Triage
+       </button>
+       <button class="ph" data-a="jph" data-i="6">
+        <span class="mono">
+         4
+        </span>
+        Treat
+       </button>
+       <button class="ph" data-a="jph" data-i="10">
+        <span class="mono">
+         5
+        </span>
+        Follow up
+       </button>
+       <button class="ph" data-a="jph" data-i="13">
+        <span class="mono">
+         6
+        </span>
+        Monitor
+       </button>
+      </div>
+      <div class="jgrid">
+       <ol aria-label="Journey steps" class="jlist">
+        <li>
+         <button aria-current="true" data-a="js" data-i="0">
+          <span class="jd none">
+          </span>
+          <span class="mono jt">
+           Day 1 &middot; 09:40
+          </span>
+          <span class="jn">
+           1. Screening at PHC/Sub-centre/Gram Panchayat
+          </span>
+         </button>
+        </li>
+        <li>
+         <button aria-current="false" data-a="js" data-i="1">
+          <span class="jd red">
+          </span>
+          <span class="mono jt">
+           Day 1 &middot; 09:55
+          </span>
+          <span class="jn">
+           2. Automatic red flag
+          </span>
+         </button>
+        </li>
+        <li>
+         <button aria-current="false" data-a="js" data-i="2">
+          <span class="jd red">
+          </span>
+          <span class="mono jt">
+           Day 1 &middot; 10:22
+          </span>
+          <span class="jn">
+           3. BPO call from 104
+          </span>
+         </button>
+        </li>
+        <li>
+         <button aria-current="false" data-a="js" data-i="3">
+          <span class="jd red">
+          </span>
+          <span class="mono jt">
+           Day 1 &middot; 10:45
+          </span>
+          <span class="jn">
+           4. KPO clinical review
+          </span>
+         </button>
+        </li>
+        <li>
+         <button aria-current="false" data-a="js" data-i="4">
+          <span class="jd red">
+          </span>
+          <span class="mono jt">
+           Day 1 &middot; 11:00
+          </span>
+          <span class="jn">
+           5. Command Centre assigns care
+          </span>
+         </button>
+        </li>
+        <li>
+         <button aria-current="false" data-a="js" data-i="5">
+          <span class="jd red">
+          </span>
+          <span class="mono jt">
+           Day 1 &middot; 11:05
+          </span>
+          <span class="jn">
+           6. Hospital only if critical
+          </span>
+         </button>
+        </li>
+        <li>
+         <button aria-current="false" data-a="js" data-i="6">
+          <span class="jd red">
+          </span>
+          <span class="mono jt">
+           Day 1 &middot; 13:30
+          </span>
+          <span class="jn">
+           7. e-Consultation with doctor
+          </span>
+         </button>
+        </li>
+        <li>
+         <button aria-current="false" data-a="js" data-i="7">
+          <span class="jd red">
+          </span>
+          <span class="mono jt">
+           Day 1 &middot; 13:45
+          </span>
+          <span class="jn">
+           8. e-Prescription generated
+          </span>
+         </button>
+        </li>
+        <li>
+         <button aria-current="false" data-a="js" data-i="8">
+          <span class="jd red">
+          </span>
+          <span class="mono jt">
+           Day 1 &middot; 18:30
+          </span>
+          <span class="jn">
+           9. Medicine delivery at home
+          </span>
+         </button>
+        </li>
+        <li>
+         <button aria-current="false" data-a="js" data-i="9">
+          <span class="jd red">
+          </span>
+          <span class="mono jt">
+           Day 2 &middot; 08:00
+          </span>
+          <span class="jn">
+           10. Home sample collection and report
+          </span>
+         </button>
+        </li>
+        <li>
+         <button aria-current="false" data-a="js" data-i="10">
+          <span class="jd yellow">
+          </span>
+          <span class="mono jt">
+           Day 15 &middot; 10:30
+          </span>
+          <span class="jn">
+           11. Follow-up consultation
+          </span>
+         </button>
+        </li>
+        <li>
+         <button aria-current="false" data-a="js" data-i="11">
+          <span class="jd yellow">
+          </span>
+          <span class="mono jt">
+           Day 16 &middot; 16:00
+          </span>
+          <span class="jn">
+           12. Video consultation
+          </span>
+         </button>
+        </li>
+        <li>
+         <button aria-current="false" data-a="js" data-i="12">
+          <span class="jd green">
+          </span>
+          <span class="mono jt">
+           Day 45 &middot; 09:40
+          </span>
+          <span class="jn">
+           13. Back to green or new e-Prescription
+          </span>
+         </button>
+        </li>
+        <li>
+         <button aria-current="false" data-a="js" data-i="13">
+          <span class="jd green">
+          </span>
+          <span class="mono jt">
+           Every month
+          </span>
+          <span class="jn">
+           14. Continuous monitoring and reporting
+          </span>
+         </button>
+        </li>
+       </ol>
+       <article class="panel jdet">
+        <div class="row" style="justify-content:space-between">
+         <span class="eyebrow">
+          Step 1 of 14 &middot; Screen
+         </span>
+         <span class="mono muted small">
+          Day 1 &middot; 09:40 &middot; takes 15 min
+         </span>
+        </div>
+        <div class="row" style="flex-wrap:nowrap;align-items:start">
+         <span class="ic">
+          <svg viewbox="0 0 24 24">
+           <path d="M3 11l9-7 9 7">
+           </path>
+           <path d="M5 10v10h14V10">
+           </path>
+           <path d="M12 12v5M9.5 14.5h5">
+           </path>
+          </svg>
+         </span>
+         <div>
+          <h2>
+           Screening at PHC/Sub-centre/Gram Panchayat
+          </h2>
+          <p class="muted small">
+           Savita Kamble, ANM, PHC/Sub-centre/Gram Panchayat, Wagholi
+          </p>
+         </div>
+        </div>
+        <div class="row">
+         <span class="small muted">
+          Sunita's status:
+         </span>
+         <span class="pill">
+          ${t("Not yet screened")}
+         </span>
+        </div>
+        <p>
+         Sunita comes to PHC/Sub-centre/Gram Panchayat, Wagholi for the NCD screening camp. The ANM registers her in Bharat HIE, creates her ABHA and links her old PHC/Sub-centre/Gram Panchayat visits. Blood pressure, sugar, SpO₂, pulse, height and weight are checked with connected devices, so the readings go straight into the record without manual typing.
+        </p>
+        <ul class="jacts">
+         <li>
+          ABHA 91-3817-5402-1290 created, 3 earlier PHC/Sub-centre/Gram Panchayat visits linked
+         </li>
+         <li>
+          BP 186/118 &middot; Sugar 162 &middot; SpO₂ 96% &middot; Pulse 92 &middot; BMI 27.1
+         </li>
+         <li>
+          Readings saved to the shared health record and the PHR
+         </li>
+        </ul>
+        <div class="grid2">
+         <div class="sec" style="gap:8px">
+          <h3>
+           What Sunita receives
+          </h3>
+          <div class="bubble">
+           <span class="mono">
+            SMS
+           </span>
+           <p>
+            Welcome to Bharat HIE. Your ABHA number is 91-3817-5402-1290. Your screening readings are now in the Bharat HIE app.
+           </p>
+          </div>
+         </div>
+         <div class="sec" style="gap:8px">
+          <h3>
+           Data exchanged (FHIR)
+          </h3>
+          <div class="row" style="gap:6px">
+           <span class="pill mono" style="font-size:11.5px">
+            Patient
+           </span>
+           <span class="pill mono" style="font-size:11.5px">
+            Consent
+           </span>
+           <span class="pill mono" style="font-size:11.5px">
+            Observation &times; 5
+           </span>
+          </div>
+          <h3>
+           Services involved
+          </h3>
+          <div class="row" style="gap:6px">
+           <button class="chip" data-a="svc" data-s="phc">
+            PHC/Sub-centre/Gram Panchayat / CHC
+           </button>
+           <button class="chip" data-a="svc" data-s="asha">
+            ASHA / ANM workers
+           </button>
+           <button class="chip" data-a="svc" data-s="abha">
+            ABHA / eHS identity
+           </button>
+           <button class="chip" data-a="svc" data-s="device">
+            Remote monitoring devices
+           </button>
+          </div>
+         </div>
+        </div>
+        <div class="row" style="justify-content:space-between;border-top:1px solid var(--line);padding-top:12px">
+         <div class="row">
+          <button class="btn" data-a="js" data-i="0" disabled>
+           &larr; Previous
+          </button>
+          <button class="btn pri" data-a="js" data-i="1">
+           Next step &rarr;
+          </button>
+         </div>
+        </div>
+       </article>
+      </div>
+      <p class="note">
+       Same loop for every flagged citizen: Flagged &rarr; BPO call &rarr; KPO review &rarr; Command Centre &rarr; Consultation &rarr; Pharmacy / Lab &rarr; Follow-up. If the citizen is still red or yellow after follow-up, a new loop starts. Green citizens move to monthly monitoring.
+      </p>
+     </section>
+     <section class="split" id="providers">
+      <div class="panel sec">
+       <h2>
+        For healthcare providers
+       </h2>
+       <ol class="olist">
+        <li>
+         <div>
+          <b>
+           Register your facility
+          </b>
+          <span>
+           Hospital, clinic, pharmacy, lab, blood bank or NGO, with licence number
+          </span>
+         </div>
+        </li>
+        <li>
+         <div>
+          <b>
+           Connect your software
+          </b>
+          <span>
+           Use Bharat HIE FHIR APIs or our ready connectors for common HMIS and LIS products
+          </span>
+         </div>
+        </li>
+        <li>
+         <div>
+          <b>
+           Verification
+          </b>
+          <span>
+           Documents and a test exchange in the sandbox
+          </span>
+         </div>
+        </li>
+        <li>
+         <div>
+          <b>
+           Go live
+          </b>
+          <span>
+           Receive e-Prescriptions, orders and referrals in your own system
+          </span>
+         </div>
+        </li>
+       </ol>
+       <button class="btn pri" data-a="open-reg" data-s="clinic" style="align-self:flex-start">
+        Register as provider
+       </button>
+      </div>
+      <div class="panel sec">
+       <h2>
+        Flag colours
+       </h2>
+       <div class="row">
+        <span class="flag red">
+         Red
+        </span>
+        <span class="small">
+         BP &ge;180/120 or &lt;90, sugar &ge;300 or &lt;70, SpO₂ &lt;90%, pulse &gt;130 or &lt;45
+        </span>
+       </div>
+       <div class="row">
+        <span class="flag yellow">
+         Yellow
+        </span>
+        <span class="small">
+         BP &ge;140/90, sugar &ge;200, SpO₂ 90&ndash;94%, pulse 101&ndash;130 or 45&ndash;54, BMI &ge;30
+        </span>
+       </div>
+       <div class="row">
+        <span class="flag green">
+         Green
+        </span>
+        <span class="small">
+         All vitals in normal range, routine monitoring
+        </span>
+       </div>
+       <p class="note">
+        Thresholds shown for the demo. Final rules are approved by the state clinical committee.
+       </p>
+      </div>
+     </section>
+    </div>
+    <aside aria-label="Country information" class="side">
+     <section class="sbox lead">
+      <div class="sbh">
+       <span class="eyebrow">
+        Leadership
+       </span>
+       <span class="flagc">
+        🇮🇳 India
+       </span>
+      </div>
+      <div class="leadph">
+       <img alt="Narendra Modi" src="assets/images/leaders/in-77026401.jpg">
+       <input accept="image/*" hidden id="pmphoto" type="file">
+      </div>
+      <div>
+       <p class="muted small">
+        Prime Minister of India
+       </p>
+       <h3 style="font-size:19px">
+        Narendra Modi
+       </h3>
+      </div>
+      <a class="btn live" href="https://www.youtube.com/results?search_query=Narendra%20Modi%20live" rel="noopener" target="_blank">
+       <span aria-hidden="true" class="live-dot">
+       </span>
+       Join Live
+      </a>
+     </section>
+     <section class="sbox lead cm">
+      <div class="sbh">
+       <span class="eyebrow">
+        Chief Minister
+       </span>
+       <span class="flagc">
+        Maharashtra
+       </span>
+      </div>
+      <div class="cmrow">
+       <div class="cmph">
+        <img alt="Devendra Fadnavis" src="assets/images/chief-ministers/maharashtra-bbbc9589.jpg">
+       </div>
+       <div style="min-width:0">
+        <p class="muted small">
+         Chief Minister of Maharashtra
+        </p>
+        <h3 style="font-size:19px">
+         Devendra Fadnavis
+        </h3>
+       </div>
+      </div>
+      <a class="btn live" href="https://www.youtube.com/results?search_query=Devendra%20Fadnavis%20Maharashtra%20CM%20live" rel="noopener" target="_blank">
+       <span aria-hidden="true" class="live-dot">
+       </span>
+       Join Live
+      </a>
+     </section>
+     <section class="sbox">
+      <div class="sbh">
+       <span class="eyebrow">
+        Doctor on duty
+       </span>
+       <span class="pill ok">
+        ● Online
+       </span>
+      </div>
+      <div class="dfeat">
+       <img alt class="dav" height="84" src="assets/images/doctors/img-18b04b56.jpg" style="width:84px;height:84px;object-fit:cover" width="84">
+       <div style="min-width:0">
+        <h3>
+         Dr. Arvind Bhagat
+        </h3>
+        <div class="small muted">
+         Cardiology
+        </div>
+        <div class="small muted">
+         Civil Hospital, Nashik
+        </div>
+        <div class="small" style="margin-top:4px">
+         <b>
+          Wait:
+         </b>
+         about 3 min &middot;
+         <b>
+          Queue:
+         </b>
+         2
+        </div>
+       </div>
+      </div>
+      <button class="btn pri" data-a="consult-open" data-i="3">
+       ▶ Join doctor consultation
+      </button>
+      <div class="drow">
+       <img alt class="dav" height="44" src="assets/images/doctors/img-183fd198.jpg" style="width:44px;height:44px;object-fit:cover" width="44">
+       <div style="min-width:0;flex:1">
+        <b>
+         Dr. Neha Kale
+        </b>
+        <div class="small muted">
+         Tele-medicine
+        </div>
+       </div>
+       <button class="btn sm" data-a="consult-open" data-i="2">
+        Join
+       </button>
+      </div>
+      <div class="drow">
+       <img alt class="dav" height="44" src="assets/images/doctors/img-99e4fd73.jpg" style="width:44px;height:44px;object-fit:cover" width="44">
+       <div style="min-width:0;flex:1">
+        <b>
+         Dr. Sameer Joshi
+        </b>
+        <div class="small muted">
+         Family Physician
+        </div>
+       </div>
+       <button class="btn sm" data-a="consult-open" data-i="1">
+        Join
+       </button>
+      </div>
+     </section>
+     <section class="sbox">
+      <div class="sbh">
+       <span class="eyebrow">
+        Careers
+       </span>
+       <span class="pill">
+        82 openings
+       </span>
+      </div>
+      <div class="jrow">
+       <div style="min-width:0">
+        <b>
+         Health Advisor (BPO call centre)
+        </b>
+        <div class="small muted">
+         Pune &middot; Full-time &middot; shifts
+        </div>
+       </div>
+       <button class="btn sm" data-a="apply" data-i="0">
+        Apply
+       </button>
+      </div>
+      <div class="jrow">
+       <div style="min-width:0">
+        <b>
+         Clinical Analyst (KPO, staff nurse)
+        </b>
+        <div class="small muted">
+         Mumbai &middot; Full-time
+        </div>
+       </div>
+       <button class="btn sm" data-a="apply" data-i="1">
+        Apply
+       </button>
+      </div>
+      <div class="jrow">
+       <div style="min-width:0">
+        <b>
+         FHIR Integration Engineer
+        </b>
+        <div class="small muted">
+         Remote / Pune &middot; Contract &middot; 12 months
+        </div>
+       </div>
+       <button class="btn sm" data-a="apply" data-i="2">
+        Apply
+       </button>
+      </div>
+      <div class="jrow">
+       <div style="min-width:0">
+        <b>
+         ASHA Coordinator
+        </b>
+        <div class="small muted">
+         Thane &middot; Full-time
+        </div>
+       </div>
+       <button class="btn sm" data-a="apply" data-i="3">
+        Apply
+       </button>
+      </div>
+      <div class="jrow">
+       <div style="min-width:0">
+        <b>
+         Command Centre Duty Officer
+        </b>
+        <div class="small muted">
+         Pune &middot; 24&times;7 rota
+        </div>
+       </div>
+       <button class="btn sm" data-a="apply" data-i="4">
+        Apply
+       </button>
+      </div>
+     </section>
+     <section class="sbox">
+      <div class="sbh">
+       <span class="eyebrow">
+        News
+       </span>
+       <span class="flagc">
+        🇮🇳 India
+       </span>
+      </div>
+      <div class="feed">
+       <div>
+        <time>
+         02 Nov 2026
+        </time>
+        <span>
+         <b>
+          Bharat HIE update
+         </b>
+         &middot; 14 new labs connected in Maharashtra this week
+        </span>
+       </div>
+       <div>
+        <time>
+         01 Nov 2026
+        </time>
+        <span>
+         <b>
+          Bharat HIE update
+         </b>
+         &middot; ABHA linking now live at all district hospitals in Pune
+        </span>
+       </div>
+       <div>
+        <time>
+         30 Oct 2026
+        </time>
+        <span>
+         <b>
+          Bharat HIE update
+         </b>
+         &middot; Red-flag first-call time in Maharashtra down to 27 minutes
+        </span>
+       </div>
+      </div>
+      <a class="btn sm" href="https://news.google.com/search?q=India%20health" rel="noopener" target="_blank">
+       Latest health news from India &nearrow;
+      </a>
+      <a class="small" href="https://www.who.int/news" rel="noopener" target="_blank">
+       WHO news &nearrow;
+      </a>
+      <p class="small muted">
+       Live news opens on the news site in a new tab.
+      </p>
+     </section>
+    </aside>
+   </div>
+  </main>
+  <footer id="contact">
+   <div class="wrapx in">
+    <div>
+     <b>
+      Bharat HIE Portal
+     </b>
+     <p>
+      One health card, one login and connected care for every citizen of Maharashtra. Hospitals, doctors, pharmacies, labs, blood banks and NGOs exchange records through a consent-based exchange aligned with ABDM.
+     </p>
+    </div>
+    <div>
+     <b>
+      Citizens
+     </b>
+     <ul>
+      <li>
+       My Health Record
+      </li>
+      <li>
+       <button class="flink" data-a="appt">
+        Book appointment
+       </button>
+      </li>
+      <li>
+       Scheme eligibility
+      </li>
+      <li>
+       Consent manager
+      </li>
+     </ul>
+    </div>
+    <div>
+     <b>
+      Providers
+     </b>
+     <ul>
+      <li>
+       Register facility
+      </li>
+      <li>
+       API documentation
+      </li>
+      <li>
+       Integration sandbox
+      </li>
+      <li>
+       Verification status
+      </li>
+     </ul>
+    </div>
+    <div>
+     <b>
+      Help
+     </b>
+     <ul>
+      <li>
+       Health helpline: 104
+      </li>
+      <li>
+       Ambulance: 108
+      </li>
+      <li>
+       Support desk: 9 am &ndash; 9 pm
+      </li>
+      <li>
+       <button class="flink" data-a="faq">
+        FAQ & help
+       </button>
+      </li>
+      <li>
+       <button class="flink" data-a="griev">
+        Complaints & feedback
+       </button>
+      </li>
+      <li>
+       <button class="flink" data-a="camps">
+        Health camps
+       </button>
+      </li>
+      <li>
+       Privacy policy
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="wrapx bt">
+    &copy; 2026 Bharat HIE Portal
+   </div>
+  </footer>
+  <div class="fab-sos">
+   <button aria-expanded="false" aria-label="Emergency SOS" class="sos-btn" data-a="sos">
+    SOS
+   </button>
+  </div>
+  <button aria-label="Open AI health assistant" class="fab-chat" data-a="chat-open">
+   <span>
+    💬
+   </span>
+   <b>
+    Health assistant
+   </b>
+  </button>
+</div>
+<script>window.START_VIEW="home";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="js/01-icons.js"></script>
+<script src="js/02-helpers.js"></script>
+<script src="js/03-country-data.js"></script>
+<script src="js/04-reference-data.js"></script>
+<script src="js/05-language.js"></script>
+<script src="js/06-state.js"></script>
+<script src="js/07-header-home.js"></script>
+<script src="js/08-services.js"></script>
+<script src="js/09-providers.js"></script>
+<script src="js/10-analytics.js"></script>
+<script src="js/11-role-dashboards.js"></script>
+<script src="js/12-health-card.js"></script>
+<script src="js/13-modals-login.js"></script>
+<script src="js/14-about.js"></script>
+<script src="js/15-find-near-me.js"></script>
+<script src="js/16-citizen-features.js"></script>
+<script src="js/17-module-dashboards.js"></script>
+<script src="js/18-app-render-events.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+/* Force light professional theme + readable text */
+
+html {
+  color-scheme: light !important;
+}
+
+html,
+body,
+#root {
+  background: #f3f5f8 !important;
+  color: #0f1c2a !important;
+}
+
+:root,
+:root[data-theme='dark'],
+:root:not([data-theme='light']) {
+  --bg: #f3f5f8 !important;
+  --fg: #0f1c2a !important;
+  --muted: #5b6b7c !important;
+  --line: #d7dee7 !important;
+  --line2: #a8b4c2 !important;
+  --surface: #ffffff !important;
+  --sunk: #e9eef4 !important;
+  --navy: #0b1f33 !important;
+  --core: #0f5f8a !important;
+  --core-h: #0a4a6c !important;
+  --core-soft: #e4eef5 !important;
+  --teal: #0e7c7b !important;
+  --prov: #0a6a69 !important;
+  --ink: #0b1f33 !important;
+  --on: #ffffff !important;
+}
+
+#app {
+  color: #0f1c2a;
+}
+
+#app main,
+#app .wrapx,
+#app .panel,
+#app .sec-h,
+#app h1,
+#app h2,
+#app h3,
+#app h4,
+#app p,
+#app li,
+#app label,
+#app td,
+#app th,
+#app .svc b,
+#app .ss-tile b,
+#app .kpi .n,
+#app .akpi .n {
+  color: #0f1c2a;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+#app .h3-head h1 {
+  color: #0b1f33 !important;
+}
+
+#app .muted,
+#app .kpi .l,
+#app .kpi .d,
+#app .svc span,
+#app .crumbs,
+#app .tab,
+#app .fld {
+  color: #5b6b7c !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Header util bar */
+#app .hdr .util,
+#app .hdr .util .who,
+#app .hdr .ubtn,
+#app .util .place,
+#app .util .lang,
+#app .util .gsearch input {
+  color: #ffffff !important;
+}
+
+#app .util .gsearch input::placeholder {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Pill nav */
+#app .pillnav {
+  background: rgba(11, 31, 51, 0.82) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+#app .pillnav .brand-hi {
+  color: #ffffff !important;
+}
+#app .pillnav .brand-en {
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+#app .pn-links > button:not(.pn-find) {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+#app .pn-links > button:not(.pn-find)[aria-current='page'] {
+  color: #d4e8f5 !important;
+  border-color: #7eb6d6 !important;
+}
+#app .pn-links .pn-find,
+#app button.pn-find {
+  background: #ffffff !important;
+  color: #0b1f33 !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+#app .pn-links .pn-find:hover {
+  color: #0a4a6c !important;
+}
+#app .pn-login {
+  background: #ffffff !important;
+  color: #0f1c2a !important;
+}
+#app .pn-reg {
+  color: #ffffff !important;
+}
+
+/* Dark surfaces keep white text */
+#app .hero2,
+#app .hero2 h1,
+#app .hero2 p,
+#app .ab-vision,
+#app .ab-vision h2,
+#app .ab-vision .eyebrow,
+#app .ab-vision .muted,
+#app .idcard,
+#app .idcard *,
+#app .fab-chat,
+#app .sos-btn,
+#app .chat header,
+#app .chat header *,
+#app .msg.me,
+#app .toast,
+#app .skip,
+#app .btn.pri,
+#app .btn.red,
+#app .btn.live {
+  color: #ffffff !important;
+}
+
+#app .h2-pri {
+  color: #0b1f33 !important;
+  background: #ffffff !important;
+}
+#app .h2-ghost {
+  color: #ffffff !important;
+}
+
+#app .hdr {
+  background: linear-gradient(180deg, #0b1f33, #0f2d45) !important;
+}
+#app .hdr.ov {
+  background: linear-gradient(180deg, rgba(11, 31, 51, 0.72), rgba(11, 31, 51, 0)) !important;
+}
+
+#app footer {
+  background: #0b1f33 !important;
+  color: #c5d0db !important;
+}
+#app footer b {
+  color: #ffffff !important;
+}
+#app footer p,
+#app footer li,
+#app footer .flink {
+  color: #c5d0db !important;
+}
+#app footer .bt {
+  color: #9aabbc !important;
+}
+
+#app .btn:not(.pri):not(.red):not(.live):not(.h2-pri):not(.h2-ghost) {
+  color: #0f1c2a !important;
+}
+#app .inp,
+#app select.place,
+#app textarea {
+  color: #0f1c2a !important;
+}
+#app .chip {
+  color: #0f1c2a !important;
+}
+#app .chip[aria-pressed='true'] {
+  color: #ffffff !important;
+  background: #0b1f33 !important;
+  border-color: #0b1f33 !important;
+}
+
+#app .fab-chat b,
+#app .fab-chat span {
+  color: #ffffff !important;
+}
+
+#app .fab-chat {
+  background: #0b1f33 !important;
+}
+
+#app img {
+  max-width: 100%;
+}
+
+.react-boot {
+  min-height: 40vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  color: #0f1c2a;
+  font-family: Inter, system-ui, sans-serif;
+}
+.react-boot[hidden] {
+  display: none;
+}

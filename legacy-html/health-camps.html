@@ -1,0 +1,1853 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Health camps · Bharat HIE Portal</title>
+<meta name="description" content="Bharat HIE Portal: one health card, one login and connected care across hospitals, doctors, pharmacies, labs, blood banks and NGOs.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Ol+Chiki&family=Noto+Sans+Meetei+Mayek&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Page: Health camps. The markup below is the rendered page; the scripts at the bottom make it interactive. -->
+<div id="app">
+  <button class="skip" data-a="skip">
+   Skip to main content
+  </button>
+  <header class="hdr">
+   <div class="util">
+    <div class="wrapx util-in">
+     <select aria-label="Country" class="place" id="ctry" title="Country (196)">
+      <optgroup label="Asia">
+       <option value="AF">
+        🇦🇫 Afghanistan
+       </option>
+       <option value="AM">
+        🇦🇲 Armenia
+       </option>
+       <option value="AZ">
+        🇦🇿 Azerbaijan
+       </option>
+       <option value="BH">
+        🇧🇭 Bahrain
+       </option>
+       <option value="BD">
+        🇧🇩 Bangladesh
+       </option>
+       <option value="BT">
+        🇧🇹 Bhutan
+       </option>
+       <option value="BN">
+        🇧🇳 Brunei
+       </option>
+       <option value="KH">
+        🇰🇭 Cambodia
+       </option>
+       <option value="CN">
+        🇨🇳 China
+       </option>
+       <option value="GE">
+        🇬🇪 Georgia
+       </option>
+       <option selected value="IN">
+        🇮🇳 India
+       </option>
+       <option value="ID">
+        🇮🇩 Indonesia
+       </option>
+       <option value="IR">
+        🇮🇷 Iran
+       </option>
+       <option value="IQ">
+        🇮🇶 Iraq
+       </option>
+       <option value="IL">
+        🇮🇱 Israel
+       </option>
+       <option value="JP">
+        🇯🇵 Japan
+       </option>
+       <option value="JO">
+        🇯🇴 Jordan
+       </option>
+       <option value="KZ">
+        🇰🇿 Kazakhstan
+       </option>
+       <option value="KW">
+        🇰🇼 Kuwait
+       </option>
+       <option value="KG">
+        🇰🇬 Kyrgyzstan
+       </option>
+       <option value="LA">
+        🇱🇦 Laos
+       </option>
+       <option value="LB">
+        🇱🇧 Lebanon
+       </option>
+       <option value="MY">
+        🇲🇾 Malaysia
+       </option>
+       <option value="MV">
+        🇲🇻 Maldives
+       </option>
+       <option value="MN">
+        🇲🇳 Mongolia
+       </option>
+       <option value="MM">
+        🇲🇲 Myanmar
+       </option>
+       <option value="NP">
+        🇳🇵 Nepal
+       </option>
+       <option value="KP">
+        🇰🇵 North Korea
+       </option>
+       <option value="OM">
+        🇴🇲 Oman
+       </option>
+       <option value="PK">
+        🇵🇰 Pakistan
+       </option>
+       <option value="PS">
+        🇵🇸 Palestine
+       </option>
+       <option value="PH">
+        🇵🇭 Philippines
+       </option>
+       <option value="QA">
+        🇶🇦 Qatar
+       </option>
+       <option value="SA">
+        🇸🇦 Saudi Arabia
+       </option>
+       <option value="SG">
+        🇸🇬 Singapore
+       </option>
+       <option value="KR">
+        🇰🇷 South Korea
+       </option>
+       <option value="LK">
+        🇱🇰 Sri Lanka
+       </option>
+       <option value="SY">
+        🇸🇾 Syria
+       </option>
+       <option value="TW">
+        🇹🇼 Taiwan
+       </option>
+       <option value="TJ">
+        🇹🇯 Tajikistan
+       </option>
+       <option value="TH">
+        🇹🇭 Thailand
+       </option>
+       <option value="TL">
+        🇹🇱 Timor-Leste
+       </option>
+       <option value="TR">
+        🇹🇷 T&uuml;rkiye
+       </option>
+       <option value="TM">
+        🇹🇲 Turkmenistan
+       </option>
+       <option value="AE">
+        🇦🇪 United Arab Emirates
+       </option>
+       <option value="UZ">
+        🇺🇿 Uzbekistan
+       </option>
+       <option value="VN">
+        🇻🇳 Vietnam
+       </option>
+       <option value="YE">
+        🇾🇪 Yemen
+       </option>
+      </optgroup>
+      <optgroup label="Africa">
+       <option value="DZ">
+        🇩🇿 Algeria
+       </option>
+       <option value="AO">
+        🇦🇴 Angola
+       </option>
+       <option value="BJ">
+        🇧🇯 Benin
+       </option>
+       <option value="BW">
+        🇧🇼 Botswana
+       </option>
+       <option value="BF">
+        🇧🇫 Burkina Faso
+       </option>
+       <option value="BI">
+        🇧🇮 Burundi
+       </option>
+       <option value="CV">
+        🇨🇻 Cabo Verde
+       </option>
+       <option value="CM">
+        🇨🇲 Cameroon
+       </option>
+       <option value="CF">
+        🇨🇫 Central African Republic
+       </option>
+       <option value="TD">
+        🇹🇩 Chad
+       </option>
+       <option value="KM">
+        🇰🇲 Comoros
+       </option>
+       <option value="CG">
+        🇨🇬 Congo
+       </option>
+       <option value="CI">
+        🇨🇮 C&ocirc;te d'Ivoire
+       </option>
+       <option value="DJ">
+        🇩🇯 Djibouti
+       </option>
+       <option value="CD">
+        🇨🇩 DR Congo
+       </option>
+       <option value="EG">
+        🇪🇬 Egypt
+       </option>
+       <option value="GQ">
+        🇬🇶 Equatorial Guinea
+       </option>
+       <option value="ER">
+        🇪🇷 Eritrea
+       </option>
+       <option value="SZ">
+        🇸🇿 Eswatini
+       </option>
+       <option value="ET">
+        🇪🇹 Ethiopia
+       </option>
+       <option value="GA">
+        🇬🇦 Gabon
+       </option>
+       <option value="GM">
+        🇬🇲 Gambia
+       </option>
+       <option value="GH">
+        🇬🇭 Ghana
+       </option>
+       <option value="GN">
+        🇬🇳 Guinea
+       </option>
+       <option value="GW">
+        🇬🇼 Guinea-Bissau
+       </option>
+       <option value="KE">
+        🇰🇪 Kenya
+       </option>
+       <option value="LS">
+        🇱🇸 Lesotho
+       </option>
+       <option value="LR">
+        🇱🇷 Liberia
+       </option>
+       <option value="LY">
+        🇱🇾 Libya
+       </option>
+       <option value="MG">
+        🇲🇬 Madagascar
+       </option>
+       <option value="MW">
+        🇲🇼 Malawi
+       </option>
+       <option value="ML">
+        🇲🇱 Mali
+       </option>
+       <option value="MR">
+        🇲🇷 Mauritania
+       </option>
+       <option value="MU">
+        🇲🇺 Mauritius
+       </option>
+       <option value="MA">
+        🇲🇦 Morocco
+       </option>
+       <option value="MZ">
+        🇲🇿 Mozambique
+       </option>
+       <option value="NA">
+        🇳🇦 Namibia
+       </option>
+       <option value="NE">
+        🇳🇪 Niger
+       </option>
+       <option value="NG">
+        🇳🇬 Nigeria
+       </option>
+       <option value="RW">
+        🇷🇼 Rwanda
+       </option>
+       <option value="ST">
+        🇸🇹 S&atilde;o Tom&eacute; and Pr&iacute;ncipe
+       </option>
+       <option value="SN">
+        🇸🇳 Senegal
+       </option>
+       <option value="SC">
+        🇸🇨 Seychelles
+       </option>
+       <option value="SL">
+        🇸🇱 Sierra Leone
+       </option>
+       <option value="SO">
+        🇸🇴 Somalia
+       </option>
+       <option value="ZA">
+        🇿🇦 South Africa
+       </option>
+       <option value="SS">
+        🇸🇸 South Sudan
+       </option>
+       <option value="SD">
+        🇸🇩 Sudan
+       </option>
+       <option value="TZ">
+        🇹🇿 Tanzania
+       </option>
+       <option value="TG">
+        🇹🇬 Togo
+       </option>
+       <option value="TN">
+        🇹🇳 Tunisia
+       </option>
+       <option value="UG">
+        🇺🇬 Uganda
+       </option>
+       <option value="ZM">
+        🇿🇲 Zambia
+       </option>
+       <option value="ZW">
+        🇿🇼 Zimbabwe
+       </option>
+      </optgroup>
+      <optgroup label="Americas">
+       <option value="AG">
+        🇦🇬 Antigua and Barbuda
+       </option>
+       <option value="AR">
+        🇦🇷 Argentina
+       </option>
+       <option value="BS">
+        🇧🇸 Bahamas
+       </option>
+       <option value="BB">
+        🇧🇧 Barbados
+       </option>
+       <option value="BZ">
+        🇧🇿 Belize
+       </option>
+       <option value="BO">
+        🇧🇴 Bolivia
+       </option>
+       <option value="BR">
+        🇧🇷 Brazil
+       </option>
+       <option value="CA">
+        🇨🇦 Canada
+       </option>
+       <option value="CL">
+        🇨🇱 Chile
+       </option>
+       <option value="CO">
+        🇨🇴 Colombia
+       </option>
+       <option value="CR">
+        🇨🇷 Costa Rica
+       </option>
+       <option value="CU">
+        🇨🇺 Cuba
+       </option>
+       <option value="DM">
+        🇩🇲 Dominica
+       </option>
+       <option value="DO">
+        🇩🇴 Dominican Republic
+       </option>
+       <option value="EC">
+        🇪🇨 Ecuador
+       </option>
+       <option value="SV">
+        🇸🇻 El Salvador
+       </option>
+       <option value="GD">
+        🇬🇩 Grenada
+       </option>
+       <option value="GT">
+        🇬🇹 Guatemala
+       </option>
+       <option value="GY">
+        🇬🇾 Guyana
+       </option>
+       <option value="HT">
+        🇭🇹 Haiti
+       </option>
+       <option value="HN">
+        🇭🇳 Honduras
+       </option>
+       <option value="JM">
+        🇯🇲 Jamaica
+       </option>
+       <option value="MX">
+        🇲🇽 Mexico
+       </option>
+       <option value="NI">
+        🇳🇮 Nicaragua
+       </option>
+       <option value="PA">
+        🇵🇦 Panama
+       </option>
+       <option value="PY">
+        🇵🇾 Paraguay
+       </option>
+       <option value="PE">
+        🇵🇪 Peru
+       </option>
+       <option value="KN">
+        🇰🇳 Saint Kitts and Nevis
+       </option>
+       <option value="LC">
+        🇱🇨 Saint Lucia
+       </option>
+       <option value="VC">
+        🇻🇨 Saint Vincent and the Grenadines
+       </option>
+       <option value="SR">
+        🇸🇷 Suriname
+       </option>
+       <option value="TT">
+        🇹🇹 Trinidad and Tobago
+       </option>
+       <option value="US">
+        🇺🇸 United States
+       </option>
+       <option value="UY">
+        🇺🇾 Uruguay
+       </option>
+       <option value="VE">
+        🇻🇪 Venezuela
+       </option>
+      </optgroup>
+      <optgroup label="Europe">
+       <option value="AL">
+        🇦🇱 Albania
+       </option>
+       <option value="AD">
+        🇦🇩 Andorra
+       </option>
+       <option value="AT">
+        🇦🇹 Austria
+       </option>
+       <option value="BY">
+        🇧🇾 Belarus
+       </option>
+       <option value="BE">
+        🇧🇪 Belgium
+       </option>
+       <option value="BA">
+        🇧🇦 Bosnia and Herzegovina
+       </option>
+       <option value="BG">
+        🇧🇬 Bulgaria
+       </option>
+       <option value="HR">
+        🇭🇷 Croatia
+       </option>
+       <option value="CY">
+        🇨🇾 Cyprus
+       </option>
+       <option value="CZ">
+        🇨🇿 Czechia
+       </option>
+       <option value="DK">
+        🇩🇰 Denmark
+       </option>
+       <option value="EE">
+        🇪🇪 Estonia
+       </option>
+       <option value="FI">
+        🇫🇮 Finland
+       </option>
+       <option value="FR">
+        🇫🇷 France
+       </option>
+       <option value="DE">
+        🇩🇪 Germany
+       </option>
+       <option value="GR">
+        🇬🇷 Greece
+       </option>
+       <option value="HU">
+        🇭🇺 Hungary
+       </option>
+       <option value="IS">
+        🇮🇸 Iceland
+       </option>
+       <option value="IE">
+        🇮🇪 Ireland
+       </option>
+       <option value="IT">
+        🇮🇹 Italy
+       </option>
+       <option value="LV">
+        🇱🇻 Latvia
+       </option>
+       <option value="LI">
+        🇱🇮 Liechtenstein
+       </option>
+       <option value="LT">
+        🇱🇹 Lithuania
+       </option>
+       <option value="LU">
+        🇱🇺 Luxembourg
+       </option>
+       <option value="MT">
+        🇲🇹 Malta
+       </option>
+       <option value="MD">
+        🇲🇩 Moldova
+       </option>
+       <option value="MC">
+        🇲🇨 Monaco
+       </option>
+       <option value="ME">
+        🇲🇪 Montenegro
+       </option>
+       <option value="NL">
+        🇳🇱 Netherlands
+       </option>
+       <option value="MK">
+        🇲🇰 North Macedonia
+       </option>
+       <option value="NO">
+        🇳🇴 Norway
+       </option>
+       <option value="PL">
+        🇵🇱 Poland
+       </option>
+       <option value="PT">
+        🇵🇹 Portugal
+       </option>
+       <option value="RO">
+        🇷🇴 Romania
+       </option>
+       <option value="RU">
+        🇷🇺 Russia
+       </option>
+       <option value="SM">
+        🇸🇲 San Marino
+       </option>
+       <option value="RS">
+        🇷🇸 Serbia
+       </option>
+       <option value="SK">
+        🇸🇰 Slovakia
+       </option>
+       <option value="SI">
+        🇸🇮 Slovenia
+       </option>
+       <option value="ES">
+        🇪🇸 Spain
+       </option>
+       <option value="SE">
+        🇸🇪 Sweden
+       </option>
+       <option value="CH">
+        🇨🇭 Switzerland
+       </option>
+       <option value="UA">
+        🇺🇦 Ukraine
+       </option>
+       <option value="GB">
+        🇬🇧 United Kingdom
+       </option>
+       <option value="VA">
+        🇻🇦 Vatican City
+       </option>
+      </optgroup>
+      <optgroup label="Oceania">
+       <option value="AU">
+        🇦🇺 Australia
+       </option>
+       <option value="FJ">
+        🇫🇯 Fiji
+       </option>
+       <option value="KI">
+        🇰🇮 Kiribati
+       </option>
+       <option value="MH">
+        🇲🇭 Marshall Islands
+       </option>
+       <option value="FM">
+        🇫🇲 Micronesia
+       </option>
+       <option value="NR">
+        🇳🇷 Nauru
+       </option>
+       <option value="NZ">
+        🇳🇿 New Zealand
+       </option>
+       <option value="PW">
+        🇵🇼 Palau
+       </option>
+       <option value="PG">
+        🇵🇬 Papua New Guinea
+       </option>
+       <option value="WS">
+        🇼🇸 Samoa
+       </option>
+       <option value="SB">
+        🇸🇧 Solomon Islands
+       </option>
+       <option value="TO">
+        🇹🇴 Tonga
+       </option>
+       <option value="TV">
+        🇹🇻 Tuvalu
+       </option>
+       <option value="VU">
+        🇻🇺 Vanuatu
+       </option>
+      </optgroup>
+     </select>
+     <select aria-label="State or region" class="place" id="stsel" title="State / region">
+      <option value="all">
+       All states & UTs
+      </option>
+      <option value="Andhra Pradesh">
+       Andhra Pradesh
+      </option>
+      <option value="Arunachal Pradesh">
+       Arunachal Pradesh
+      </option>
+      <option value="Assam">
+       Assam
+      </option>
+      <option value="Bihar">
+       Bihar
+      </option>
+      <option value="Chhattisgarh">
+       Chhattisgarh
+      </option>
+      <option value="Goa">
+       Goa
+      </option>
+      <option value="Gujarat">
+       Gujarat
+      </option>
+      <option value="Haryana">
+       Haryana
+      </option>
+      <option value="Himachal Pradesh">
+       Himachal Pradesh
+      </option>
+      <option value="Jharkhand">
+       Jharkhand
+      </option>
+      <option value="Karnataka">
+       Karnataka
+      </option>
+      <option value="Kerala">
+       Kerala
+      </option>
+      <option value="Madhya Pradesh">
+       Madhya Pradesh
+      </option>
+      <option selected value="Maharashtra">
+       Maharashtra
+      </option>
+      <option value="Manipur">
+       Manipur
+      </option>
+      <option value="Meghalaya">
+       Meghalaya
+      </option>
+      <option value="Mizoram">
+       Mizoram
+      </option>
+      <option value="Nagaland">
+       Nagaland
+      </option>
+      <option value="Odisha">
+       Odisha
+      </option>
+      <option value="Punjab">
+       Punjab
+      </option>
+      <option value="Rajasthan">
+       Rajasthan
+      </option>
+      <option value="Sikkim">
+       Sikkim
+      </option>
+      <option value="Tamil Nadu">
+       Tamil Nadu
+      </option>
+      <option value="Telangana">
+       Telangana
+      </option>
+      <option value="Tripura">
+       Tripura
+      </option>
+      <option value="Uttar Pradesh">
+       Uttar Pradesh
+      </option>
+      <option value="Uttarakhand">
+       Uttarakhand
+      </option>
+      <option value="West Bengal">
+       West Bengal
+      </option>
+      <option value="Andaman and Nicobar Islands">
+       Andaman and Nicobar Islands
+      </option>
+      <option value="Chandigarh">
+       Chandigarh
+      </option>
+      <option value="Dadra and Nagar Haveli and Daman and Diu">
+       Dadra and Nagar Haveli and Daman and Diu
+      </option>
+      <option value="Delhi">
+       Delhi
+      </option>
+      <option value="Jammu and Kashmir">
+       Jammu and Kashmir
+      </option>
+      <option value="Ladakh">
+       Ladakh
+      </option>
+      <option value="Lakshadweep">
+       Lakshadweep
+      </option>
+      <option value="Puducherry">
+       Puducherry
+      </option>
+     </select>
+     <button aria-label="Language: English" class="lang" data-a="lang-open">
+      <svg aria-hidden="true" viewbox="0 0 24 24">
+       <circle cx="12" cy="12" r="9">
+       </circle>
+       <path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18">
+       </path>
+      </svg>
+      <span>
+       English
+      </span>
+      <svg aria-hidden="true" style="width:12px;height:12px" viewbox="0 0 24 24">
+       <path d="M6 9l6 6 6-6">
+       </path>
+      </svg>
+     </button>
+     <span class="top-sp">
+     </span>
+     <div class="gsearch" role="search">
+      <svg aria-hidden="true" viewbox="0 0 24 24">
+       <circle cx="11" cy="11" r="7">
+       </circle>
+       <path d="M20 20l-3.5-3.5">
+       </path>
+      </svg>
+      <input aria-label="Search services" autocomplete="off" id="gsearch" placeholder="Search services, e.g. dialysis, pharmacy, TB" type="search" value>
+     </div>
+     <button class="ubtn" data-a="login-admin">
+      Admin
+     </button>
+    </div>
+   </div>
+   <div class="pill-wrap">
+    <nav aria-label="Main" class="pillnav">
+     <button aria-label="Bharat HIE Portal, home" class="brand" data-a="home">
+      <img alt="India flag" class="brand-logo" src="assets/images/flags/in-9ead4319.webp">
+      <span class="brand-txt">
+       <span class="brand-hi" lang="hi">
+        भारत
+       </span>
+       <span class="brand-en">
+        HIE Portal
+       </span>
+      </span>
+     </button>
+     <div class="pn-links">
+      <button data-a="home">
+       Home
+      </button>
+      <button data-a="about">
+       About us
+      </button>
+      <button data-a="jump" data-j="services">
+       Services
+      </button>
+      <button data-a="jump" data-j="how">
+       How it works
+      </button>
+      <button data-a="jump" data-j="providers">
+       For providers
+      </button>
+      <button data-a="as" data-r="admin" data-t="analytics">
+       Live analytics
+      </button>
+      <button data-a="jump" data-j="contact">
+       Contact
+      </button>
+      <button class="pn-find" data-a="find">
+       📍 Find healthcare near me
+      </button>
+      <span class="pn-more">
+       <button aria-current="page" aria-expanded="false" data-a="more">
+        More &dtrif;
+       </button>
+      </span>
+     </div>
+     <div class="pn-cta">
+      <button class="pn-reg" data-a="open-reg">
+       Register
+      </button>
+      <button class="pn-login" data-a="open-login">
+       Log in
+      </button>
+     </div>
+    </nav>
+   </div>
+   <div aria-label="WHO news" class="ticker" role="region">
+    <div class="wrapx tk-in">
+     <a class="tk-lab" href="https://www.who.int/news" rel="noopener" target="_blank">
+      <span aria-hidden="true" class="tk-dot">
+      </span>
+      WHO News
+     </a>
+     <div class="tk-view">
+      <div class="tk-track">
+       <a href="https://www.who.int/news/item/30-10-2026-barbados-eliminates-mother-to-child-transmission-of-hiv" rel="noopener" target="_blank">
+        <time>
+         30 Oct 2026
+        </time>
+        Barbados eliminates mother-to-child transmission of HIV
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/23-10-2026-who-and-enhypen-join-efforts-to-inspire-young-blood-donors-globally" rel="noopener" target="_blank">
+        <time>
+         23 Oct 2026
+        </time>
+        WHO and ENHYPEN join efforts to inspire young blood donors globally
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children" rel="noopener" target="_blank">
+        <time>
+         21 Oct 2026
+        </time>
+        New global framework launched to track increasing health risks of extreme heat for pregnant women, newborns and children
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/16-10-2026-interpol-and-who-sign-agreement-to-strengthen-global-health-and-security-protection" rel="noopener" target="_blank">
+        <time>
+         16 Oct 2026
+        </time>
+        INTERPOL and WHO sign agreement to strengthen global health and security protection
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/12-10-2026-who-welcomes-adoption-of-united-nations-political-declaration-on-pandemic-prevention-preparedness-and-response" rel="noopener" target="_blank">
+        <time>
+         12 Oct 2026
+        </time>
+        WHO welcomes adoption of United Nations political declaration on pandemic prevention, preparedness and response
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/12-10-2026-who-pandemic-hub-sets-ambitious-goal-to-detect-new-outbreaks-within-24-hours" rel="noopener" target="_blank">
+        <time>
+         12 Oct 2026
+        </time>
+        WHO Pandemic Hub sets ambitious goal to detect new outbreaks within 24 hours
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/09-10-2026-who-urges-shift-from-institutional-to-community-based-mental-health-care" rel="noopener" target="_blank">
+        <time>
+         9 Oct 2026
+        </time>
+        WHO urges shift from institutional to community-based mental health care
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths" rel="noopener" target="_blank">
+        <time>
+         8 Oct 2026
+        </time>
+        New global roadmap launched to tackle hypertension in pregnancy, a leading cause of maternal and newborn deaths
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity" rel="noopener" target="_blank">
+        <time>
+         7 Oct 2026
+        </time>
+        WHO issues first global guidelines on child and adolescent obesity
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings" rel="noopener" target="_blank">
+        <time>
+         30 Sep 2026
+        </time>
+        WHO releases new guidance to prevent heat-related illness at mass gatherings
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <span aria-hidden="true" class="tk-dup">
+        <a href="https://www.who.int/news/item/30-10-2026-barbados-eliminates-mother-to-child-transmission-of-hiv" rel="noopener" target="_blank">
+         <time>
+          30 Oct 2026
+         </time>
+         Barbados eliminates mother-to-child transmission of HIV
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/23-10-2026-who-and-enhypen-join-efforts-to-inspire-young-blood-donors-globally" rel="noopener" target="_blank">
+         <time>
+          23 Oct 2026
+         </time>
+         WHO and ENHYPEN join efforts to inspire young blood donors globally
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children" rel="noopener" target="_blank">
+         <time>
+          21 Oct 2026
+         </time>
+         New global framework launched to track increasing health risks of extreme heat for pregnant women, newborns and children
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/16-10-2026-interpol-and-who-sign-agreement-to-strengthen-global-health-and-security-protection" rel="noopener" target="_blank">
+         <time>
+          16 Oct 2026
+         </time>
+         INTERPOL and WHO sign agreement to strengthen global health and security protection
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/12-10-2026-who-welcomes-adoption-of-united-nations-political-declaration-on-pandemic-prevention-preparedness-and-response" rel="noopener" target="_blank">
+         <time>
+          12 Oct 2026
+         </time>
+         WHO welcomes adoption of United Nations political declaration on pandemic prevention, preparedness and response
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/12-10-2026-who-pandemic-hub-sets-ambitious-goal-to-detect-new-outbreaks-within-24-hours" rel="noopener" target="_blank">
+         <time>
+          12 Oct 2026
+         </time>
+         WHO Pandemic Hub sets ambitious goal to detect new outbreaks within 24 hours
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/09-10-2026-who-urges-shift-from-institutional-to-community-based-mental-health-care" rel="noopener" target="_blank">
+         <time>
+          9 Oct 2026
+         </time>
+         WHO urges shift from institutional to community-based mental health care
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths" rel="noopener" target="_blank">
+         <time>
+          8 Oct 2026
+         </time>
+         New global roadmap launched to tackle hypertension in pregnancy, a leading cause of maternal and newborn deaths
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity" rel="noopener" target="_blank">
+         <time>
+          7 Oct 2026
+         </time>
+         WHO issues first global guidelines on child and adolescent obesity
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings" rel="noopener" target="_blank">
+         <time>
+          30 Sep 2026
+         </time>
+         WHO releases new guidance to prevent heat-related illness at mass gatherings
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+       </span>
+      </div>
+     </div>
+     <span class="tk-note">
+      Updated 2 Nov 2026
+     </span>
+    </div>
+   </div>
+  </header>
+  <main class="wrapx" id="main" tabindex="-1">
+   <nav aria-label="Breadcrumb" class="crumbs">
+    <ol>
+     <li>
+      <button data-a="home">
+       Home
+      </button>
+     </li>
+     <li aria-current="page">
+      Health camps
+     </li>
+    </ol>
+   </nav>
+   <section class="sec fx">
+    <div class="fx-hero">
+     <span class="eyebrow">
+      Health camps
+     </span>
+     <h1>
+      Screening camps and vaccination drives near you
+     </h1>
+     <p class="muted">
+      Upcoming camps in Maharashtra. Entry is free; carry your ABHA or health card if you have one.
+     </p>
+    </div>
+    <div class="filters">
+     <button aria-pressed="true" class="chip" data-a="camp-f" data-g="all">
+      All camps
+     </button>
+     <button aria-pressed="false" class="chip" data-a="camp-f" data-g="Blood donation camp">
+      Blood donation camp
+     </button>
+     <button aria-pressed="false" class="chip" data-a="camp-f" data-g="Animal vaccination (FMD / LSD)">
+      Animal vaccination (FMD / LSD)
+     </button>
+     <button aria-pressed="false" class="chip" data-a="camp-f" data-g="TB screening (Ni-kshay)">
+      TB screening (Ni-kshay)
+     </button>
+     <button aria-pressed="false" class="chip" data-a="camp-f" data-g="Free BP & sugar screening">
+      Free BP & sugar screening
+     </button>
+     <button aria-pressed="false" class="chip" data-a="camp-f" data-g="Women & child health camp">
+      Women & child health camp
+     </button>
+     <button aria-pressed="false" class="chip" data-a="camp-f" data-g="Mission Indradhanush vaccination drive">
+      Mission Indradhanush vaccination drive
+     </button>
+     <button aria-pressed="false" class="chip" data-a="camp-f" data-g="Oral cancer & dental screening">
+      Oral cancer & dental screening
+     </button>
+     <button aria-pressed="false" class="chip" data-a="camp-f" data-g="Eye check-up & free spectacles">
+      Eye check-up & free spectacles
+     </button>
+     <button aria-pressed="false" class="chip" data-a="camp-f" data-g="Yoga & wellness morning">
+      Yoga & wellness morning
+     </button>
+    </div>
+    <p class="small muted">
+     <span class="pill">
+      Demo schedule
+     </span>
+     Dates and places are shown for the demonstration. District health offices publish the live camp list here.
+    </p>
+    <h3 class="camp-m">
+     November 2026
+    </h3>
+    <div class="camps">
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        4
+       </b>
+       <span>
+        Nov
+       </span>
+       <small>
+        Wed
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/blood-7a261cb7.webp">
+       <div>
+        <b>
+         Blood donation camp
+        </b>
+        <span>
+         📍 Community hall, Pune
+        </span>
+        <span>
+         🕘 9 am &ndash; 1 pm
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-03T18:30:00.000Z" data-t="Blood donation camp" data-w="Community hall, Pune">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=Community%20hall%2C%20Pune%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        5
+       </b>
+       <span>
+        Nov
+       </span>
+       <small>
+        Thu
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/mvu-aa6bcd2f.webp">
+       <div>
+        <b>
+         Animal vaccination (FMD / LSD)
+        </b>
+        <span>
+         📍 Veterinary dispensary, Mumbai
+        </span>
+        <span>
+         🕘 10 am &ndash; 4 pm
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-04T18:30:00.000Z" data-t="Animal vaccination (FMD / LSD)" data-w="Veterinary dispensary, Mumbai">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=Veterinary%20dispensary%2C%20Mumbai%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        7
+       </b>
+       <span>
+        Nov
+       </span>
+       <small>
+        Sat
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/ntep-9b7e1c0e.webp">
+       <div>
+        <b>
+         TB screening (Ni-kshay)
+        </b>
+        <span>
+         📍 PHC/Sub-centre/Gram Panchayat, Thane
+        </span>
+        <span>
+         🕘 8 am &ndash; 11 am
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-06T18:30:00.000Z" data-t="TB screening (Ni-kshay)" data-w="PHC/Sub-centre/Gram Panchayat, Thane">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=PHC/Sub-centre/Gram Panchayat%2C%20Thane%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        9
+       </b>
+       <span>
+        Nov
+       </span>
+       <small>
+        Mon
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/npncd-1b65ba8e.webp">
+       <div>
+        <b>
+         Free BP & sugar screening
+        </b>
+        <span>
+         📍 PHC/Sub-centre/Gram Panchayat, Nashik
+        </span>
+        <span>
+         🕘 9 am &ndash; 1 pm
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-08T18:30:00.000Z" data-t="Free BP & sugar screening" data-w="PHC/Sub-centre/Gram Panchayat, Nashik">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=PHC/Sub-centre/Gram Panchayat%2FSub-centre%2FGram%20Panchayat%2C%20Nashik%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        10
+       </b>
+       <span>
+        Nov
+       </span>
+       <small>
+        Tue
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/matru-c2d54f12.webp">
+       <div>
+        <b>
+         Women & child health camp
+        </b>
+        <span>
+         📍 Sub-centre, Nagpur
+        </span>
+        <span>
+         🕘 10 am &ndash; 4 pm
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-09T18:30:00.000Z" data-t="Women & child health camp" data-w="Sub-centre, Nagpur">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=Sub-centre%2C%20Nagpur%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        12
+       </b>
+       <span>
+        Nov
+       </span>
+       <small>
+        Thu
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/immun-117cdac4.webp">
+       <div>
+        <b>
+         Mission Indradhanush vaccination drive
+        </b>
+        <span>
+         📍 Anganwadi centre, Chh. Sambhajinagar
+        </span>
+        <span>
+         🕘 8 am &ndash; 11 am
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-11T18:30:00.000Z" data-t="Mission Indradhanush vaccination drive" data-w="Anganwadi centre, Chh. Sambhajinagar">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=Anganwadi%20centre%2C%20Chh.%20Sambhajinagar%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        14
+       </b>
+       <span>
+        Nov
+       </span>
+       <small>
+        Sat
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/nohp-2e6c8c6a.webp">
+       <div>
+        <b>
+         Oral cancer & dental screening
+        </b>
+        <span>
+         📍 PHC/Sub-centre/Gram Panchayat, Solapur
+        </span>
+        <span>
+         🕘 9 am &ndash; 1 pm
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-13T18:30:00.000Z" data-t="Oral cancer & dental screening" data-w="PHC/Sub-centre/Gram Panchayat, Solapur">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=PHC/Sub-centre/Gram Panchayat%2C%20Solapur%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        15
+       </b>
+       <span>
+        Nov
+       </span>
+       <small>
+        Sun
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/npcbvi-c0b25a21.webp">
+       <div>
+        <b>
+         Eye check-up & free spectacles
+        </b>
+        <span>
+         📍 Rural hospital, Kolhapur
+        </span>
+        <span>
+         🕘 10 am &ndash; 4 pm
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-14T18:30:00.000Z" data-t="Eye check-up & free spectacles" data-w="Rural hospital, Kolhapur">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=Rural%20hospital%2C%20Kolhapur%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        17
+       </b>
+       <span>
+        Nov
+       </span>
+       <small>
+        Tue
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/yogactr-e910adbf.webp">
+       <div>
+        <b>
+         Yoga & wellness morning
+        </b>
+        <span>
+         📍 Public garden, Pune
+        </span>
+        <span>
+         🕘 8 am &ndash; 11 am
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-16T18:30:00.000Z" data-t="Yoga & wellness morning" data-w="Public garden, Pune">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=Public%20garden%2C%20Pune%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        19
+       </b>
+       <span>
+        Nov
+       </span>
+       <small>
+        Thu
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/blood-7a261cb7.webp">
+       <div>
+        <b>
+         Blood donation camp
+        </b>
+        <span>
+         📍 Community hall, Mumbai
+        </span>
+        <span>
+         🕘 9 am &ndash; 1 pm
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-18T18:30:00.000Z" data-t="Blood donation camp" data-w="Community hall, Mumbai">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=Community%20hall%2C%20Mumbai%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        21
+       </b>
+       <span>
+        Nov
+       </span>
+       <small>
+        Sat
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/mvu-aa6bcd2f.webp">
+       <div>
+        <b>
+         Animal vaccination (FMD / LSD)
+        </b>
+        <span>
+         📍 Veterinary dispensary, Thane
+        </span>
+        <span>
+         🕘 10 am &ndash; 4 pm
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-20T18:30:00.000Z" data-t="Animal vaccination (FMD / LSD)" data-w="Veterinary dispensary, Thane">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=Veterinary%20dispensary%2C%20Thane%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        22
+       </b>
+       <span>
+        Nov
+       </span>
+       <small>
+        Sun
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/ntep-9b7e1c0e.webp">
+       <div>
+        <b>
+         TB screening (Ni-kshay)
+        </b>
+        <span>
+         📍 PHC/Sub-centre/Gram Panchayat, Nashik
+        </span>
+        <span>
+         🕘 8 am &ndash; 11 am
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-21T18:30:00.000Z" data-t="TB screening (Ni-kshay)" data-w="PHC/Sub-centre/Gram Panchayat, Nashik">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=PHC/Sub-centre/Gram Panchayat%2C%20Nashik%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        24
+       </b>
+       <span>
+        Nov
+       </span>
+       <small>
+        Tue
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/npncd-1b65ba8e.webp">
+       <div>
+        <b>
+         Free BP & sugar screening
+        </b>
+        <span>
+         📍 PHC/Sub-centre/Gram Panchayat, Nagpur
+        </span>
+        <span>
+         🕘 9 am &ndash; 1 pm
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-23T18:30:00.000Z" data-t="Free BP & sugar screening" data-w="PHC/Sub-centre/Gram Panchayat, Nagpur">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=PHC/Sub-centre/Gram Panchayat%2FSub-centre%2FGram%20Panchayat%2C%20Nagpur%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        26
+       </b>
+       <span>
+        Nov
+       </span>
+       <small>
+        Thu
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/matru-c2d54f12.webp">
+       <div>
+        <b>
+         Women & child health camp
+        </b>
+        <span>
+         📍 Sub-centre, Chh. Sambhajinagar
+        </span>
+        <span>
+         🕘 10 am &ndash; 4 pm
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-25T18:30:00.000Z" data-t="Women & child health camp" data-w="Sub-centre, Chh. Sambhajinagar">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=Sub-centre%2C%20Chh.%20Sambhajinagar%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        27
+       </b>
+       <span>
+        Nov
+       </span>
+       <small>
+        Fri
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/immun-117cdac4.webp">
+       <div>
+        <b>
+         Mission Indradhanush vaccination drive
+        </b>
+        <span>
+         📍 Anganwadi centre, Solapur
+        </span>
+        <span>
+         🕘 8 am &ndash; 11 am
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-26T18:30:00.000Z" data-t="Mission Indradhanush vaccination drive" data-w="Anganwadi centre, Solapur">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=Anganwadi%20centre%2C%20Solapur%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        29
+       </b>
+       <span>
+        Nov
+       </span>
+       <small>
+        Sun
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/nohp-2e6c8c6a.webp">
+       <div>
+        <b>
+         Oral cancer & dental screening
+        </b>
+        <span>
+         📍 PHC/Sub-centre/Gram Panchayat, Kolhapur
+        </span>
+        <span>
+         🕘 9 am &ndash; 1 pm
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-28T18:30:00.000Z" data-t="Oral cancer & dental screening" data-w="PHC/Sub-centre/Gram Panchayat, Kolhapur">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=PHC/Sub-centre/Gram Panchayat%2C%20Kolhapur%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+    </div>
+    <h3 class="camp-m">
+     December 2026
+    </h3>
+    <div class="camps">
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        1
+       </b>
+       <span>
+        Dec
+       </span>
+       <small>
+        Tue
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/npcbvi-c0b25a21.webp">
+       <div>
+        <b>
+         Eye check-up & free spectacles
+        </b>
+        <span>
+         📍 Rural hospital, Pune
+        </span>
+        <span>
+         🕘 10 am &ndash; 4 pm
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-11-30T18:30:00.000Z" data-t="Eye check-up & free spectacles" data-w="Rural hospital, Pune">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=Rural%20hospital%2C%20Pune%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+     <article class="camp">
+      <div class="camp-d">
+       <b>
+        2
+       </b>
+       <span>
+        Dec
+       </span>
+       <small>
+        Wed
+       </small>
+      </div>
+      <div class="camp-b">
+       <img alt src="assets/images/service-icons/yogactr-e910adbf.webp">
+       <div>
+        <b>
+         Yoga & wellness morning
+        </b>
+        <span>
+         📍 Public garden, Mumbai
+        </span>
+        <span>
+         🕘 8 am &ndash; 11 am
+        </span>
+       </div>
+      </div>
+      <div class="camp-a">
+       <button class="btn sm" data-a="camp-remind" data-d="2026-12-01T18:30:00.000Z" data-t="Yoga & wellness morning" data-w="Public garden, Mumbai">
+        🔔 Remind me
+       </button>
+       <a class="btn sm" href="https://www.google.com/maps/search/?api=1&query=Public%20garden%2C%20Mumbai%2C%20India" rel="noopener" target="_blank">
+        Map &nearrow;
+       </a>
+      </div>
+     </article>
+    </div>
+   </section>
+  </main>
+  <footer id="contact">
+   <div class="wrapx in">
+    <div>
+     <b>
+      Bharat HIE Portal
+     </b>
+     <p>
+      One health card, one login and connected care for every citizen of Maharashtra. Hospitals, doctors, pharmacies, labs, blood banks and NGOs exchange records through a consent-based exchange aligned with ABDM.
+     </p>
+    </div>
+    <div>
+     <b>
+      Citizens
+     </b>
+     <ul>
+      <li>
+       My Health Record
+      </li>
+      <li>
+       <button class="flink" data-a="appt">
+        Book appointment
+       </button>
+      </li>
+      <li>
+       Scheme eligibility
+      </li>
+      <li>
+       Consent manager
+      </li>
+     </ul>
+    </div>
+    <div>
+     <b>
+      Providers
+     </b>
+     <ul>
+      <li>
+       Register facility
+      </li>
+      <li>
+       API documentation
+      </li>
+      <li>
+       Integration sandbox
+      </li>
+      <li>
+       Verification status
+      </li>
+     </ul>
+    </div>
+    <div>
+     <b>
+      Help
+     </b>
+     <ul>
+      <li>
+       Health helpline: 104
+      </li>
+      <li>
+       Ambulance: 108
+      </li>
+      <li>
+       Support desk: 9 am &ndash; 9 pm
+      </li>
+      <li>
+       <button class="flink" data-a="faq">
+        FAQ & help
+       </button>
+      </li>
+      <li>
+       <button class="flink" data-a="griev">
+        Complaints & feedback
+       </button>
+      </li>
+      <li>
+       <button class="flink" data-a="camps">
+        Health camps
+       </button>
+      </li>
+      <li>
+       Privacy policy
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="wrapx bt">
+    &copy; 2026 Bharat HIE Portal
+   </div>
+  </footer>
+  <div class="fab-sos">
+   <button aria-expanded="false" aria-label="Emergency SOS" class="sos-btn" data-a="sos">
+    SOS
+   </button>
+  </div>
+  <button aria-label="Open AI health assistant" class="fab-chat" data-a="chat-open">
+   <span>
+    💬
+   </span>
+   <b>
+    Health assistant
+   </b>
+  </button>
+</div>
+<script>window.START_VIEW="camps";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="js/01-icons.js"></script>
+<script src="js/02-helpers.js"></script>
+<script src="js/03-country-data.js"></script>
+<script src="js/04-reference-data.js"></script>
+<script src="js/05-language.js"></script>
+<script src="js/06-state.js"></script>
+<script src="js/07-header-home.js"></script>
+<script src="js/08-services.js"></script>
+<script src="js/09-providers.js"></script>
+<script src="js/10-analytics.js"></script>
+<script src="js/11-role-dashboards.js"></script>
+<script src="js/12-health-card.js"></script>
+<script src="js/13-modals-login.js"></script>
+<script src="js/14-about.js"></script>
+<script src="js/15-find-near-me.js"></script>
+<script src="js/16-citizen-features.js"></script>
+<script src="js/17-module-dashboards.js"></script>
+<script src="js/18-app-render-events.js"></script>
+
+
+
+</body>
+</html>

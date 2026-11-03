@@ -1,0 +1,281 @@
+/* Professional motion + surface polish (respects reduced motion) */
+
+:root {
+  --hie-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --hie-fast: 180ms;
+  --hie-med: 320ms;
+  --hie-slow: 700ms;
+  --hie-lift: 0 14px 36px rgba(18, 59, 93, 0.12);
+}
+
+@keyframes hie-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hie-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hie-soft-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hie-toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hie-pill-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---- Page enter ---- */
+#app .pill-wrap .pillnav {
+  animation: hie-pill-in var(--hie-slow) var(--hie-ease) both;
+}
+
+#app .vhero {
+  animation: hie-fade-in 900ms var(--hie-ease) both;
+}
+
+#app .h3-vision {
+  animation: hie-fade-up var(--hie-slow) var(--hie-ease) 120ms both;
+}
+
+#app .h3-head h1 {
+  color: #0b1f33 !important;
+  letter-spacing: -0.02em;
+  animation: hie-fade-up 0.8s var(--hie-ease) 180ms both;
+}
+
+#app .h3-eye {
+  animation: hie-fade-up 0.65s var(--hie-ease) 80ms both;
+}
+
+#app .h3-vtxt,
+#app .h3-steps {
+  animation: hie-fade-up 0.7s var(--hie-ease) 220ms both;
+}
+
+#app #services .sec-h,
+#app #how .sec-h,
+#app #providers .sec-h,
+#app .sec-h {
+  animation: hie-fade-up 0.6s var(--hie-ease) both;
+}
+
+#app .svc-grid .svc,
+#app .ss-tile,
+#app .kpi,
+#app .akpi,
+#app .sbox,
+#app .panel,
+#app .role,
+#app .fd-hero,
+#app .ab-vision,
+#app .md-card {
+  animation: hie-fade-up 0.55s var(--hie-ease) both;
+}
+
+#app .svc-grid .svc:nth-child(1),
+#app .ss-tile:nth-child(1) {
+  animation-delay: 40ms;
+}
+#app .svc-grid .svc:nth-child(2),
+#app .ss-tile:nth-child(2) {
+  animation-delay: 80ms;
+}
+#app .svc-grid .svc:nth-child(3),
+#app .ss-tile:nth-child(3) {
+  animation-delay: 120ms;
+}
+#app .svc-grid .svc:nth-child(4),
+#app .ss-tile:nth-child(4) {
+  animation-delay: 160ms;
+}
+#app .svc-grid .svc:nth-child(5),
+#app .ss-tile:nth-child(5) {
+  animation-delay: 200ms;
+}
+#app .svc-grid .svc:nth-child(6),
+#app .ss-tile:nth-child(6) {
+  animation-delay: 240ms;
+}
+#app .svc-grid .svc:nth-child(7),
+#app .ss-tile:nth-child(7) {
+  animation-delay: 280ms;
+}
+#app .svc-grid .svc:nth-child(8),
+#app .ss-tile:nth-child(8) {
+  animation-delay: 320ms;
+}
+#app .svc-grid .svc:nth-child(n + 9),
+#app .ss-tile:nth-child(n + 9) {
+  animation-delay: 360ms;
+}
+
+#app .toast {
+  animation: hie-toast-in 0.35s var(--hie-ease) both;
+}
+
+#app .modal {
+  animation: hie-soft-scale 0.28s var(--hie-ease) both;
+}
+
+#app .scrim {
+  animation: hie-fade-in 0.25s ease both;
+}
+
+/* ---- Hover / interaction polish ---- */
+#app .svc,
+#app .panel,
+#app .sbox,
+#app .kpi,
+#app .akpi,
+#app .role,
+#app .ss-tile,
+#app .card {
+  transition:
+    transform var(--hie-med) var(--hie-ease),
+    box-shadow var(--hie-med) var(--hie-ease),
+    border-color var(--hie-fast) ease,
+    background-color var(--hie-fast) ease;
+}
+
+#app .svc:hover,
+#app .sbox:hover,
+#app .role:hover,
+#app .ss-tile:hover,
+#app .panel:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--hie-lift);
+  border-color: color-mix(in srgb, var(--core) 35%, var(--line));
+}
+
+#app .kpi:hover,
+#app .akpi:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--hie-lift);
+}
+
+#app .btn {
+  transition:
+    transform var(--hie-fast) var(--hie-ease),
+    background-color var(--hie-fast) ease,
+    border-color var(--hie-fast) ease,
+    box-shadow var(--hie-fast) ease,
+    color var(--hie-fast) ease;
+}
+
+#app .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(18, 59, 93, 0.12);
+}
+
+#app .btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+#app .btn.pri:hover {
+  box-shadow: 0 8px 20px rgba(23, 105, 170, 0.28);
+}
+
+#app .pn-links button,
+#app .pn-find,
+#app .pn-login,
+#app .pn-reg {
+  transition:
+    background-color var(--hie-fast) ease,
+    color var(--hie-fast) ease,
+    border-color var(--hie-fast) ease,
+    transform var(--hie-fast) var(--hie-ease),
+    box-shadow var(--hie-fast) ease;
+}
+
+#app .pn-links button:hover {
+  transform: translateY(-1px);
+}
+
+#app .pn-find:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+#app .pillnav {
+  transition: box-shadow var(--hie-med) ease, background-color var(--hie-med) ease;
+}
+
+#app .pillnav:hover {
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.32);
+}
+
+#app .fab-chat,
+#app .sos-btn {
+  transition:
+    transform var(--hie-med) var(--hie-ease),
+    box-shadow var(--hie-med) ease;
+}
+
+#app .fab-chat:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+#app .sos-btn:hover {
+  transform: scale(1.06);
+}
+
+#app .inp:focus,
+#app .util .gsearch:focus-within {
+  transition: box-shadow var(--hie-fast) ease, border-color var(--hie-fast) ease;
+}
+
+#app .h3-vision {
+  transition: box-shadow var(--hie-med) ease, border-color var(--hie-med) ease;
+}
+
+#app .h3-vision:hover {
+  box-shadow: 0 16px 40px rgba(18, 59, 93, 0.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #app *,
+  #app *::before,
+  #app *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

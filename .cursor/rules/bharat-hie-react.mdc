@@ -1,0 +1,15 @@
+---
+description: Bharat HIE Portal React conventions and text-visibility rules
+alwaysApply: true
+---
+
+# Bharat HIE Portal
+
+React + Vite app. See `AGENTS.md` for routes and commands.
+
+## Must follow
+- Keep body/UI text readable: use `var(--fg)` / `var(--muted)`; never transparent or ultra-low-contrast text.
+- New features go in `src/` React components; preserve `public/js/` script order when touching legacy portal logic.
+- Asset URLs use `/assets/...` (files under `public/assets/`).
+- Run `npm run test` after UI or route changes.
+- Do not commit secrets or real patient data.

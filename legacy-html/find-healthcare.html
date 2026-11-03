@@ -1,0 +1,1586 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Find healthcare near me · Bharat HIE Portal</title>
+<meta name="description" content="Bharat HIE Portal: one health card, one login and connected care across hospitals, doctors, pharmacies, labs, blood banks and NGOs.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Ol+Chiki&family=Noto+Sans+Meetei+Mayek&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Page: Find healthcare near me. The markup below is the rendered page; the scripts at the bottom make it interactive. -->
+<div id="app">
+  <button class="skip" data-a="skip">
+   Skip to main content
+  </button>
+  <header class="hdr">
+   <div class="util">
+    <div class="wrapx util-in">
+     <select aria-label="Country" class="place" id="ctry" title="Country (196)">
+      <optgroup label="Asia">
+       <option value="AF">
+        🇦🇫 Afghanistan
+       </option>
+       <option value="AM">
+        🇦🇲 Armenia
+       </option>
+       <option value="AZ">
+        🇦🇿 Azerbaijan
+       </option>
+       <option value="BH">
+        🇧🇭 Bahrain
+       </option>
+       <option value="BD">
+        🇧🇩 Bangladesh
+       </option>
+       <option value="BT">
+        🇧🇹 Bhutan
+       </option>
+       <option value="BN">
+        🇧🇳 Brunei
+       </option>
+       <option value="KH">
+        🇰🇭 Cambodia
+       </option>
+       <option value="CN">
+        🇨🇳 China
+       </option>
+       <option value="GE">
+        🇬🇪 Georgia
+       </option>
+       <option selected value="IN">
+        🇮🇳 India
+       </option>
+       <option value="ID">
+        🇮🇩 Indonesia
+       </option>
+       <option value="IR">
+        🇮🇷 Iran
+       </option>
+       <option value="IQ">
+        🇮🇶 Iraq
+       </option>
+       <option value="IL">
+        🇮🇱 Israel
+       </option>
+       <option value="JP">
+        🇯🇵 Japan
+       </option>
+       <option value="JO">
+        🇯🇴 Jordan
+       </option>
+       <option value="KZ">
+        🇰🇿 Kazakhstan
+       </option>
+       <option value="KW">
+        🇰🇼 Kuwait
+       </option>
+       <option value="KG">
+        🇰🇬 Kyrgyzstan
+       </option>
+       <option value="LA">
+        🇱🇦 Laos
+       </option>
+       <option value="LB">
+        🇱🇧 Lebanon
+       </option>
+       <option value="MY">
+        🇲🇾 Malaysia
+       </option>
+       <option value="MV">
+        🇲🇻 Maldives
+       </option>
+       <option value="MN">
+        🇲🇳 Mongolia
+       </option>
+       <option value="MM">
+        🇲🇲 Myanmar
+       </option>
+       <option value="NP">
+        🇳🇵 Nepal
+       </option>
+       <option value="KP">
+        🇰🇵 North Korea
+       </option>
+       <option value="OM">
+        🇴🇲 Oman
+       </option>
+       <option value="PK">
+        🇵🇰 Pakistan
+       </option>
+       <option value="PS">
+        🇵🇸 Palestine
+       </option>
+       <option value="PH">
+        🇵🇭 Philippines
+       </option>
+       <option value="QA">
+        🇶🇦 Qatar
+       </option>
+       <option value="SA">
+        🇸🇦 Saudi Arabia
+       </option>
+       <option value="SG">
+        🇸🇬 Singapore
+       </option>
+       <option value="KR">
+        🇰🇷 South Korea
+       </option>
+       <option value="LK">
+        🇱🇰 Sri Lanka
+       </option>
+       <option value="SY">
+        🇸🇾 Syria
+       </option>
+       <option value="TW">
+        🇹🇼 Taiwan
+       </option>
+       <option value="TJ">
+        🇹🇯 Tajikistan
+       </option>
+       <option value="TH">
+        🇹🇭 Thailand
+       </option>
+       <option value="TL">
+        🇹🇱 Timor-Leste
+       </option>
+       <option value="TR">
+        🇹🇷 T&uuml;rkiye
+       </option>
+       <option value="TM">
+        🇹🇲 Turkmenistan
+       </option>
+       <option value="AE">
+        🇦🇪 United Arab Emirates
+       </option>
+       <option value="UZ">
+        🇺🇿 Uzbekistan
+       </option>
+       <option value="VN">
+        🇻🇳 Vietnam
+       </option>
+       <option value="YE">
+        🇾🇪 Yemen
+       </option>
+      </optgroup>
+      <optgroup label="Africa">
+       <option value="DZ">
+        🇩🇿 Algeria
+       </option>
+       <option value="AO">
+        🇦🇴 Angola
+       </option>
+       <option value="BJ">
+        🇧🇯 Benin
+       </option>
+       <option value="BW">
+        🇧🇼 Botswana
+       </option>
+       <option value="BF">
+        🇧🇫 Burkina Faso
+       </option>
+       <option value="BI">
+        🇧🇮 Burundi
+       </option>
+       <option value="CV">
+        🇨🇻 Cabo Verde
+       </option>
+       <option value="CM">
+        🇨🇲 Cameroon
+       </option>
+       <option value="CF">
+        🇨🇫 Central African Republic
+       </option>
+       <option value="TD">
+        🇹🇩 Chad
+       </option>
+       <option value="KM">
+        🇰🇲 Comoros
+       </option>
+       <option value="CG">
+        🇨🇬 Congo
+       </option>
+       <option value="CI">
+        🇨🇮 C&ocirc;te d'Ivoire
+       </option>
+       <option value="DJ">
+        🇩🇯 Djibouti
+       </option>
+       <option value="CD">
+        🇨🇩 DR Congo
+       </option>
+       <option value="EG">
+        🇪🇬 Egypt
+       </option>
+       <option value="GQ">
+        🇬🇶 Equatorial Guinea
+       </option>
+       <option value="ER">
+        🇪🇷 Eritrea
+       </option>
+       <option value="SZ">
+        🇸🇿 Eswatini
+       </option>
+       <option value="ET">
+        🇪🇹 Ethiopia
+       </option>
+       <option value="GA">
+        🇬🇦 Gabon
+       </option>
+       <option value="GM">
+        🇬🇲 Gambia
+       </option>
+       <option value="GH">
+        🇬🇭 Ghana
+       </option>
+       <option value="GN">
+        🇬🇳 Guinea
+       </option>
+       <option value="GW">
+        🇬🇼 Guinea-Bissau
+       </option>
+       <option value="KE">
+        🇰🇪 Kenya
+       </option>
+       <option value="LS">
+        🇱🇸 Lesotho
+       </option>
+       <option value="LR">
+        🇱🇷 Liberia
+       </option>
+       <option value="LY">
+        🇱🇾 Libya
+       </option>
+       <option value="MG">
+        🇲🇬 Madagascar
+       </option>
+       <option value="MW">
+        🇲🇼 Malawi
+       </option>
+       <option value="ML">
+        🇲🇱 Mali
+       </option>
+       <option value="MR">
+        🇲🇷 Mauritania
+       </option>
+       <option value="MU">
+        🇲🇺 Mauritius
+       </option>
+       <option value="MA">
+        🇲🇦 Morocco
+       </option>
+       <option value="MZ">
+        🇲🇿 Mozambique
+       </option>
+       <option value="NA">
+        🇳🇦 Namibia
+       </option>
+       <option value="NE">
+        🇳🇪 Niger
+       </option>
+       <option value="NG">
+        🇳🇬 Nigeria
+       </option>
+       <option value="RW">
+        🇷🇼 Rwanda
+       </option>
+       <option value="ST">
+        🇸🇹 S&atilde;o Tom&eacute; and Pr&iacute;ncipe
+       </option>
+       <option value="SN">
+        🇸🇳 Senegal
+       </option>
+       <option value="SC">
+        🇸🇨 Seychelles
+       </option>
+       <option value="SL">
+        🇸🇱 Sierra Leone
+       </option>
+       <option value="SO">
+        🇸🇴 Somalia
+       </option>
+       <option value="ZA">
+        🇿🇦 South Africa
+       </option>
+       <option value="SS">
+        🇸🇸 South Sudan
+       </option>
+       <option value="SD">
+        🇸🇩 Sudan
+       </option>
+       <option value="TZ">
+        🇹🇿 Tanzania
+       </option>
+       <option value="TG">
+        🇹🇬 Togo
+       </option>
+       <option value="TN">
+        🇹🇳 Tunisia
+       </option>
+       <option value="UG">
+        🇺🇬 Uganda
+       </option>
+       <option value="ZM">
+        🇿🇲 Zambia
+       </option>
+       <option value="ZW">
+        🇿🇼 Zimbabwe
+       </option>
+      </optgroup>
+      <optgroup label="Americas">
+       <option value="AG">
+        🇦🇬 Antigua and Barbuda
+       </option>
+       <option value="AR">
+        🇦🇷 Argentina
+       </option>
+       <option value="BS">
+        🇧🇸 Bahamas
+       </option>
+       <option value="BB">
+        🇧🇧 Barbados
+       </option>
+       <option value="BZ">
+        🇧🇿 Belize
+       </option>
+       <option value="BO">
+        🇧🇴 Bolivia
+       </option>
+       <option value="BR">
+        🇧🇷 Brazil
+       </option>
+       <option value="CA">
+        🇨🇦 Canada
+       </option>
+       <option value="CL">
+        🇨🇱 Chile
+       </option>
+       <option value="CO">
+        🇨🇴 Colombia
+       </option>
+       <option value="CR">
+        🇨🇷 Costa Rica
+       </option>
+       <option value="CU">
+        🇨🇺 Cuba
+       </option>
+       <option value="DM">
+        🇩🇲 Dominica
+       </option>
+       <option value="DO">
+        🇩🇴 Dominican Republic
+       </option>
+       <option value="EC">
+        🇪🇨 Ecuador
+       </option>
+       <option value="SV">
+        🇸🇻 El Salvador
+       </option>
+       <option value="GD">
+        🇬🇩 Grenada
+       </option>
+       <option value="GT">
+        🇬🇹 Guatemala
+       </option>
+       <option value="GY">
+        🇬🇾 Guyana
+       </option>
+       <option value="HT">
+        🇭🇹 Haiti
+       </option>
+       <option value="HN">
+        🇭🇳 Honduras
+       </option>
+       <option value="JM">
+        🇯🇲 Jamaica
+       </option>
+       <option value="MX">
+        🇲🇽 Mexico
+       </option>
+       <option value="NI">
+        🇳🇮 Nicaragua
+       </option>
+       <option value="PA">
+        🇵🇦 Panama
+       </option>
+       <option value="PY">
+        🇵🇾 Paraguay
+       </option>
+       <option value="PE">
+        🇵🇪 Peru
+       </option>
+       <option value="KN">
+        🇰🇳 Saint Kitts and Nevis
+       </option>
+       <option value="LC">
+        🇱🇨 Saint Lucia
+       </option>
+       <option value="VC">
+        🇻🇨 Saint Vincent and the Grenadines
+       </option>
+       <option value="SR">
+        🇸🇷 Suriname
+       </option>
+       <option value="TT">
+        🇹🇹 Trinidad and Tobago
+       </option>
+       <option value="US">
+        🇺🇸 United States
+       </option>
+       <option value="UY">
+        🇺🇾 Uruguay
+       </option>
+       <option value="VE">
+        🇻🇪 Venezuela
+       </option>
+      </optgroup>
+      <optgroup label="Europe">
+       <option value="AL">
+        🇦🇱 Albania
+       </option>
+       <option value="AD">
+        🇦🇩 Andorra
+       </option>
+       <option value="AT">
+        🇦🇹 Austria
+       </option>
+       <option value="BY">
+        🇧🇾 Belarus
+       </option>
+       <option value="BE">
+        🇧🇪 Belgium
+       </option>
+       <option value="BA">
+        🇧🇦 Bosnia and Herzegovina
+       </option>
+       <option value="BG">
+        🇧🇬 Bulgaria
+       </option>
+       <option value="HR">
+        🇭🇷 Croatia
+       </option>
+       <option value="CY">
+        🇨🇾 Cyprus
+       </option>
+       <option value="CZ">
+        🇨🇿 Czechia
+       </option>
+       <option value="DK">
+        🇩🇰 Denmark
+       </option>
+       <option value="EE">
+        🇪🇪 Estonia
+       </option>
+       <option value="FI">
+        🇫🇮 Finland
+       </option>
+       <option value="FR">
+        🇫🇷 France
+       </option>
+       <option value="DE">
+        🇩🇪 Germany
+       </option>
+       <option value="GR">
+        🇬🇷 Greece
+       </option>
+       <option value="HU">
+        🇭🇺 Hungary
+       </option>
+       <option value="IS">
+        🇮🇸 Iceland
+       </option>
+       <option value="IE">
+        🇮🇪 Ireland
+       </option>
+       <option value="IT">
+        🇮🇹 Italy
+       </option>
+       <option value="LV">
+        🇱🇻 Latvia
+       </option>
+       <option value="LI">
+        🇱🇮 Liechtenstein
+       </option>
+       <option value="LT">
+        🇱🇹 Lithuania
+       </option>
+       <option value="LU">
+        🇱🇺 Luxembourg
+       </option>
+       <option value="MT">
+        🇲🇹 Malta
+       </option>
+       <option value="MD">
+        🇲🇩 Moldova
+       </option>
+       <option value="MC">
+        🇲🇨 Monaco
+       </option>
+       <option value="ME">
+        🇲🇪 Montenegro
+       </option>
+       <option value="NL">
+        🇳🇱 Netherlands
+       </option>
+       <option value="MK">
+        🇲🇰 North Macedonia
+       </option>
+       <option value="NO">
+        🇳🇴 Norway
+       </option>
+       <option value="PL">
+        🇵🇱 Poland
+       </option>
+       <option value="PT">
+        🇵🇹 Portugal
+       </option>
+       <option value="RO">
+        🇷🇴 Romania
+       </option>
+       <option value="RU">
+        🇷🇺 Russia
+       </option>
+       <option value="SM">
+        🇸🇲 San Marino
+       </option>
+       <option value="RS">
+        🇷🇸 Serbia
+       </option>
+       <option value="SK">
+        🇸🇰 Slovakia
+       </option>
+       <option value="SI">
+        🇸🇮 Slovenia
+       </option>
+       <option value="ES">
+        🇪🇸 Spain
+       </option>
+       <option value="SE">
+        🇸🇪 Sweden
+       </option>
+       <option value="CH">
+        🇨🇭 Switzerland
+       </option>
+       <option value="UA">
+        🇺🇦 Ukraine
+       </option>
+       <option value="GB">
+        🇬🇧 United Kingdom
+       </option>
+       <option value="VA">
+        🇻🇦 Vatican City
+       </option>
+      </optgroup>
+      <optgroup label="Oceania">
+       <option value="AU">
+        🇦🇺 Australia
+       </option>
+       <option value="FJ">
+        🇫🇯 Fiji
+       </option>
+       <option value="KI">
+        🇰🇮 Kiribati
+       </option>
+       <option value="MH">
+        🇲🇭 Marshall Islands
+       </option>
+       <option value="FM">
+        🇫🇲 Micronesia
+       </option>
+       <option value="NR">
+        🇳🇷 Nauru
+       </option>
+       <option value="NZ">
+        🇳🇿 New Zealand
+       </option>
+       <option value="PW">
+        🇵🇼 Palau
+       </option>
+       <option value="PG">
+        🇵🇬 Papua New Guinea
+       </option>
+       <option value="WS">
+        🇼🇸 Samoa
+       </option>
+       <option value="SB">
+        🇸🇧 Solomon Islands
+       </option>
+       <option value="TO">
+        🇹🇴 Tonga
+       </option>
+       <option value="TV">
+        🇹🇻 Tuvalu
+       </option>
+       <option value="VU">
+        🇻🇺 Vanuatu
+       </option>
+      </optgroup>
+     </select>
+     <select aria-label="State or region" class="place" id="stsel" title="State / region">
+      <option value="all">
+       All states & UTs
+      </option>
+      <option value="Andhra Pradesh">
+       Andhra Pradesh
+      </option>
+      <option value="Arunachal Pradesh">
+       Arunachal Pradesh
+      </option>
+      <option value="Assam">
+       Assam
+      </option>
+      <option value="Bihar">
+       Bihar
+      </option>
+      <option value="Chhattisgarh">
+       Chhattisgarh
+      </option>
+      <option value="Goa">
+       Goa
+      </option>
+      <option value="Gujarat">
+       Gujarat
+      </option>
+      <option value="Haryana">
+       Haryana
+      </option>
+      <option value="Himachal Pradesh">
+       Himachal Pradesh
+      </option>
+      <option value="Jharkhand">
+       Jharkhand
+      </option>
+      <option value="Karnataka">
+       Karnataka
+      </option>
+      <option value="Kerala">
+       Kerala
+      </option>
+      <option value="Madhya Pradesh">
+       Madhya Pradesh
+      </option>
+      <option selected value="Maharashtra">
+       Maharashtra
+      </option>
+      <option value="Manipur">
+       Manipur
+      </option>
+      <option value="Meghalaya">
+       Meghalaya
+      </option>
+      <option value="Mizoram">
+       Mizoram
+      </option>
+      <option value="Nagaland">
+       Nagaland
+      </option>
+      <option value="Odisha">
+       Odisha
+      </option>
+      <option value="Punjab">
+       Punjab
+      </option>
+      <option value="Rajasthan">
+       Rajasthan
+      </option>
+      <option value="Sikkim">
+       Sikkim
+      </option>
+      <option value="Tamil Nadu">
+       Tamil Nadu
+      </option>
+      <option value="Telangana">
+       Telangana
+      </option>
+      <option value="Tripura">
+       Tripura
+      </option>
+      <option value="Uttar Pradesh">
+       Uttar Pradesh
+      </option>
+      <option value="Uttarakhand">
+       Uttarakhand
+      </option>
+      <option value="West Bengal">
+       West Bengal
+      </option>
+      <option value="Andaman and Nicobar Islands">
+       Andaman and Nicobar Islands
+      </option>
+      <option value="Chandigarh">
+       Chandigarh
+      </option>
+      <option value="Dadra and Nagar Haveli and Daman and Diu">
+       Dadra and Nagar Haveli and Daman and Diu
+      </option>
+      <option value="Delhi">
+       Delhi
+      </option>
+      <option value="Jammu and Kashmir">
+       Jammu and Kashmir
+      </option>
+      <option value="Ladakh">
+       Ladakh
+      </option>
+      <option value="Lakshadweep">
+       Lakshadweep
+      </option>
+      <option value="Puducherry">
+       Puducherry
+      </option>
+     </select>
+     <button aria-label="Language: English" class="lang" data-a="lang-open">
+      <svg aria-hidden="true" viewbox="0 0 24 24">
+       <circle cx="12" cy="12" r="9">
+       </circle>
+       <path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18">
+       </path>
+      </svg>
+      <span>
+       English
+      </span>
+      <svg aria-hidden="true" style="width:12px;height:12px" viewbox="0 0 24 24">
+       <path d="M6 9l6 6 6-6">
+       </path>
+      </svg>
+     </button>
+     <span class="top-sp">
+     </span>
+     <div class="gsearch" role="search">
+      <svg aria-hidden="true" viewbox="0 0 24 24">
+       <circle cx="11" cy="11" r="7">
+       </circle>
+       <path d="M20 20l-3.5-3.5">
+       </path>
+      </svg>
+      <input aria-label="Search services" autocomplete="off" id="gsearch" placeholder="Search services, e.g. dialysis, pharmacy, TB" type="search" value>
+     </div>
+     <button class="ubtn" data-a="login-admin">
+      Admin
+     </button>
+    </div>
+   </div>
+   <div class="pill-wrap">
+    <nav aria-label="Main" class="pillnav">
+     <button aria-label="Bharat HIE Portal, home" class="brand" data-a="home">
+      <img alt="India flag" class="brand-logo" src="assets/images/flags/in-9ead4319.webp">
+      <span class="brand-txt">
+       <span class="brand-hi" lang="hi">
+        भारत
+       </span>
+       <span class="brand-en">
+        HIE Portal
+       </span>
+      </span>
+     </button>
+     <div class="pn-links">
+      <button data-a="home">
+       Home
+      </button>
+      <button data-a="about">
+       About us
+      </button>
+      <button data-a="jump" data-j="services">
+       Services
+      </button>
+      <button data-a="jump" data-j="how">
+       How it works
+      </button>
+      <button data-a="jump" data-j="providers">
+       For providers
+      </button>
+      <button data-a="as" data-r="admin" data-t="analytics">
+       Live analytics
+      </button>
+      <button data-a="jump" data-j="contact">
+       Contact
+      </button>
+      <button aria-current="page" class="pn-find" data-a="find">
+       📍 Find healthcare near me
+      </button>
+      <span class="pn-more">
+       <button aria-expanded="false" data-a="more">
+        More &dtrif;
+       </button>
+      </span>
+     </div>
+     <div class="pn-cta">
+      <button class="pn-reg" data-a="open-reg">
+       Register
+      </button>
+      <button class="pn-login" data-a="open-login">
+       Log in
+      </button>
+     </div>
+    </nav>
+   </div>
+   <div aria-label="WHO news" class="ticker" role="region">
+    <div class="wrapx tk-in">
+     <a class="tk-lab" href="https://www.who.int/news" rel="noopener" target="_blank">
+      <span aria-hidden="true" class="tk-dot">
+      </span>
+      WHO News
+     </a>
+     <div class="tk-view">
+      <div class="tk-track">
+       <a href="https://www.who.int/news/item/30-10-2026-barbados-eliminates-mother-to-child-transmission-of-hiv" rel="noopener" target="_blank">
+        <time>
+         30 Oct 2026
+        </time>
+        Barbados eliminates mother-to-child transmission of HIV
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/23-10-2026-who-and-enhypen-join-efforts-to-inspire-young-blood-donors-globally" rel="noopener" target="_blank">
+        <time>
+         23 Oct 2026
+        </time>
+        WHO and ENHYPEN join efforts to inspire young blood donors globally
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children" rel="noopener" target="_blank">
+        <time>
+         21 Oct 2026
+        </time>
+        New global framework launched to track increasing health risks of extreme heat for pregnant women, newborns and children
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/16-10-2026-interpol-and-who-sign-agreement-to-strengthen-global-health-and-security-protection" rel="noopener" target="_blank">
+        <time>
+         16 Oct 2026
+        </time>
+        INTERPOL and WHO sign agreement to strengthen global health and security protection
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/12-10-2026-who-welcomes-adoption-of-united-nations-political-declaration-on-pandemic-prevention-preparedness-and-response" rel="noopener" target="_blank">
+        <time>
+         12 Oct 2026
+        </time>
+        WHO welcomes adoption of United Nations political declaration on pandemic prevention, preparedness and response
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/12-10-2026-who-pandemic-hub-sets-ambitious-goal-to-detect-new-outbreaks-within-24-hours" rel="noopener" target="_blank">
+        <time>
+         12 Oct 2026
+        </time>
+        WHO Pandemic Hub sets ambitious goal to detect new outbreaks within 24 hours
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/09-10-2026-who-urges-shift-from-institutional-to-community-based-mental-health-care" rel="noopener" target="_blank">
+        <time>
+         9 Oct 2026
+        </time>
+        WHO urges shift from institutional to community-based mental health care
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths" rel="noopener" target="_blank">
+        <time>
+         8 Oct 2026
+        </time>
+        New global roadmap launched to tackle hypertension in pregnancy, a leading cause of maternal and newborn deaths
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity" rel="noopener" target="_blank">
+        <time>
+         7 Oct 2026
+        </time>
+        WHO issues first global guidelines on child and adolescent obesity
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings" rel="noopener" target="_blank">
+        <time>
+         30 Sep 2026
+        </time>
+        WHO releases new guidance to prevent heat-related illness at mass gatherings
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <span aria-hidden="true" class="tk-dup">
+        <a href="https://www.who.int/news/item/30-10-2026-barbados-eliminates-mother-to-child-transmission-of-hiv" rel="noopener" target="_blank">
+         <time>
+          30 Oct 2026
+         </time>
+         Barbados eliminates mother-to-child transmission of HIV
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/23-10-2026-who-and-enhypen-join-efforts-to-inspire-young-blood-donors-globally" rel="noopener" target="_blank">
+         <time>
+          23 Oct 2026
+         </time>
+         WHO and ENHYPEN join efforts to inspire young blood donors globally
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children" rel="noopener" target="_blank">
+         <time>
+          21 Oct 2026
+         </time>
+         New global framework launched to track increasing health risks of extreme heat for pregnant women, newborns and children
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/16-10-2026-interpol-and-who-sign-agreement-to-strengthen-global-health-and-security-protection" rel="noopener" target="_blank">
+         <time>
+          16 Oct 2026
+         </time>
+         INTERPOL and WHO sign agreement to strengthen global health and security protection
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/12-10-2026-who-welcomes-adoption-of-united-nations-political-declaration-on-pandemic-prevention-preparedness-and-response" rel="noopener" target="_blank">
+         <time>
+          12 Oct 2026
+         </time>
+         WHO welcomes adoption of United Nations political declaration on pandemic prevention, preparedness and response
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/12-10-2026-who-pandemic-hub-sets-ambitious-goal-to-detect-new-outbreaks-within-24-hours" rel="noopener" target="_blank">
+         <time>
+          12 Oct 2026
+         </time>
+         WHO Pandemic Hub sets ambitious goal to detect new outbreaks within 24 hours
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/09-10-2026-who-urges-shift-from-institutional-to-community-based-mental-health-care" rel="noopener" target="_blank">
+         <time>
+          9 Oct 2026
+         </time>
+         WHO urges shift from institutional to community-based mental health care
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths" rel="noopener" target="_blank">
+         <time>
+          8 Oct 2026
+         </time>
+         New global roadmap launched to tackle hypertension in pregnancy, a leading cause of maternal and newborn deaths
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity" rel="noopener" target="_blank">
+         <time>
+          7 Oct 2026
+         </time>
+         WHO issues first global guidelines on child and adolescent obesity
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings" rel="noopener" target="_blank">
+         <time>
+          30 Sep 2026
+         </time>
+         WHO releases new guidance to prevent heat-related illness at mass gatherings
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+       </span>
+      </div>
+     </div>
+     <span class="tk-note">
+      Updated 2 Nov 2026
+     </span>
+    </div>
+   </div>
+  </header>
+  <main class="wrapx" id="main" tabindex="-1">
+   <nav aria-label="Breadcrumb" class="crumbs">
+    <ol>
+     <li>
+      <button data-a="home">
+       Home
+      </button>
+     </li>
+     <li aria-current="page">
+      Find healthcare near me
+     </li>
+    </ol>
+   </nav>
+   <section class="sec fd">
+    <div class="fd-hero">
+     <span class="eyebrow">
+      Find healthcare near me
+     </span>
+     <h1>
+      Find healthcare professionals near you
+     </h1>
+     <p class="muted">
+      Choose what you need, enter an area, city or PIN code anywhere in India, and see the nearest options on the map.
+     </p>
+    </div>
+    <div class="fd-form" id="fd-form">
+     <label class="fld">
+      <span>
+       <b>
+        1
+       </b>
+       Which healthcare professional do you need?
+      </span>
+      <select class="inp" id="fd-type">
+       <optgroup label="Doctor specialists">
+        <option selected value="sp0">
+         General physician
+        </option>
+        <option value="sp1">
+         Family medicine doctor
+        </option>
+        <option value="sp2">
+         Cardiologist (heart)
+        </option>
+        <option value="sp3">
+         Cardiothoracic surgeon
+        </option>
+        <option value="sp4">
+         Neurologist (brain & nerves)
+        </option>
+        <option value="sp5">
+         Neurosurgeon
+        </option>
+        <option value="sp6">
+         Nephrologist (kidney)
+        </option>
+        <option value="sp7">
+         Urologist
+        </option>
+        <option value="sp8">
+         Gastroenterologist (stomach)
+        </option>
+        <option value="sp9">
+         Hepatologist (liver)
+        </option>
+        <option value="sp10">
+         Pulmonologist (lungs)
+        </option>
+        <option value="sp11">
+         Endocrinologist (hormones, thyroid)
+        </option>
+        <option value="sp12">
+         Diabetologist (diabetes)
+        </option>
+        <option value="sp13">
+         Rheumatologist (joints)
+        </option>
+        <option value="sp14">
+         Oncologist (cancer)
+        </option>
+        <option value="sp15">
+         Haematologist (blood)
+        </option>
+        <option value="sp16">
+         Dermatologist (skin & hair)
+        </option>
+        <option value="sp17">
+         Venereologist
+        </option>
+        <option value="sp18">
+         Trichologist (hair)
+        </option>
+        <option value="sp19">
+         Psychiatrist
+        </option>
+        <option value="sp20">
+         Psychologist / counsellor
+        </option>
+        <option value="sp21">
+         Paediatrician (child specialist)
+        </option>
+        <option value="sp22">
+         Neonatologist (newborn)
+        </option>
+        <option value="sp23">
+         Paediatric surgeon
+        </option>
+        <option value="sp24">
+         Gynaecologist & obstetrician
+        </option>
+        <option value="sp25">
+         Infertility / IVF specialist
+        </option>
+        <option value="sp26">
+         Orthopaedic surgeon (bones)
+        </option>
+        <option value="sp27">
+         Spine surgeon
+        </option>
+        <option value="sp28">
+         Sports medicine specialist
+        </option>
+        <option value="sp29">
+         General surgeon
+        </option>
+        <option value="sp30">
+         Laparoscopic surgeon
+        </option>
+        <option value="sp31">
+         Bariatric surgeon (weight loss)
+        </option>
+        <option value="sp32">
+         Plastic & cosmetic surgeon
+        </option>
+        <option value="sp33">
+         Vascular surgeon
+        </option>
+        <option value="sp34">
+         ENT specialist (ear, nose, throat)
+        </option>
+        <option value="sp35">
+         Ophthalmologist (eye)
+        </option>
+        <option value="sp36">
+         Dentist
+        </option>
+        <option value="sp37">
+         Orthodontist
+        </option>
+        <option value="sp38">
+         Oral & maxillofacial surgeon
+        </option>
+        <option value="sp39">
+         Anaesthesiologist
+        </option>
+        <option value="sp40">
+         Pain management specialist
+        </option>
+        <option value="sp41">
+         Physiatrist (rehabilitation)
+        </option>
+        <option value="sp42">
+         Geriatrician (elderly)
+        </option>
+        <option value="sp43">
+         Infectious disease specialist
+        </option>
+        <option value="sp44">
+         Allergist & immunologist
+        </option>
+        <option value="sp45">
+         Critical care / intensivist
+        </option>
+        <option value="sp46">
+         Emergency medicine
+        </option>
+        <option value="sp47">
+         Radiologist
+        </option>
+        <option value="sp48">
+         Pathologist
+        </option>
+        <option value="sp49">
+         Andrologist (men's health)
+        </option>
+        <option value="sp50">
+         Sexologist
+        </option>
+        <option value="sp51">
+         Audiologist & speech therapist
+        </option>
+        <option value="sp52">
+         Occupational therapist
+        </option>
+        <option value="sp53">
+         Podiatrist (foot)
+        </option>
+        <option value="sp54">
+         Ayurveda doctor
+        </option>
+        <option value="sp55">
+         Homoeopathy doctor
+        </option>
+        <option value="sp56">
+         Unani doctor
+        </option>
+        <option value="sp57">
+         Siddha doctor
+        </option>
+        <option value="sp58">
+         Naturopathy & yoga doctor
+        </option>
+       </optgroup>
+       <optgroup label="Hospitals & centres">
+        <option value="phc">
+         Primary Health Centre (PHC/Sub-centre/Gram Panchayat)
+        </option>
+        <option value="govhosp">
+         Government hospital
+        </option>
+        <option value="pvthosp">
+         Private hospital / nursing home
+        </option>
+        <option value="clinic">
+         Clinic / family doctor (GP)
+        </option>
+        <option value="doctors">
+         Multi-speciality hospital
+        </option>
+        <option value="specialty">
+         Cancer hospital
+        </option>
+        <option value="pmndp">
+         Dialysis centre
+        </option>
+        <option value="npcbvi">
+         Eye hospital
+        </option>
+        <option value="mental">
+         Mental health hospital
+        </option>
+        <option value="matru">
+         Maternity hospital
+        </option>
+        <option value="nphce">
+         Elderly care home
+        </option>
+        <option value="ayush">
+         Ayurveda / AYUSH hospital
+        </option>
+       </optgroup>
+       <optgroup label="Tests & medicines">
+        <option value="lab">
+         Pathology lab / blood test
+        </option>
+        <option value="radio">
+         X-ray, CT, MRI, ultrasound
+        </option>
+        <option value="pharmacy">
+         Pharmacy / chemist
+        </option>
+        <option value="meddir">
+         Jan Aushadhi Kendra
+        </option>
+        <option value="blood">
+         Blood bank
+        </option>
+       </optgroup>
+       <optgroup label="Care & therapy">
+        <option value="physio">
+         Physiotherapy centre
+        </option>
+        <option value="homecare">
+         Home nursing / palliative care
+        </option>
+        <option value="yogactr">
+         Yoga centre
+        </option>
+        <option value="nutri">
+         Dietitian / nutritionist
+        </option>
+        <option value="ntep">
+         TB / chest clinic
+        </option>
+       </optgroup>
+       <optgroup label="Emergency">
+        <option value="amb">
+         Ambulance service
+        </option>
+        <option value="trauma">
+         Emergency / trauma centre
+        </option>
+       </optgroup>
+       <optgroup label="Animal health">
+        <option value="mvu">
+         Veterinary hospital
+        </option>
+        <option value="pet">
+         Pet clinic
+        </option>
+       </optgroup>
+      </select>
+     </label>
+     <label class="fld">
+      <span>
+       <b>
+        2
+       </b>
+       Which area do you need it in?
+      </span>
+      <input autocomplete="off" class="inp" id="fd-loc" list="fd-places" placeholder="Area, city or PIN code, e.g. Wagholi Pune or 411014" value>
+      <datalist id="fd-places">
+       <option value="Mumbai">
+       </option>
+       <option value="Pune">
+       </option>
+       <option value="Nagpur">
+       </option>
+       <option value="Nashik">
+       </option>
+       <option value="Thane">
+       </option>
+       <option value="Aurangabad (Chh. Sambhajinagar)">
+       </option>
+       <option value="Kolhapur">
+       </option>
+       <option value="Solapur">
+       </option>
+       <option value="Delhi">
+       </option>
+       <option value="New Delhi">
+       </option>
+       <option value="Bengaluru">
+       </option>
+       <option value="Chennai">
+       </option>
+       <option value="Hyderabad">
+       </option>
+       <option value="Kolkata">
+       </option>
+       <option value="Ahmedabad">
+       </option>
+       <option value="Jaipur">
+       </option>
+       <option value="Lucknow">
+       </option>
+       <option value="Patna">
+       </option>
+       <option value="Bhopal">
+       </option>
+       <option value="Indore">
+       </option>
+       <option value="Chandigarh">
+       </option>
+       <option value="Bhubaneswar">
+       </option>
+       <option value="Guwahati">
+       </option>
+       <option value="Thiruvananthapuram">
+       </option>
+       <option value="Kochi">
+       </option>
+       <option value="Visakhapatnam">
+       </option>
+       <option value="Surat">
+       </option>
+       <option value="Varanasi">
+       </option>
+       <option value="Ranchi">
+       </option>
+       <option value="Raipur">
+       </option>
+       <option value="Dehradun">
+       </option>
+       <option value="Shimla">
+       </option>
+       <option value="Srinagar">
+       </option>
+       <option value="Jammu">
+       </option>
+       <option value="Goa (Panaji)">
+       </option>
+       <option value="Imphal">
+       </option>
+       <option value="Shillong">
+       </option>
+       <option value="Agartala">
+       </option>
+       <option value="Aizawl">
+       </option>
+       <option value="Kohima">
+       </option>
+       <option value="Itanagar">
+       </option>
+       <option value="Gangtok">
+       </option>
+       <option value="Port Blair">
+       </option>
+       <option value="Puducherry">
+       </option>
+       <option value="Wagholi, Pune">
+       </option>
+       <option value="Andheri, Mumbai">
+       </option>
+       <option value="Hinjewadi, Pune">
+       </option>
+       <option value="Dharavi, Mumbai">
+       </option>
+      </datalist>
+     </label>
+     <div class="row">
+      <button class="btn pri" data-a="fd-go">
+       Show on map &rarr;
+      </button>
+      <button class="btn" data-a="fd-me">
+       📍 Use my location
+      </button>
+     </div>
+    </div>
+    <div class="fd-quick">
+     <span class="small muted">
+      Emergency:
+     </span>
+     <a class="btn sm" href="tel:108">
+      🚑 108
+     </a>
+     <a class="btn sm" href="tel:104">
+      &phone; 104
+     </a>
+     <a class="btn sm" href="tel:14416">
+      Tele-MANAS 14416
+     </a>
+     <a class="btn sm" href="tel:1962">
+      🐄 1962
+     </a>
+    </div>
+   </section>
+  </main>
+  <footer id="contact">
+   <div class="wrapx in">
+    <div>
+     <b>
+      Bharat HIE Portal
+     </b>
+     <p>
+      One health card, one login and connected care for every citizen of Maharashtra. Hospitals, doctors, pharmacies, labs, blood banks and NGOs exchange records through a consent-based exchange aligned with ABDM.
+     </p>
+    </div>
+    <div>
+     <b>
+      Citizens
+     </b>
+     <ul>
+      <li>
+       My Health Record
+      </li>
+      <li>
+       <button class="flink" data-a="appt">
+        Book appointment
+       </button>
+      </li>
+      <li>
+       Scheme eligibility
+      </li>
+      <li>
+       Consent manager
+      </li>
+     </ul>
+    </div>
+    <div>
+     <b>
+      Providers
+     </b>
+     <ul>
+      <li>
+       Register facility
+      </li>
+      <li>
+       API documentation
+      </li>
+      <li>
+       Integration sandbox
+      </li>
+      <li>
+       Verification status
+      </li>
+     </ul>
+    </div>
+    <div>
+     <b>
+      Help
+     </b>
+     <ul>
+      <li>
+       Health helpline: 104
+      </li>
+      <li>
+       Ambulance: 108
+      </li>
+      <li>
+       Support desk: 9 am &ndash; 9 pm
+      </li>
+      <li>
+       <button class="flink" data-a="faq">
+        FAQ & help
+       </button>
+      </li>
+      <li>
+       <button class="flink" data-a="griev">
+        Complaints & feedback
+       </button>
+      </li>
+      <li>
+       <button class="flink" data-a="camps">
+        Health camps
+       </button>
+      </li>
+      <li>
+       Privacy policy
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="wrapx bt">
+    &copy; 2026 Bharat HIE Portal
+   </div>
+  </footer>
+  <div class="fab-sos">
+   <button aria-expanded="false" aria-label="Emergency SOS" class="sos-btn" data-a="sos">
+    SOS
+   </button>
+  </div>
+  <button aria-label="Open AI health assistant" class="fab-chat" data-a="chat-open">
+   <span>
+    💬
+   </span>
+   <b>
+    Health assistant
+   </b>
+  </button>
+</div>
+<script>window.START_VIEW="find";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="js/01-icons.js"></script>
+<script src="js/02-helpers.js"></script>
+<script src="js/03-country-data.js"></script>
+<script src="js/04-reference-data.js"></script>
+<script src="js/05-language.js"></script>
+<script src="js/06-state.js"></script>
+<script src="js/07-header-home.js"></script>
+<script src="js/08-services.js"></script>
+<script src="js/09-providers.js"></script>
+<script src="js/10-analytics.js"></script>
+<script src="js/11-role-dashboards.js"></script>
+<script src="js/12-health-card.js"></script>
+<script src="js/13-modals-login.js"></script>
+<script src="js/14-about.js"></script>
+<script src="js/15-find-near-me.js"></script>
+<script src="js/16-citizen-features.js"></script>
+<script src="js/17-module-dashboards.js"></script>
+<script src="js/18-app-render-events.js"></script>
+
+
+
+</body>
+</html>

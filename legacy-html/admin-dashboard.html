@@ -1,0 +1,3348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin dashboard · Bharat HIE Portal</title>
+<meta name="description" content="Bharat HIE Portal: one health card, one login and connected care across hospitals, doctors, pharmacies, labs, blood banks and NGOs.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Ol+Chiki&family=Noto+Sans+Meetei+Mayek&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Page: Admin dashboard. The markup below is the rendered page; the scripts at the bottom make it interactive. -->
+<div id="app">
+  <button class="skip" data-a="skip">
+   Skip to main content
+  </button>
+  <header class="hdr">
+   <div class="util">
+    <div class="wrapx util-in">
+     <select aria-label="Country" class="place" id="ctry" title="Country (196)">
+      <optgroup label="Asia">
+       <option value="AF">
+        🇦🇫 Afghanistan
+       </option>
+       <option value="AM">
+        🇦🇲 Armenia
+       </option>
+       <option value="AZ">
+        🇦🇿 Azerbaijan
+       </option>
+       <option value="BH">
+        🇧🇭 Bahrain
+       </option>
+       <option value="BD">
+        🇧🇩 Bangladesh
+       </option>
+       <option value="BT">
+        🇧🇹 Bhutan
+       </option>
+       <option value="BN">
+        🇧🇳 Brunei
+       </option>
+       <option value="KH">
+        🇰🇭 Cambodia
+       </option>
+       <option value="CN">
+        🇨🇳 China
+       </option>
+       <option value="GE">
+        🇬🇪 Georgia
+       </option>
+       <option selected value="IN">
+        🇮🇳 India
+       </option>
+       <option value="ID">
+        🇮🇩 Indonesia
+       </option>
+       <option value="IR">
+        🇮🇷 Iran
+       </option>
+       <option value="IQ">
+        🇮🇶 Iraq
+       </option>
+       <option value="IL">
+        🇮🇱 Israel
+       </option>
+       <option value="JP">
+        🇯🇵 Japan
+       </option>
+       <option value="JO">
+        🇯🇴 Jordan
+       </option>
+       <option value="KZ">
+        🇰🇿 Kazakhstan
+       </option>
+       <option value="KW">
+        🇰🇼 Kuwait
+       </option>
+       <option value="KG">
+        🇰🇬 Kyrgyzstan
+       </option>
+       <option value="LA">
+        🇱🇦 Laos
+       </option>
+       <option value="LB">
+        🇱🇧 Lebanon
+       </option>
+       <option value="MY">
+        🇲🇾 Malaysia
+       </option>
+       <option value="MV">
+        🇲🇻 Maldives
+       </option>
+       <option value="MN">
+        🇲🇳 Mongolia
+       </option>
+       <option value="MM">
+        🇲🇲 Myanmar
+       </option>
+       <option value="NP">
+        🇳🇵 Nepal
+       </option>
+       <option value="KP">
+        🇰🇵 North Korea
+       </option>
+       <option value="OM">
+        🇴🇲 Oman
+       </option>
+       <option value="PK">
+        🇵🇰 Pakistan
+       </option>
+       <option value="PS">
+        🇵🇸 Palestine
+       </option>
+       <option value="PH">
+        🇵🇭 Philippines
+       </option>
+       <option value="QA">
+        🇶🇦 Qatar
+       </option>
+       <option value="SA">
+        🇸🇦 Saudi Arabia
+       </option>
+       <option value="SG">
+        🇸🇬 Singapore
+       </option>
+       <option value="KR">
+        🇰🇷 South Korea
+       </option>
+       <option value="LK">
+        🇱🇰 Sri Lanka
+       </option>
+       <option value="SY">
+        🇸🇾 Syria
+       </option>
+       <option value="TW">
+        🇹🇼 Taiwan
+       </option>
+       <option value="TJ">
+        🇹🇯 Tajikistan
+       </option>
+       <option value="TH">
+        🇹🇭 Thailand
+       </option>
+       <option value="TL">
+        🇹🇱 Timor-Leste
+       </option>
+       <option value="TR">
+        🇹🇷 T&uuml;rkiye
+       </option>
+       <option value="TM">
+        🇹🇲 Turkmenistan
+       </option>
+       <option value="AE">
+        🇦🇪 United Arab Emirates
+       </option>
+       <option value="UZ">
+        🇺🇿 Uzbekistan
+       </option>
+       <option value="VN">
+        🇻🇳 Vietnam
+       </option>
+       <option value="YE">
+        🇾🇪 Yemen
+       </option>
+      </optgroup>
+      <optgroup label="Africa">
+       <option value="DZ">
+        🇩🇿 Algeria
+       </option>
+       <option value="AO">
+        🇦🇴 Angola
+       </option>
+       <option value="BJ">
+        🇧🇯 Benin
+       </option>
+       <option value="BW">
+        🇧🇼 Botswana
+       </option>
+       <option value="BF">
+        🇧🇫 Burkina Faso
+       </option>
+       <option value="BI">
+        🇧🇮 Burundi
+       </option>
+       <option value="CV">
+        🇨🇻 Cabo Verde
+       </option>
+       <option value="CM">
+        🇨🇲 Cameroon
+       </option>
+       <option value="CF">
+        🇨🇫 Central African Republic
+       </option>
+       <option value="TD">
+        🇹🇩 Chad
+       </option>
+       <option value="KM">
+        🇰🇲 Comoros
+       </option>
+       <option value="CG">
+        🇨🇬 Congo
+       </option>
+       <option value="CI">
+        🇨🇮 C&ocirc;te d'Ivoire
+       </option>
+       <option value="DJ">
+        🇩🇯 Djibouti
+       </option>
+       <option value="CD">
+        🇨🇩 DR Congo
+       </option>
+       <option value="EG">
+        🇪🇬 Egypt
+       </option>
+       <option value="GQ">
+        🇬🇶 Equatorial Guinea
+       </option>
+       <option value="ER">
+        🇪🇷 Eritrea
+       </option>
+       <option value="SZ">
+        🇸🇿 Eswatini
+       </option>
+       <option value="ET">
+        🇪🇹 Ethiopia
+       </option>
+       <option value="GA">
+        🇬🇦 Gabon
+       </option>
+       <option value="GM">
+        🇬🇲 Gambia
+       </option>
+       <option value="GH">
+        🇬🇭 Ghana
+       </option>
+       <option value="GN">
+        🇬🇳 Guinea
+       </option>
+       <option value="GW">
+        🇬🇼 Guinea-Bissau
+       </option>
+       <option value="KE">
+        🇰🇪 Kenya
+       </option>
+       <option value="LS">
+        🇱🇸 Lesotho
+       </option>
+       <option value="LR">
+        🇱🇷 Liberia
+       </option>
+       <option value="LY">
+        🇱🇾 Libya
+       </option>
+       <option value="MG">
+        🇲🇬 Madagascar
+       </option>
+       <option value="MW">
+        🇲🇼 Malawi
+       </option>
+       <option value="ML">
+        🇲🇱 Mali
+       </option>
+       <option value="MR">
+        🇲🇷 Mauritania
+       </option>
+       <option value="MU">
+        🇲🇺 Mauritius
+       </option>
+       <option value="MA">
+        🇲🇦 Morocco
+       </option>
+       <option value="MZ">
+        🇲🇿 Mozambique
+       </option>
+       <option value="NA">
+        🇳🇦 Namibia
+       </option>
+       <option value="NE">
+        🇳🇪 Niger
+       </option>
+       <option value="NG">
+        🇳🇬 Nigeria
+       </option>
+       <option value="RW">
+        🇷🇼 Rwanda
+       </option>
+       <option value="ST">
+        🇸🇹 S&atilde;o Tom&eacute; and Pr&iacute;ncipe
+       </option>
+       <option value="SN">
+        🇸🇳 Senegal
+       </option>
+       <option value="SC">
+        🇸🇨 Seychelles
+       </option>
+       <option value="SL">
+        🇸🇱 Sierra Leone
+       </option>
+       <option value="SO">
+        🇸🇴 Somalia
+       </option>
+       <option value="ZA">
+        🇿🇦 South Africa
+       </option>
+       <option value="SS">
+        🇸🇸 South Sudan
+       </option>
+       <option value="SD">
+        🇸🇩 Sudan
+       </option>
+       <option value="TZ">
+        🇹🇿 Tanzania
+       </option>
+       <option value="TG">
+        🇹🇬 Togo
+       </option>
+       <option value="TN">
+        🇹🇳 Tunisia
+       </option>
+       <option value="UG">
+        🇺🇬 Uganda
+       </option>
+       <option value="ZM">
+        🇿🇲 Zambia
+       </option>
+       <option value="ZW">
+        🇿🇼 Zimbabwe
+       </option>
+      </optgroup>
+      <optgroup label="Americas">
+       <option value="AG">
+        🇦🇬 Antigua and Barbuda
+       </option>
+       <option value="AR">
+        🇦🇷 Argentina
+       </option>
+       <option value="BS">
+        🇧🇸 Bahamas
+       </option>
+       <option value="BB">
+        🇧🇧 Barbados
+       </option>
+       <option value="BZ">
+        🇧🇿 Belize
+       </option>
+       <option value="BO">
+        🇧🇴 Bolivia
+       </option>
+       <option value="BR">
+        🇧🇷 Brazil
+       </option>
+       <option value="CA">
+        🇨🇦 Canada
+       </option>
+       <option value="CL">
+        🇨🇱 Chile
+       </option>
+       <option value="CO">
+        🇨🇴 Colombia
+       </option>
+       <option value="CR">
+        🇨🇷 Costa Rica
+       </option>
+       <option value="CU">
+        🇨🇺 Cuba
+       </option>
+       <option value="DM">
+        🇩🇲 Dominica
+       </option>
+       <option value="DO">
+        🇩🇴 Dominican Republic
+       </option>
+       <option value="EC">
+        🇪🇨 Ecuador
+       </option>
+       <option value="SV">
+        🇸🇻 El Salvador
+       </option>
+       <option value="GD">
+        🇬🇩 Grenada
+       </option>
+       <option value="GT">
+        🇬🇹 Guatemala
+       </option>
+       <option value="GY">
+        🇬🇾 Guyana
+       </option>
+       <option value="HT">
+        🇭🇹 Haiti
+       </option>
+       <option value="HN">
+        🇭🇳 Honduras
+       </option>
+       <option value="JM">
+        🇯🇲 Jamaica
+       </option>
+       <option value="MX">
+        🇲🇽 Mexico
+       </option>
+       <option value="NI">
+        🇳🇮 Nicaragua
+       </option>
+       <option value="PA">
+        🇵🇦 Panama
+       </option>
+       <option value="PY">
+        🇵🇾 Paraguay
+       </option>
+       <option value="PE">
+        🇵🇪 Peru
+       </option>
+       <option value="KN">
+        🇰🇳 Saint Kitts and Nevis
+       </option>
+       <option value="LC">
+        🇱🇨 Saint Lucia
+       </option>
+       <option value="VC">
+        🇻🇨 Saint Vincent and the Grenadines
+       </option>
+       <option value="SR">
+        🇸🇷 Suriname
+       </option>
+       <option value="TT">
+        🇹🇹 Trinidad and Tobago
+       </option>
+       <option value="US">
+        🇺🇸 United States
+       </option>
+       <option value="UY">
+        🇺🇾 Uruguay
+       </option>
+       <option value="VE">
+        🇻🇪 Venezuela
+       </option>
+      </optgroup>
+      <optgroup label="Europe">
+       <option value="AL">
+        🇦🇱 Albania
+       </option>
+       <option value="AD">
+        🇦🇩 Andorra
+       </option>
+       <option value="AT">
+        🇦🇹 Austria
+       </option>
+       <option value="BY">
+        🇧🇾 Belarus
+       </option>
+       <option value="BE">
+        🇧🇪 Belgium
+       </option>
+       <option value="BA">
+        🇧🇦 Bosnia and Herzegovina
+       </option>
+       <option value="BG">
+        🇧🇬 Bulgaria
+       </option>
+       <option value="HR">
+        🇭🇷 Croatia
+       </option>
+       <option value="CY">
+        🇨🇾 Cyprus
+       </option>
+       <option value="CZ">
+        🇨🇿 Czechia
+       </option>
+       <option value="DK">
+        🇩🇰 Denmark
+       </option>
+       <option value="EE">
+        🇪🇪 Estonia
+       </option>
+       <option value="FI">
+        🇫🇮 Finland
+       </option>
+       <option value="FR">
+        🇫🇷 France
+       </option>
+       <option value="DE">
+        🇩🇪 Germany
+       </option>
+       <option value="GR">
+        🇬🇷 Greece
+       </option>
+       <option value="HU">
+        🇭🇺 Hungary
+       </option>
+       <option value="IS">
+        🇮🇸 Iceland
+       </option>
+       <option value="IE">
+        🇮🇪 Ireland
+       </option>
+       <option value="IT">
+        🇮🇹 Italy
+       </option>
+       <option value="LV">
+        🇱🇻 Latvia
+       </option>
+       <option value="LI">
+        🇱🇮 Liechtenstein
+       </option>
+       <option value="LT">
+        🇱🇹 Lithuania
+       </option>
+       <option value="LU">
+        🇱🇺 Luxembourg
+       </option>
+       <option value="MT">
+        🇲🇹 Malta
+       </option>
+       <option value="MD">
+        🇲🇩 Moldova
+       </option>
+       <option value="MC">
+        🇲🇨 Monaco
+       </option>
+       <option value="ME">
+        🇲🇪 Montenegro
+       </option>
+       <option value="NL">
+        🇳🇱 Netherlands
+       </option>
+       <option value="MK">
+        🇲🇰 North Macedonia
+       </option>
+       <option value="NO">
+        🇳🇴 Norway
+       </option>
+       <option value="PL">
+        🇵🇱 Poland
+       </option>
+       <option value="PT">
+        🇵🇹 Portugal
+       </option>
+       <option value="RO">
+        🇷🇴 Romania
+       </option>
+       <option value="RU">
+        🇷🇺 Russia
+       </option>
+       <option value="SM">
+        🇸🇲 San Marino
+       </option>
+       <option value="RS">
+        🇷🇸 Serbia
+       </option>
+       <option value="SK">
+        🇸🇰 Slovakia
+       </option>
+       <option value="SI">
+        🇸🇮 Slovenia
+       </option>
+       <option value="ES">
+        🇪🇸 Spain
+       </option>
+       <option value="SE">
+        🇸🇪 Sweden
+       </option>
+       <option value="CH">
+        🇨🇭 Switzerland
+       </option>
+       <option value="UA">
+        🇺🇦 Ukraine
+       </option>
+       <option value="GB">
+        🇬🇧 United Kingdom
+       </option>
+       <option value="VA">
+        🇻🇦 Vatican City
+       </option>
+      </optgroup>
+      <optgroup label="Oceania">
+       <option value="AU">
+        🇦🇺 Australia
+       </option>
+       <option value="FJ">
+        🇫🇯 Fiji
+       </option>
+       <option value="KI">
+        🇰🇮 Kiribati
+       </option>
+       <option value="MH">
+        🇲🇭 Marshall Islands
+       </option>
+       <option value="FM">
+        🇫🇲 Micronesia
+       </option>
+       <option value="NR">
+        🇳🇷 Nauru
+       </option>
+       <option value="NZ">
+        🇳🇿 New Zealand
+       </option>
+       <option value="PW">
+        🇵🇼 Palau
+       </option>
+       <option value="PG">
+        🇵🇬 Papua New Guinea
+       </option>
+       <option value="WS">
+        🇼🇸 Samoa
+       </option>
+       <option value="SB">
+        🇸🇧 Solomon Islands
+       </option>
+       <option value="TO">
+        🇹🇴 Tonga
+       </option>
+       <option value="TV">
+        🇹🇻 Tuvalu
+       </option>
+       <option value="VU">
+        🇻🇺 Vanuatu
+       </option>
+      </optgroup>
+     </select>
+     <select aria-label="State or region" class="place" id="stsel" title="State / region">
+      <option value="all">
+       All states & UTs
+      </option>
+      <option value="Andhra Pradesh">
+       Andhra Pradesh
+      </option>
+      <option value="Arunachal Pradesh">
+       Arunachal Pradesh
+      </option>
+      <option value="Assam">
+       Assam
+      </option>
+      <option value="Bihar">
+       Bihar
+      </option>
+      <option value="Chhattisgarh">
+       Chhattisgarh
+      </option>
+      <option value="Goa">
+       Goa
+      </option>
+      <option value="Gujarat">
+       Gujarat
+      </option>
+      <option value="Haryana">
+       Haryana
+      </option>
+      <option value="Himachal Pradesh">
+       Himachal Pradesh
+      </option>
+      <option value="Jharkhand">
+       Jharkhand
+      </option>
+      <option value="Karnataka">
+       Karnataka
+      </option>
+      <option value="Kerala">
+       Kerala
+      </option>
+      <option value="Madhya Pradesh">
+       Madhya Pradesh
+      </option>
+      <option selected value="Maharashtra">
+       Maharashtra
+      </option>
+      <option value="Manipur">
+       Manipur
+      </option>
+      <option value="Meghalaya">
+       Meghalaya
+      </option>
+      <option value="Mizoram">
+       Mizoram
+      </option>
+      <option value="Nagaland">
+       Nagaland
+      </option>
+      <option value="Odisha">
+       Odisha
+      </option>
+      <option value="Punjab">
+       Punjab
+      </option>
+      <option value="Rajasthan">
+       Rajasthan
+      </option>
+      <option value="Sikkim">
+       Sikkim
+      </option>
+      <option value="Tamil Nadu">
+       Tamil Nadu
+      </option>
+      <option value="Telangana">
+       Telangana
+      </option>
+      <option value="Tripura">
+       Tripura
+      </option>
+      <option value="Uttar Pradesh">
+       Uttar Pradesh
+      </option>
+      <option value="Uttarakhand">
+       Uttarakhand
+      </option>
+      <option value="West Bengal">
+       West Bengal
+      </option>
+      <option value="Andaman and Nicobar Islands">
+       Andaman and Nicobar Islands
+      </option>
+      <option value="Chandigarh">
+       Chandigarh
+      </option>
+      <option value="Dadra and Nagar Haveli and Daman and Diu">
+       Dadra and Nagar Haveli and Daman and Diu
+      </option>
+      <option value="Delhi">
+       Delhi
+      </option>
+      <option value="Jammu and Kashmir">
+       Jammu and Kashmir
+      </option>
+      <option value="Ladakh">
+       Ladakh
+      </option>
+      <option value="Lakshadweep">
+       Lakshadweep
+      </option>
+      <option value="Puducherry">
+       Puducherry
+      </option>
+     </select>
+     <button aria-label="Language: English" class="lang" data-a="lang-open">
+      <svg aria-hidden="true" viewbox="0 0 24 24">
+       <circle cx="12" cy="12" r="9">
+       </circle>
+       <path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18">
+       </path>
+      </svg>
+      <span>
+       English
+      </span>
+      <svg aria-hidden="true" style="width:12px;height:12px" viewbox="0 0 24 24">
+       <path d="M6 9l6 6 6-6">
+       </path>
+      </svg>
+     </button>
+     <span class="top-sp">
+     </span>
+     <div class="gsearch" role="search">
+      <svg aria-hidden="true" viewbox="0 0 24 24">
+       <circle cx="11" cy="11" r="7">
+       </circle>
+       <path d="M20 20l-3.5-3.5">
+       </path>
+      </svg>
+      <input aria-label="Search services" autocomplete="off" id="gsearch" placeholder="Search services, e.g. dialysis, pharmacy, TB" type="search" value>
+     </div>
+     <span class="who">
+      <span class="role-tag">
+       Admin
+      </span>
+      <b>
+       State Health Control
+      </b>
+     </span>
+     <button class="ubtn" data-a="logout">
+      Log out
+     </button>
+    </div>
+   </div>
+   <div class="pill-wrap">
+    <nav aria-label="Main" class="pillnav">
+     <button aria-label="Bharat HIE Portal, home" class="brand" data-a="home">
+      <img alt="India flag" class="brand-logo" src="assets/images/flags/in-9ead4319.webp">
+      <span class="brand-txt">
+       <span class="brand-hi" lang="hi">
+        भारत
+       </span>
+       <span class="brand-en">
+        HIE Portal
+       </span>
+      </span>
+     </button>
+     <div class="pn-links">
+      <button data-a="home">
+       Home
+      </button>
+      <button data-a="about">
+       About us
+      </button>
+      <button data-a="jump" data-j="services">
+       Services
+      </button>
+      <button data-a="jump" data-j="how">
+       How it works
+      </button>
+      <button data-a="jump" data-j="providers">
+       For providers
+      </button>
+      <button aria-current="page" data-a="as" data-r="admin" data-t="analytics">
+       Live analytics
+      </button>
+      <button data-a="jump" data-j="contact">
+       Contact
+      </button>
+      <button class="pn-find" data-a="find">
+       📍 Find healthcare near me
+      </button>
+      <span class="pn-more">
+       <button aria-expanded="false" data-a="more">
+        More &dtrif;
+       </button>
+      </span>
+     </div>
+    </nav>
+   </div>
+   <div class="demo-bar">
+    <div class="wrapx top-in">
+     <span>
+      View as:
+     </span>
+     <button aria-pressed="true" data-a="as" data-r="admin">
+      Admin
+     </button>
+     <button aria-pressed="false" data-a="as" data-r="doctor">
+      Doctor
+     </button>
+     <button aria-pressed="false" data-a="as" data-r="pharmacist">
+      Pharmacist
+     </button>
+     <button aria-pressed="false" data-a="as" data-r="pathologist">
+      Pathologist
+     </button>
+     <button aria-pressed="false" data-a="as" data-r="bloodbank">
+      Blood Bank
+     </button>
+     <button aria-pressed="false" data-a="as" data-r="ngo">
+      NGO
+     </button>
+     <button aria-pressed="false" data-a="as" data-r="citizen">
+      Citizen
+     </button>
+    </div>
+   </div>
+   <div aria-label="WHO news" class="ticker" role="region">
+    <div class="wrapx tk-in">
+     <a class="tk-lab" href="https://www.who.int/news" rel="noopener" target="_blank">
+      <span aria-hidden="true" class="tk-dot">
+      </span>
+      WHO News
+     </a>
+     <div class="tk-view">
+      <div class="tk-track">
+       <a href="https://www.who.int/news/item/30-10-2026-barbados-eliminates-mother-to-child-transmission-of-hiv" rel="noopener" target="_blank">
+        <time>
+         30 Oct 2026
+        </time>
+        Barbados eliminates mother-to-child transmission of HIV
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/23-10-2026-who-and-enhypen-join-efforts-to-inspire-young-blood-donors-globally" rel="noopener" target="_blank">
+        <time>
+         23 Oct 2026
+        </time>
+        WHO and ENHYPEN join efforts to inspire young blood donors globally
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children" rel="noopener" target="_blank">
+        <time>
+         21 Oct 2026
+        </time>
+        New global framework launched to track increasing health risks of extreme heat for pregnant women, newborns and children
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/16-10-2026-interpol-and-who-sign-agreement-to-strengthen-global-health-and-security-protection" rel="noopener" target="_blank">
+        <time>
+         16 Oct 2026
+        </time>
+        INTERPOL and WHO sign agreement to strengthen global health and security protection
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/12-10-2026-who-welcomes-adoption-of-united-nations-political-declaration-on-pandemic-prevention-preparedness-and-response" rel="noopener" target="_blank">
+        <time>
+         12 Oct 2026
+        </time>
+        WHO welcomes adoption of United Nations political declaration on pandemic prevention, preparedness and response
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/12-10-2026-who-pandemic-hub-sets-ambitious-goal-to-detect-new-outbreaks-within-24-hours" rel="noopener" target="_blank">
+        <time>
+         12 Oct 2026
+        </time>
+        WHO Pandemic Hub sets ambitious goal to detect new outbreaks within 24 hours
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/09-10-2026-who-urges-shift-from-institutional-to-community-based-mental-health-care" rel="noopener" target="_blank">
+        <time>
+         9 Oct 2026
+        </time>
+        WHO urges shift from institutional to community-based mental health care
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths" rel="noopener" target="_blank">
+        <time>
+         8 Oct 2026
+        </time>
+        New global roadmap launched to tackle hypertension in pregnancy, a leading cause of maternal and newborn deaths
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity" rel="noopener" target="_blank">
+        <time>
+         7 Oct 2026
+        </time>
+        WHO issues first global guidelines on child and adolescent obesity
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <a href="https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings" rel="noopener" target="_blank">
+        <time>
+         30 Sep 2026
+        </time>
+        WHO releases new guidance to prevent heat-related illness at mass gatherings
+       </a>
+       <span aria-hidden="true" class="tk-sep">
+        ◆
+       </span>
+       <span aria-hidden="true" class="tk-dup">
+        <a href="https://www.who.int/news/item/30-10-2026-barbados-eliminates-mother-to-child-transmission-of-hiv" rel="noopener" target="_blank">
+         <time>
+          30 Oct 2026
+         </time>
+         Barbados eliminates mother-to-child transmission of HIV
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/23-10-2026-who-and-enhypen-join-efforts-to-inspire-young-blood-donors-globally" rel="noopener" target="_blank">
+         <time>
+          23 Oct 2026
+         </time>
+         WHO and ENHYPEN join efforts to inspire young blood donors globally
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children" rel="noopener" target="_blank">
+         <time>
+          21 Oct 2026
+         </time>
+         New global framework launched to track increasing health risks of extreme heat for pregnant women, newborns and children
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/16-10-2026-interpol-and-who-sign-agreement-to-strengthen-global-health-and-security-protection" rel="noopener" target="_blank">
+         <time>
+          16 Oct 2026
+         </time>
+         INTERPOL and WHO sign agreement to strengthen global health and security protection
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/12-10-2026-who-welcomes-adoption-of-united-nations-political-declaration-on-pandemic-prevention-preparedness-and-response" rel="noopener" target="_blank">
+         <time>
+          12 Oct 2026
+         </time>
+         WHO welcomes adoption of United Nations political declaration on pandemic prevention, preparedness and response
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/12-10-2026-who-pandemic-hub-sets-ambitious-goal-to-detect-new-outbreaks-within-24-hours" rel="noopener" target="_blank">
+         <time>
+          12 Oct 2026
+         </time>
+         WHO Pandemic Hub sets ambitious goal to detect new outbreaks within 24 hours
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/09-10-2026-who-urges-shift-from-institutional-to-community-based-mental-health-care" rel="noopener" target="_blank">
+         <time>
+          9 Oct 2026
+         </time>
+         WHO urges shift from institutional to community-based mental health care
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths" rel="noopener" target="_blank">
+         <time>
+          8 Oct 2026
+         </time>
+         New global roadmap launched to tackle hypertension in pregnancy, a leading cause of maternal and newborn deaths
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity" rel="noopener" target="_blank">
+         <time>
+          7 Oct 2026
+         </time>
+         WHO issues first global guidelines on child and adolescent obesity
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+        <a href="https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings" rel="noopener" target="_blank">
+         <time>
+          30 Sep 2026
+         </time>
+         WHO releases new guidance to prevent heat-related illness at mass gatherings
+        </a>
+        <span aria-hidden="true" class="tk-sep">
+         ◆
+        </span>
+       </span>
+      </div>
+     </div>
+     <span class="tk-note">
+      Updated 2 Nov 2026
+     </span>
+    </div>
+   </div>
+  </header>
+  <main class="wrapx" id="main" tabindex="-1">
+   <nav aria-label="Breadcrumb" class="crumbs">
+    <ol>
+     <li>
+      <button data-a="home">
+       Home
+      </button>
+     </li>
+     <li>
+      <button data-a="crumb-role">
+       Admin
+      </button>
+     </li>
+     <li aria-current="page">
+      Live analytics
+     </li>
+    </ol>
+   </nav>
+   <section class="sec">
+    <div class="sec-h">
+     <div class="sec" style="gap:6px">
+      <span class="eyebrow">
+       Admin &middot; Maharashtra, India
+      </span>
+      <h1>
+       Citizen health monitoring
+      </h1>
+      <p class="muted" style="max-width:70ch">
+       Live status of 52 citizens in the demo. Updated 02 Nov, 15:30.
+      </p>
+     </div>
+    </div>
+    <div class="kpis">
+     <button class="kpi b" data-a="flagF" data-f="all">
+      <span class="n">
+       52
+      </span>
+      <span class="l">
+       Citizens in view
+      </span>
+      <span class="d">
+       +6 registered today
+      </span>
+     </button>
+     <button class="kpi r" data-a="flagF" data-f="red">
+      <span class="n">
+       10
+      </span>
+      <span class="l">
+       Red &middot; act now
+      </span>
+      <span class="d">
+       Call within 1 hour
+      </span>
+     </button>
+     <button class="kpi y" data-a="flagF" data-f="yellow">
+      <span class="n">
+       14
+      </span>
+      <span class="l">
+       Yellow &middot; watch
+      </span>
+      <span class="d">
+       Call within 48 hours
+      </span>
+     </button>
+     <button class="kpi g" data-a="flagF" data-f="green">
+      <span class="n">
+       28
+      </span>
+      <span class="l">
+       Green &middot; normal
+      </span>
+      <span class="d">
+       Monthly reminder
+      </span>
+     </button>
+    </div>
+    <div class="tabs" role="tablist">
+     <button aria-selected="true" class="tab" data-a="tab" data-t="analytics" role="tab">
+      Live analytics
+     </button>
+     <button aria-selected="false" class="tab" data-a="tab" data-t="overview" role="tab">
+      All citizens
+      <span class="cnt">
+       52
+      </span>
+     </button>
+     <button aria-selected="false" class="tab" data-a="tab" data-t="districts" role="tab">
+      Districts
+     </button>
+     <button aria-selected="false" class="tab" data-a="tab" data-t="bpo" role="tab">
+      BPO queue
+      <span class="cnt">
+       10
+      </span>
+     </button>
+     <button aria-selected="false" class="tab" data-a="tab" data-t="kpo" role="tab">
+      KPO review
+      <span class="cnt">
+       2
+      </span>
+     </button>
+     <button aria-selected="false" class="tab" data-a="tab" data-t="cc" role="tab">
+      Command Centre
+      <span class="cnt">
+       1
+      </span>
+     </button>
+     <button aria-selected="false" class="tab" data-a="tab" data-t="services" role="tab">
+      Services
+      <span class="cnt">
+       111
+      </span>
+     </button>
+     <button aria-selected="false" class="tab" data-a="tab" data-t="providers" role="tab">
+      Providers
+      <span class="cnt">
+       22
+      </span>
+     </button>
+    </div>
+    <div id="anx">
+     <div class="ax-top">
+      <div class="row">
+       <span class="livepill on">
+        <span class="live-dot">
+        </span>
+        Live
+       </span>
+       <span class="small muted">
+        Updated 15:54:38 &middot; refreshes every 4 seconds &middot; Maharashtra &middot; click any chart to see its data
+       </span>
+      </div>
+      <div class="row">
+       <button aria-pressed="true" class="chip" data-a="ax-range" data-g="today">
+        Today
+       </button>
+       <button aria-pressed="false" class="chip" data-a="ax-range" data-g="7d">
+        7 days
+       </button>
+       <button aria-pressed="false" class="chip" data-a="ax-range" data-g="30d">
+        30 days
+       </button>
+       <button class="btn sm" data-a="ax-live">
+        Pause
+       </button>
+       <button class="btn sm pri" data-a="ax-xl" data-row="-1" data-sheet="KPIs">
+        Open all data in Excel view
+       </button>
+      </div>
+     </div>
+     <div class="gauges">
+      <button class="gauge" data-a="ax-xl" data-row="4" data-sheet="KPIs" title="Open in Excel view">
+       <svg aria-hidden="true" height="112" viewbox="0 0 110 110" width="112">
+        <circle cx="55" cy="55" fill="none" r="42" stroke="var(--sunk)" stroke-width="11">
+        </circle>
+        <circle class="gval" cx="55" cy="55" fill="none" r="42" stroke="var(--grn)" stroke-dasharray="248.6 263.9" stroke-linecap="round" stroke-width="11" transform="rotate(-90 55 55)">
+        </circle>
+        <circle class="gspin" cx="55" cy="55" fill="none" opacity=".45" r="52" stroke="var(--grn)" stroke-dasharray="4 10" stroke-width="1.5">
+        </circle>
+        <text class="gv" text-anchor="middle" x="55" y="61">
+         94.2%
+        </text>
+       </svg>
+       <span class="gl">
+        Red flags called within 1 hour
+       </span>
+       <span class="gs">
+        Target 95%
+       </span>
+      </button>
+      <button class="gauge" data-a="ax-xl" data-row="8" data-sheet="KPIs" title="Open in Excel view">
+       <svg aria-hidden="true" height="112" viewbox="0 0 110 110" width="112">
+        <circle cx="55" cy="55" fill="none" r="42" stroke="var(--sunk)" stroke-width="11">
+        </circle>
+        <circle class="gval" cx="55" cy="55" fill="none" r="42" stroke="var(--core)" stroke-dasharray="177.7 263.9" stroke-linecap="round" stroke-width="11" transform="rotate(-90 55 55)">
+        </circle>
+        <circle class="gspin" cx="55" cy="55" fill="none" opacity=".45" r="52" stroke="var(--core)" stroke-dasharray="4 10" stroke-width="1.5">
+        </circle>
+        <text class="gv" text-anchor="middle" x="55" y="61">
+         67.3%
+        </text>
+       </svg>
+       <span class="gl">
+        Today's screening target
+       </span>
+       <span class="gs">
+        33,613 of 49,910
+       </span>
+      </button>
+      <button class="gauge" data-a="ax-xl" data-row="9" data-sheet="KPIs" title="Open in Excel view">
+       <svg aria-hidden="true" height="112" viewbox="0 0 110 110" width="112">
+        <circle cx="55" cy="55" fill="none" r="42" stroke="var(--sunk)" stroke-width="11">
+        </circle>
+        <circle class="gval" cx="55" cy="55" fill="none" r="42" stroke="var(--prov)" stroke-dasharray="250.3 263.9" stroke-linecap="round" stroke-width="11" transform="rotate(-90 55 55)">
+        </circle>
+        <circle class="gspin" cx="55" cy="55" fill="none" opacity=".45" r="52" stroke="var(--prov)" stroke-dasharray="4 10" stroke-width="1.5">
+        </circle>
+        <text class="gv" text-anchor="middle" x="55" y="61">
+         94.8%
+        </text>
+       </svg>
+       <span class="gl">
+        Consultations completed
+       </span>
+      </button>
+      <button class="gauge" data-a="ax-xl" data-row="10" data-sheet="KPIs" title="Open in Excel view">
+       <svg aria-hidden="true" height="112" viewbox="0 0 110 110" width="112">
+        <circle cx="55" cy="55" fill="none" r="42" stroke="var(--sunk)" stroke-width="11">
+        </circle>
+        <circle class="gval" cx="55" cy="55" fill="none" r="42" stroke="var(--amb)" stroke-dasharray="241.2 263.9" stroke-linecap="round" stroke-width="11" transform="rotate(-90 55 55)">
+        </circle>
+        <circle class="gspin" cx="55" cy="55" fill="none" opacity=".45" r="52" stroke="var(--amb)" stroke-dasharray="4 10" stroke-width="1.5">
+        </circle>
+        <text class="gv" text-anchor="middle" x="55" y="61">
+         91.4%
+        </text>
+       </svg>
+       <span class="gl">
+        Lab reports within 24 hours
+       </span>
+      </button>
+     </div>
+     <div class="akpis">
+      <button class="akpi" data-a="ax-xl" data-row="0" data-sheet="KPIs" title="Open in Excel view">
+       <span class="l">
+        Citizens screened today
+       </span>
+       <span class="n">
+        33,613
+       </span>
+       <svg aria-hidden="true" class="spk" preserveaspectratio="none" viewbox="0 0 110 30">
+        <path class="tl" d="M0.0 27.0 L10.0 24.8 L20.0 22.6 L30.0 20.5 L40.0 18.3 L50.0 16.1 L60.0 13.9 L70.0 11.7 L80.0 9.5 L90.0 7.4 L100.0 5.2 L110.0 3.0 L110 30 L0 30 Z" fill="var(--core)" opacity=".12">
+        </path>
+        <path class="tl" d="M0.0 27.0 L10.0 24.8 L20.0 22.6 L30.0 20.5 L40.0 18.3 L50.0 16.1 L60.0 13.9 L70.0 11.7 L80.0 9.5 L90.0 7.4 L100.0 5.2 L110.0 3.0" fill="none" stroke="var(--core)" stroke-width="1.8" vector-effect="non-scaling-stroke">
+        </path>
+        <circle class="tc" cx="110.0" cy="3.0" fill="var(--core)" r="2.6">
+        </circle>
+       </svg>
+      </button>
+      <button class="akpi" data-a="ax-xl" data-row="1" data-sheet="KPIs" title="Open in Excel view">
+       <span class="l">
+        Red flags today
+       </span>
+       <span class="n">
+        1,345
+       </span>
+       <span class="d">
+        4.0% of screened
+       </span>
+       <svg aria-hidden="true" class="spk" preserveaspectratio="none" viewbox="0 0 110 30">
+        <path class="tl" d="M0.0 27.0 L10.0 24.8 L20.0 22.6 L30.0 20.5 L40.0 18.3 L50.0 16.1 L60.0 13.9 L70.0 11.7 L80.0 9.5 L90.0 7.4 L100.0 5.2 L110.0 3.0 L110 30 L0 30 Z" fill="var(--red)" opacity=".12">
+        </path>
+        <path class="tl" d="M0.0 27.0 L10.0 24.8 L20.0 22.6 L30.0 20.5 L40.0 18.3 L50.0 16.1 L60.0 13.9 L70.0 11.7 L80.0 9.5 L90.0 7.4 L100.0 5.2 L110.0 3.0" fill="none" stroke="var(--red)" stroke-width="1.8" vector-effect="non-scaling-stroke">
+        </path>
+        <circle class="tc" cx="110.0" cy="3.0" fill="var(--red)" r="2.6">
+        </circle>
+       </svg>
+      </button>
+      <button class="akpi" data-a="ax-xl" data-row="2" data-sheet="KPIs" title="Open in Excel view">
+       <span class="l">
+        Yellow flags today
+       </span>
+       <span class="n">
+        4,874
+       </span>
+       <span class="d">
+        14.5% of screened
+       </span>
+       <svg aria-hidden="true" class="spk" preserveaspectratio="none" viewbox="0 0 110 30">
+        <path class="tl" d="M0.0 27.0 L10.0 24.8 L20.0 22.6 L30.0 20.5 L40.0 18.3 L50.0 16.1 L60.0 13.9 L70.0 11.7 L80.0 9.5 L90.0 7.4 L100.0 5.2 L110.0 3.0 L110 30 L0 30 Z" fill="var(--amb)" opacity=".12">
+        </path>
+        <path class="tl" d="M0.0 27.0 L10.0 24.8 L20.0 22.6 L30.0 20.5 L40.0 18.3 L50.0 16.1 L60.0 13.9 L70.0 11.7 L80.0 9.5 L90.0 7.4 L100.0 5.2 L110.0 3.0" fill="none" stroke="var(--amb)" stroke-width="1.8" vector-effect="non-scaling-stroke">
+        </path>
+        <circle class="tc" cx="110.0" cy="3.0" fill="var(--amb)" r="2.6">
+        </circle>
+       </svg>
+      </button>
+      <button class="akpi" data-a="ax-xl" data-row="3" data-sheet="KPIs" title="Open in Excel view">
+       <span class="l">
+        Avg time to first call (red)
+       </span>
+       <span class="n">
+        27 min
+       </span>
+       <span class="d">
+        Target: 60 min
+       </span>
+       <svg aria-hidden="true" class="spk" preserveaspectratio="none" viewbox="0 0 110 30">
+        <path class="tl" d="M0.0 3.0 L10.0 6.1 L20.0 18.5 L30.0 27.0 L40.0 26.0 L50.0 20.3 L60.0 14.1 L70.0 22.2 L80.0 21.8 L90.0 11.4 L100.0 8.2 L110.0 15.3 L110 30 L0 30 Z" fill="var(--core)" opacity=".12">
+        </path>
+        <path class="tl" d="M0.0 3.0 L10.0 6.1 L20.0 18.5 L30.0 27.0 L40.0 26.0 L50.0 20.3 L60.0 14.1 L70.0 22.2 L80.0 21.8 L90.0 11.4 L100.0 8.2 L110.0 15.3" fill="none" stroke="var(--core)" stroke-width="1.8" vector-effect="non-scaling-stroke">
+        </path>
+        <circle class="tc" cx="110.0" cy="15.3" fill="var(--core)" r="2.6">
+        </circle>
+       </svg>
+      </button>
+      <button class="akpi" data-a="ax-xl" data-row="4" data-sheet="KPIs" title="Open in Excel view">
+       <span class="l">
+        Red flags called within 1 hour
+       </span>
+       <span class="n">
+        94.2%
+       </span>
+       <svg aria-hidden="true" class="spk" preserveaspectratio="none" viewbox="0 0 110 30">
+        <path class="tl" d="M0.0 18.3 L10.0 8.4 L20.0 6.7 L30.0 5.4 L40.0 24.9 L50.0 15.0 L60.0 6.6 L70.0 3.0 L80.0 27.0 L90.0 17.1 L100.0 19.0 L110.0 10.0 L110 30 L0 30 Z" fill="var(--grn)" opacity=".12">
+        </path>
+        <path class="tl" d="M0.0 18.3 L10.0 8.4 L20.0 6.7 L30.0 5.4 L40.0 24.9 L50.0 15.0 L60.0 6.6 L70.0 3.0 L80.0 27.0 L90.0 17.1 L100.0 19.0 L110.0 10.0" fill="none" stroke="var(--grn)" stroke-width="1.8" vector-effect="non-scaling-stroke">
+        </path>
+        <circle class="tc" cx="110.0" cy="10.0" fill="var(--grn)" r="2.6">
+        </circle>
+       </svg>
+      </button>
+      <button class="akpi" data-a="ax-xl" data-row="5" data-sheet="KPIs" title="Open in Excel view">
+       <span class="l">
+        Consultations today
+       </span>
+       <span class="n">
+        4,261
+       </span>
+       <svg aria-hidden="true" class="spk" preserveaspectratio="none" viewbox="0 0 110 30">
+        <path class="tl" d="M0.0 27.0 L10.0 24.8 L20.0 22.6 L30.0 20.5 L40.0 18.3 L50.0 16.1 L60.0 13.9 L70.0 11.7 L80.0 9.5 L90.0 7.4 L100.0 5.2 L110.0 3.0 L110 30 L0 30 Z" fill="var(--prov)" opacity=".12">
+        </path>
+        <path class="tl" d="M0.0 27.0 L10.0 24.8 L20.0 22.6 L30.0 20.5 L40.0 18.3 L50.0 16.1 L60.0 13.9 L70.0 11.7 L80.0 9.5 L90.0 7.4 L100.0 5.2 L110.0 3.0" fill="none" stroke="var(--prov)" stroke-width="1.8" vector-effect="non-scaling-stroke">
+        </path>
+        <circle class="tc" cx="110.0" cy="3.0" fill="var(--prov)" r="2.6">
+        </circle>
+       </svg>
+      </button>
+      <button class="akpi" data-a="ax-xl" data-row="6" data-sheet="KPIs" title="Open in Excel view">
+       <span class="l">
+        e-Prescriptions today
+       </span>
+       <span class="n">
+        3,494
+       </span>
+       <svg aria-hidden="true" class="spk" preserveaspectratio="none" viewbox="0 0 110 30">
+        <path class="tl" d="M0.0 27.0 L10.0 24.8 L20.0 22.6 L30.0 20.5 L40.0 18.3 L50.0 16.1 L60.0 13.9 L70.0 11.7 L80.0 9.5 L90.0 7.4 L100.0 5.2 L110.0 3.0 L110 30 L0 30 Z" fill="var(--prov)" opacity=".12">
+        </path>
+        <path class="tl" d="M0.0 27.0 L10.0 24.8 L20.0 22.6 L30.0 20.5 L40.0 18.3 L50.0 16.1 L60.0 13.9 L70.0 11.7 L80.0 9.5 L90.0 7.4 L100.0 5.2 L110.0 3.0" fill="none" stroke="var(--prov)" stroke-width="1.8" vector-effect="non-scaling-stroke">
+        </path>
+        <circle class="tc" cx="110.0" cy="3.0" fill="var(--prov)" r="2.6">
+        </circle>
+       </svg>
+      </button>
+      <button class="akpi" data-a="ax-xl" data-row="7" data-sheet="KPIs" title="Open in Excel view">
+       <span class="l">
+        Lab reports today
+       </span>
+       <span class="n">
+        2,557
+       </span>
+       <svg aria-hidden="true" class="spk" preserveaspectratio="none" viewbox="0 0 110 30">
+        <path class="tl" d="M0.0 27.0 L10.0 24.8 L20.0 22.6 L30.0 20.5 L40.0 18.3 L50.0 16.1 L60.0 13.9 L70.0 11.7 L80.0 9.5 L90.0 7.4 L100.0 5.2 L110.0 3.0 L110 30 L0 30 Z" fill="var(--prov)" opacity=".12">
+        </path>
+        <path class="tl" d="M0.0 27.0 L10.0 24.8 L20.0 22.6 L30.0 20.5 L40.0 18.3 L50.0 16.1 L60.0 13.9 L70.0 11.7 L80.0 9.5 L90.0 7.4 L100.0 5.2 L110.0 3.0" fill="none" stroke="var(--prov)" stroke-width="1.8" vector-effect="non-scaling-stroke">
+        </path>
+        <circle class="tc" cx="110.0" cy="3.0" fill="var(--prov)" r="2.6">
+        </circle>
+       </svg>
+      </button>
+     </div>
+     <div class="agrid g2">
+      <section class="apanel">
+       <div class="aph">
+        <h3>
+         Red and yellow flags, last 14 days
+        </h3>
+        <div class="row">
+         <div class="leg">
+          <span>
+           <i style="background:var(--red)">
+           </i>
+           Red
+          </span>
+          <span>
+           <i style="background:var(--amb)">
+           </i>
+           Yellow
+          </span>
+         </div>
+         <button class="xlbtn" data-a="ax-xl" data-row="-1" data-sheet="Daily flags" title="Open in Excel view">
+          <svg aria-hidden="true" viewbox="0 0 24 24">
+           <rect height="18" rx="2" width="18" x="3" y="3">
+           </rect>
+           <path d="M3 9h18M3 15h18M9 3v18">
+           </path>
+          </svg>
+          Excel
+         </button>
+        </div>
+       </div>
+       <svg aria-label="Red and yellow flags per day, last 14 days" class="chart" role="img" viewbox="0 0 640 230">
+        <line stroke="var(--line)" x1="52" x2="628" y1="202" y2="202">
+        </line>
+        <text text-anchor="end" x="46" y="206">
+         0
+        </text>
+        <line stroke="var(--line)" x1="52" x2="628" y1="155" y2="155">
+        </line>
+        <text text-anchor="end" x="46" y="159">
+         2,250
+        </text>
+        <line stroke="var(--line)" x1="52" x2="628" y1="108" y2="108">
+        </line>
+        <text text-anchor="end" x="46" y="112">
+         4,500
+        </text>
+        <line stroke="var(--line)" x1="52" x2="628" y1="61" y2="61">
+        </line>
+        <text text-anchor="end" x="46" y="65">
+         6,750
+        </text>
+        <line stroke="var(--line)" x1="52" x2="628" y1="14" y2="14">
+        </line>
+        <text text-anchor="end" x="46" y="18">
+         9,000
+        </text>
+        <path class="tl" d="M52.0 58.6 L96.3 53.1 L140.6 54.7 L184.9 59.3 L229.2 58.1 L273.5 52.7 L317.8 54.2 L362.2 49.7 L406.5 54.1 L450.8 48.7 L495.1 61.4 L539.4 53.6 L583.7 56.2 L628.0 49.8 L628 202 L52 202 Z" fill="var(--amb)" opacity=".1">
+        </path>
+        <path class="tl" d="M52.0 159.5 L96.3 158.4 L140.6 159.7 L184.9 161.7 L229.2 161.9 L273.5 160.9 L317.8 161.7 L362.2 161.3 L406.5 163.0 L450.8 162.2 L495.1 166.2 L539.4 164.8 L583.7 165.9 L628.0 164.8 L628 202 L52 202 Z" fill="var(--red)" opacity=".1">
+        </path>
+        <path class="tl" d="M52.0 58.6 L96.3 53.1 L140.6 54.7 L184.9 59.3 L229.2 58.1 L273.5 52.7 L317.8 54.2 L362.2 49.7 L406.5 54.1 L450.8 48.7 L495.1 61.4 L539.4 53.6 L583.7 56.2 L628.0 49.8" fill="none" stroke="var(--amb)" stroke-width="2.4">
+        </path>
+        <circle class="tc pt" cx="52.0" cy="58.6" data-a="ax-xl" data-row="0" data-sheet="Daily flags" fill="var(--amb)" r="3">
+         <title>
+          20 Oct: 6,867
+         </title>
+        </circle>
+        <circle class="tc pt" cx="96.3" cy="53.1" data-a="ax-xl" data-row="1" data-sheet="Daily flags" fill="var(--amb)" r="3">
+         <title>
+          21 Oct: 7,126
+         </title>
+        </circle>
+        <circle class="tc pt" cx="140.6" cy="54.7" data-a="ax-xl" data-row="2" data-sheet="Daily flags" fill="var(--amb)" r="3">
+         <title>
+          22 Oct: 7,050
+         </title>
+        </circle>
+        <circle class="tc pt" cx="184.9" cy="59.3" data-a="ax-xl" data-row="3" data-sheet="Daily flags" fill="var(--amb)" r="3">
+         <title>
+          23 Oct: 6,831
+         </title>
+        </circle>
+        <circle class="tc pt" cx="229.2" cy="58.1" data-a="ax-xl" data-row="4" data-sheet="Daily flags" fill="var(--amb)" r="3">
+         <title>
+          24 Oct: 6,891
+         </title>
+        </circle>
+        <circle class="tc pt" cx="273.5" cy="52.7" data-a="ax-xl" data-row="5" data-sheet="Daily flags" fill="var(--amb)" r="3">
+         <title>
+          25 Oct: 7,149
+         </title>
+        </circle>
+        <circle class="tc pt" cx="317.8" cy="54.2" data-a="ax-xl" data-row="6" data-sheet="Daily flags" fill="var(--amb)" r="3">
+         <title>
+          26 Oct: 7,074
+         </title>
+        </circle>
+        <circle class="tc pt" cx="362.2" cy="49.7" data-a="ax-xl" data-row="7" data-sheet="Daily flags" fill="var(--amb)" r="3">
+         <title>
+          27 Oct: 7,293
+         </title>
+        </circle>
+        <circle class="tc pt" cx="406.5" cy="54.1" data-a="ax-xl" data-row="8" data-sheet="Daily flags" fill="var(--amb)" r="3">
+         <title>
+          28 Oct: 7,081
+         </title>
+        </circle>
+        <circle class="tc pt" cx="450.8" cy="48.7" data-a="ax-xl" data-row="9" data-sheet="Daily flags" fill="var(--amb)" r="3">
+         <title>
+          29 Oct: 7,340
+         </title>
+        </circle>
+        <circle class="tc pt" cx="495.1" cy="61.4" data-a="ax-xl" data-row="10" data-sheet="Daily flags" fill="var(--amb)" r="3">
+         <title>
+          30 Oct: 6,732
+         </title>
+        </circle>
+        <circle class="tc pt" cx="539.4" cy="53.6" data-a="ax-xl" data-row="11" data-sheet="Daily flags" fill="var(--amb)" r="3">
+         <title>
+          31 Oct: 7,104
+         </title>
+        </circle>
+        <circle class="tc pt" cx="583.7" cy="56.2" data-a="ax-xl" data-row="12" data-sheet="Daily flags" fill="var(--amb)" r="3">
+         <title>
+          01 Nov: 6,981
+         </title>
+        </circle>
+        <circle class="tc pt" cx="628.0" cy="49.8" data-a="ax-xl" data-row="13" data-sheet="Daily flags" fill="var(--amb)" r="4.5">
+         <title>
+          02 Nov: 7,285
+         </title>
+        </circle>
+        <path class="tl" d="M52.0 159.5 L96.3 158.4 L140.6 159.7 L184.9 161.7 L229.2 161.9 L273.5 160.9 L317.8 161.7 L362.2 161.3 L406.5 163.0 L450.8 162.2 L495.1 166.2 L539.4 164.8 L583.7 165.9 L628.0 164.8" fill="none" stroke="var(--red)" stroke-width="2.4">
+        </path>
+        <circle class="tc pt" cx="52.0" cy="159.5" data-a="ax-xl" data-row="0" data-sheet="Daily flags" fill="var(--red)" r="3">
+         <title>
+          20 Oct: 2,036
+         </title>
+        </circle>
+        <circle class="tc pt" cx="96.3" cy="158.4" data-a="ax-xl" data-row="1" data-sheet="Daily flags" fill="var(--red)" r="3">
+         <title>
+          21 Oct: 2,085
+         </title>
+        </circle>
+        <circle class="tc pt" cx="140.6" cy="159.7" data-a="ax-xl" data-row="2" data-sheet="Daily flags" fill="var(--red)" r="3">
+         <title>
+          22 Oct: 2,026
+         </title>
+        </circle>
+        <circle class="tc pt" cx="184.9" cy="161.7" data-a="ax-xl" data-row="3" data-sheet="Daily flags" fill="var(--red)" r="3">
+         <title>
+          23 Oct: 1,931
+         </title>
+        </circle>
+        <circle class="tc pt" cx="229.2" cy="161.9" data-a="ax-xl" data-row="4" data-sheet="Daily flags" fill="var(--red)" r="3">
+         <title>
+          24 Oct: 1,922
+         </title>
+        </circle>
+        <circle class="tc pt" cx="273.5" cy="160.9" data-a="ax-xl" data-row="5" data-sheet="Daily flags" fill="var(--red)" r="3">
+         <title>
+          25 Oct: 1,967
+         </title>
+        </circle>
+        <circle class="tc pt" cx="317.8" cy="161.7" data-a="ax-xl" data-row="6" data-sheet="Daily flags" fill="var(--red)" r="3">
+         <title>
+          26 Oct: 1,931
+         </title>
+        </circle>
+        <circle class="tc pt" cx="362.2" cy="161.3" data-a="ax-xl" data-row="7" data-sheet="Daily flags" fill="var(--red)" r="3">
+         <title>
+          27 Oct: 1,949
+         </title>
+        </circle>
+        <circle class="tc pt" cx="406.5" cy="163.0" data-a="ax-xl" data-row="8" data-sheet="Daily flags" fill="var(--red)" r="3">
+         <title>
+          28 Oct: 1,866
+         </title>
+        </circle>
+        <circle class="tc pt" cx="450.8" cy="162.2" data-a="ax-xl" data-row="9" data-sheet="Daily flags" fill="var(--red)" r="3">
+         <title>
+          29 Oct: 1,906
+         </title>
+        </circle>
+        <circle class="tc pt" cx="495.1" cy="166.2" data-a="ax-xl" data-row="10" data-sheet="Daily flags" fill="var(--red)" r="3">
+         <title>
+          30 Oct: 1,713
+         </title>
+        </circle>
+        <circle class="tc pt" cx="539.4" cy="164.8" data-a="ax-xl" data-row="11" data-sheet="Daily flags" fill="var(--red)" r="3">
+         <title>
+          31 Oct: 1,779
+         </title>
+        </circle>
+        <circle class="tc pt" cx="583.7" cy="165.9" data-a="ax-xl" data-row="12" data-sheet="Daily flags" fill="var(--red)" r="3">
+         <title>
+          01 Nov: 1,729
+         </title>
+        </circle>
+        <circle class="tc pt" cx="628.0" cy="164.8" data-a="ax-xl" data-row="13" data-sheet="Daily flags" fill="var(--red)" r="4.5">
+         <title>
+          02 Nov: 1,781
+         </title>
+        </circle>
+        <text text-anchor="middle" x="96.3076923076923" y="222">
+         21 Oct
+        </text>
+        <text text-anchor="middle" x="184.92307692307693" y="222">
+         23 Oct
+        </text>
+        <text text-anchor="middle" x="273.53846153846155" y="222">
+         25 Oct
+        </text>
+        <text text-anchor="middle" x="362.15384615384613" y="222">
+         27 Oct
+        </text>
+        <text text-anchor="middle" x="450.7692307692308" y="222">
+         29 Oct
+        </text>
+        <text text-anchor="middle" x="539.3846153846154" y="222">
+         31 Oct
+        </text>
+        <text text-anchor="middle" x="628" y="222">
+         02 Nov
+        </text>
+       </svg>
+      </section>
+      <section class="apanel">
+       <div class="aph">
+        <h3>
+         Red flag live feed
+        </h3>
+        <div class="row">
+         <span class="pill bad">
+          2 waiting
+         </span>
+         <button class="xlbtn" data-a="ax-xl" data-row="-1" data-sheet="Red flag feed" title="Open in Excel view">
+          <svg aria-hidden="true" viewbox="0 0 24 24">
+           <rect height="18" rx="2" width="18" x="3" y="3">
+           </rect>
+           <path d="M3 9h18M3 15h18M9 3v18">
+           </path>
+          </svg>
+          Excel
+         </button>
+        </div>
+       </div>
+       <div class="afeed">
+        <button class="new" data-a="ax-xl" data-k="CS-20818" data-row="0" data-sheet="Red flag feed">
+         <span class="flag red">
+          Red
+         </span>
+         <span style="min-width:0;flex:1">
+          <b class="mono">
+           CS-20818
+          </b>
+          &middot; Male, 52 &middot; Chh. Sambhajinagar
+          <span class="small muted" style="display:block">
+           Very high sugar (338) &middot; Queued for BPO call
+          </span>
+         </span>
+         <time class="mono">
+          15:51
+         </time>
+        </button>
+        <button class="" data-a="ax-xl" data-k="CS-20817" data-row="1" data-sheet="Red flag feed">
+         <span class="flag red">
+          Red
+         </span>
+         <span style="min-width:0;flex:1">
+          <b class="mono">
+           CS-20817
+          </b>
+          &middot; Female, 41 &middot; Nashik
+          <span class="small muted" style="display:block">
+           Low sugar (61) &middot; Queued for BPO call
+          </span>
+         </span>
+         <time class="mono">
+          15:48
+         </time>
+        </button>
+        <button class="" data-a="ax-xl" data-k="CS-20816" data-row="2" data-sheet="Red flag feed">
+         <span class="flag red">
+          Red
+         </span>
+         <span style="min-width:0;flex:1">
+          <b class="mono">
+           CS-20816
+          </b>
+          &middot; Male, 47 &middot; Nashik
+          <span class="small muted" style="display:block">
+           Very high sugar (338) &middot; BPO calling
+          </span>
+         </span>
+         <time class="mono">
+          15:45
+         </time>
+        </button>
+        <button class="" data-a="ax-xl" data-k="CS-20815" data-row="3" data-sheet="Red flag feed">
+         <span class="flag red">
+          Red
+         </span>
+         <span style="min-width:0;flex:1">
+          <b class="mono">
+           CS-20815
+          </b>
+          &middot; Male, 58 &middot; Kolhapur
+          <span class="small muted" style="display:block">
+           BP crisis (181/122) &middot; BPO calling
+          </span>
+         </span>
+         <time class="mono">
+          15:42
+         </time>
+        </button>
+        <button class="" data-a="ax-xl" data-k="CS-20814" data-row="4" data-sheet="Red flag feed">
+         <span class="flag red">
+          Red
+         </span>
+         <span style="min-width:0;flex:1">
+          <b class="mono">
+           CS-20814
+          </b>
+          &middot; Female, 34 &middot; Nagpur
+          <span class="small muted" style="display:block">
+           Pulse 138 &middot; KPO review
+          </span>
+         </span>
+         <time class="mono">
+          15:39
+         </time>
+        </button>
+        <button class="" data-a="ax-xl" data-k="CS-20813" data-row="5" data-sheet="Red flag feed">
+         <span class="flag red">
+          Red
+         </span>
+         <span style="min-width:0;flex:1">
+          <b class="mono">
+           CS-20813
+          </b>
+          &middot; Female, 58 &middot; Solapur
+          <span class="small muted" style="display:block">
+           Low sugar (61) &middot; KPO review
+          </span>
+         </span>
+         <time class="mono">
+          15:36
+         </time>
+        </button>
+        <button class="" data-a="ax-xl" data-k="CS-20812" data-row="6" data-sheet="Red flag feed">
+         <span class="flag red">
+          Red
+         </span>
+         <span style="min-width:0;flex:1">
+          <b class="mono">
+           CS-20812
+          </b>
+          &middot; Female, 66 &middot; Kolhapur
+          <span class="small muted" style="display:block">
+           Very high sugar (338) &middot; Doctor assigned
+          </span>
+         </span>
+         <time class="mono">
+          15:33
+         </time>
+        </button>
+        <button class="" data-a="ax-xl" data-k="CS-20811" data-row="7" data-sheet="Red flag feed">
+         <span class="flag red">
+          Red
+         </span>
+         <span style="min-width:0;flex:1">
+          <b class="mono">
+           CS-20811
+          </b>
+          &middot; Male, 61 &middot; Jalgaon
+          <span class="small muted" style="display:block">
+           BP crisis (192/121) &middot; Doctor assigned
+          </span>
+         </span>
+         <time class="mono">
+          15:30
+         </time>
+        </button>
+       </div>
+      </section>
+     </div>
+     <div class="agrid g2">
+      <section class="apanel">
+       <div class="aph">
+        <h3>
+         Disease-wise burden
+        </h3>
+        <div class="row">
+         <span class="small muted">
+          today
+         </span>
+         <button class="xlbtn" data-a="ax-xl" data-row="-1" data-sheet="Diseases" title="Open in Excel view">
+          <svg aria-hidden="true" viewbox="0 0 24 24">
+           <rect height="18" rx="2" width="18" x="3" y="3">
+           </rect>
+           <path d="M3 9h18M3 15h18M9 3v18">
+           </path>
+          </svg>
+          Excel
+         </button>
+        </div>
+       </div>
+       <div class="hbars">
+        <button class="hb" data-a="ax-xl" data-k="Hypertension" data-row="0" data-sheet="Diseases">
+         <span class="hl">
+          Hypertension
+         </span>
+         <span class="ht">
+          <i style="width:100.0%;background:#C42B2B">
+          </i>
+         </span>
+         <span class="hv">
+          6,286
+         </span>
+         <span class="hchg dn">
+          ▼ 8%
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-k="Anaemia" data-row="1" data-sheet="Diseases">
+         <span class="hl">
+          Anaemia
+         </span>
+         <span class="ht">
+          <i style="width:63.0%;background:#B4447A">
+          </i>
+         </span>
+         <span class="hv">
+          3,963
+         </span>
+         <span class="hchg dn">
+          ▼ 3%
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-k="Diabetes" data-row="2" data-sheet="Diseases">
+         <span class="hl">
+          Diabetes
+         </span>
+         <span class="ht">
+          <i style="width:51.1%;background:#A86100">
+          </i>
+         </span>
+         <span class="hv">
+          3,212
+         </span>
+         <span class="hchg up">
+          ▲ 4%
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-k="Respiratory / COPD" data-row="3" data-sheet="Diseases">
+         <span class="hl">
+          Respiratory / COPD
+         </span>
+         <span class="ht">
+          <i style="width:22.6%;background:#1C4C9E">
+          </i>
+         </span>
+         <span class="hv">
+          1,420
+         </span>
+         <span class="hchg up">
+          ▲ 4%
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-k="Mental health" data-row="4" data-sheet="Diseases">
+         <span class="hl">
+          Mental health
+         </span>
+         <span class="ht">
+          <i style="width:17.0%;background:#6A4BB0">
+          </i>
+         </span>
+         <span class="hv">
+          1,069
+         </span>
+         <span class="hchg up">
+          ▲ 4%
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-k="Child malnutrition" data-row="5" data-sheet="Diseases">
+         <span class="hl">
+          Child malnutrition
+         </span>
+         <span class="ht">
+          <i style="width:11.5%;background:#0D6B60">
+          </i>
+         </span>
+         <span class="hv">
+          724
+         </span>
+         <span class="hchg up">
+          ▲ 5%
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-k="Cardiac disease" data-row="6" data-sheet="Diseases">
+         <span class="hl">
+          Cardiac disease
+         </span>
+         <span class="ht">
+          <i style="width:10.3%;background:#7A2F2F">
+          </i>
+         </span>
+         <span class="hv">
+          649
+         </span>
+         <span class="hchg up">
+          ▲ 5%
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-k="Vector-borne (dengue, malaria)" data-row="7" data-sheet="Diseases">
+         <span class="hl">
+          Vector-borne (dengue, malaria)
+         </span>
+         <span class="ht">
+          <i style="width:8.6%;background:#2E7D32">
+          </i>
+         </span>
+         <span class="hv">
+          543
+         </span>
+         <span class="hchg up">
+          ▲ 1%
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-k="Kidney disease (CKD)" data-row="8" data-sheet="Diseases">
+         <span class="hl">
+          Kidney disease (CKD)
+         </span>
+         <span class="ht">
+          <i style="width:6.1%;background:#8A5A2B">
+          </i>
+         </span>
+         <span class="hv">
+          380
+         </span>
+         <span class="hchg up">
+          ▲ 10%
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-k="TB (presumptive)" data-row="9" data-sheet="Diseases">
+         <span class="hl">
+          TB (presumptive)
+         </span>
+         <span class="ht">
+          <i style="width:5.3%;background:#5A6B76">
+          </i>
+         </span>
+         <span class="hv">
+          331
+         </span>
+         <span class="hchg up">
+          ▲ 7%
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-k="High-risk pregnancy" data-row="10" data-sheet="Diseases">
+         <span class="hl">
+          High-risk pregnancy
+         </span>
+         <span class="ht">
+          <i style="width:4.0%;background:#D9661C">
+          </i>
+         </span>
+         <span class="hv">
+          252
+         </span>
+         <span class="hchg up">
+          ▲ 7%
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-k="Cancer screen positive" data-row="11" data-sheet="Diseases">
+         <span class="hl">
+          Cancer screen positive
+         </span>
+         <span class="ht">
+          <i style="width:1.7%;background:#13212B">
+          </i>
+         </span>
+         <span class="hv">
+          109
+         </span>
+         <span class="hchg up">
+          ▲ 8%
+         </span>
+        </button>
+       </div>
+      </section>
+      <section class="apanel">
+       <div class="aph">
+        <h3>
+         Age-wise flags
+        </h3>
+        <div class="row">
+         <div class="leg">
+          <span>
+           <i style="background:var(--red)">
+           </i>
+           Red
+          </span>
+          <span>
+           <i style="background:var(--amb)">
+           </i>
+           Yellow
+          </span>
+          <span>
+           <i style="background:var(--grn)">
+           </i>
+           Green
+          </span>
+         </div>
+         <button class="xlbtn" data-a="ax-xl" data-row="-1" data-sheet="Age groups" title="Open in Excel view">
+          <svg aria-hidden="true" viewbox="0 0 24 24">
+           <rect height="18" rx="2" width="18" x="3" y="3">
+           </rect>
+           <path d="M3 9h18M3 15h18M9 3v18">
+           </path>
+          </svg>
+          Excel
+         </button>
+        </div>
+       </div>
+       <div class="hbars">
+        <button class="hb" data-a="ax-xl" data-row="0" data-sheet="Age groups">
+         <span class="hl">
+          0&ndash;9 yrs
+         </span>
+         <span class="ht stk">
+          <span class="stkin" style="width:68.8%">
+           <i style="width:1.2%;background:var(--red)">
+           </i>
+           <i style="width:6.0%;background:var(--amb)">
+           </i>
+           <i style="flex:1;background:var(--grn)">
+           </i>
+          </span>
+         </span>
+         <span class="hv">
+          3,697
+         </span>
+         <span class="hchg">
+          1.2% red
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-row="1" data-sheet="Age groups">
+         <span class="hl">
+          10&ndash;19 yrs
+         </span>
+         <span class="ht stk">
+          <span class="stkin" style="width:75.0%">
+           <i style="width:0.8%;background:var(--red)">
+           </i>
+           <i style="width:5.0%;background:var(--amb)">
+           </i>
+           <i style="flex:1;background:var(--grn)">
+           </i>
+          </span>
+         </span>
+         <span class="hv">
+          4,034
+         </span>
+         <span class="hchg">
+          0.8% red
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-row="2" data-sheet="Age groups">
+         <span class="hl">
+          20&ndash;29 yrs
+         </span>
+         <span class="ht stk">
+          <span class="stkin" style="width:93.8%">
+           <i style="width:1.2%;background:var(--red)">
+           </i>
+           <i style="width:7.0%;background:var(--amb)">
+           </i>
+           <i style="flex:1;background:var(--grn)">
+           </i>
+          </span>
+         </span>
+         <span class="hv">
+          5,042
+         </span>
+         <span class="hchg">
+          1.2% red
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-row="3" data-sheet="Age groups">
+         <span class="hl">
+          30&ndash;39 yrs
+         </span>
+         <span class="ht stk">
+          <span class="stkin" style="width:100.0%">
+           <i style="width:2.2%;background:var(--red)">
+           </i>
+           <i style="width:11.0%;background:var(--amb)">
+           </i>
+           <i style="flex:1;background:var(--grn)">
+           </i>
+          </span>
+         </span>
+         <span class="hv">
+          5,378
+         </span>
+         <span class="hchg">
+          2.2% red
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-row="4" data-sheet="Age groups">
+         <span class="hl">
+          40&ndash;49 yrs
+         </span>
+         <span class="ht stk">
+          <span class="stkin" style="width:93.8%">
+           <i style="width:3.8%;background:var(--red)">
+           </i>
+           <i style="width:17.0%;background:var(--amb)">
+           </i>
+           <i style="flex:1;background:var(--grn)">
+           </i>
+          </span>
+         </span>
+         <span class="hv">
+          5,042
+         </span>
+         <span class="hchg">
+          3.8% red
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-row="5" data-sheet="Age groups">
+         <span class="hl">
+          50&ndash;59 yrs
+         </span>
+         <span class="ht stk">
+          <span class="stkin" style="width:81.3%">
+           <i style="width:6.0%;background:var(--red)">
+           </i>
+           <i style="width:22.0%;background:var(--amb)">
+           </i>
+           <i style="flex:1;background:var(--grn)">
+           </i>
+          </span>
+         </span>
+         <span class="hv">
+          4,370
+         </span>
+         <span class="hchg">
+          6.0% red
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-row="6" data-sheet="Age groups">
+         <span class="hl">
+          60&ndash;69 yrs
+         </span>
+         <span class="ht stk">
+          <span class="stkin" style="width:68.8%">
+           <i style="width:8.5%;background:var(--red)">
+           </i>
+           <i style="width:26.0%;background:var(--amb)">
+           </i>
+           <i style="flex:1;background:var(--grn)">
+           </i>
+          </span>
+         </span>
+         <span class="hv">
+          3,697
+         </span>
+         <span class="hchg">
+          8.5% red
+         </span>
+        </button>
+        <button class="hb" data-a="ax-xl" data-row="7" data-sheet="Age groups">
+         <span class="hl">
+          70+ yrs
+         </span>
+         <span class="ht stk">
+          <span class="stkin" style="width:43.8%">
+           <i style="width:11.0%;background:var(--red)">
+           </i>
+           <i style="width:28.0%;background:var(--amb)">
+           </i>
+           <i style="flex:1;background:var(--grn)">
+           </i>
+          </span>
+         </span>
+         <span class="hv">
+          2,353
+         </span>
+         <span class="hchg">
+          11.0% red
+         </span>
+        </button>
+       </div>
+       <div class="aph" style="margin-top:14px">
+        <h3>
+         Gender split
+        </h3>
+        <button class="xlbtn" data-a="ax-xl" data-row="-1" data-sheet="Gender" title="Open in Excel view">
+         <svg aria-hidden="true" viewbox="0 0 24 24">
+          <rect height="18" rx="2" width="18" x="3" y="3">
+          </rect>
+          <path d="M3 9h18M3 15h18M9 3v18">
+          </path>
+         </svg>
+         Excel
+        </button>
+       </div>
+       <div class="donutw">
+        <svg aria-label="Split by gender" height="140" role="img" viewbox="0 0 140 140" width="140">
+         <circle cx="70" cy="70" fill="none" r="46" stroke="var(--sunk)" stroke-width="20">
+         </circle>
+         <circle class="gval seg" cx="70" cy="70" data-a="ax-xl" data-row="0" data-sheet="Gender" fill="none" r="46" stroke="#B4447A" stroke-dasharray="151.7 289.0" stroke-dashoffset="0.0" stroke-width="20" transform="rotate(-90 70 70)">
+          <title>
+           Female: 17,815
+          </title>
+         </circle>
+         <circle class="gval seg" cx="70" cy="70" data-a="ax-xl" data-row="1" data-sheet="Gender" fill="none" r="46" stroke="#1C4C9E" stroke-dasharray="132.9 289.0" stroke-dashoffset="-153.2" stroke-width="20" transform="rotate(-90 70 70)">
+          <title>
+           Male: 15,630
+          </title>
+         </circle>
+         <circle class="gval seg" cx="70" cy="70" data-a="ax-xl" data-row="2" data-sheet="Gender" fill="none" r="46" stroke="#5A6B76" stroke-dasharray="0.0 289.0" stroke-dashoffset="-287.6" stroke-width="20" transform="rotate(-90 70 70)">
+          <title>
+           Other: 168
+          </title>
+         </circle>
+         <text style="font-size:15px;font-weight:700;fill:var(--fg)" text-anchor="middle" x="70" y="68">
+          33,613
+         </text>
+         <text text-anchor="middle" x="70" y="84">
+          screened
+         </text>
+        </svg>
+        <div class="legend2">
+         <button data-a="ax-xl" data-row="0" data-sheet="Gender">
+          <i style="background:#B4447A">
+          </i>
+          <span>
+           Female
+          </span>
+          <b>
+           53%
+          </b>
+         </button>
+         <button data-a="ax-xl" data-row="1" data-sheet="Gender">
+          <i style="background:#1C4C9E">
+          </i>
+          <span>
+           Male
+          </span>
+          <b>
+           47%
+          </b>
+         </button>
+         <button data-a="ax-xl" data-row="2" data-sheet="Gender">
+          <i style="background:#5A6B76">
+          </i>
+          <span>
+           Other
+          </span>
+          <b>
+           1%
+          </b>
+         </button>
+        </div>
+       </div>
+      </section>
+     </div>
+     <section class="apanel">
+      <div class="aph">
+       <h3>
+        District-wise status: Maharashtra
+       </h3>
+       <div class="row">
+        <span class="small muted">
+         Sorted by red-flag rate &middot; 14 districts
+        </span>
+        <button class="xlbtn" data-a="ax-xl" data-row="-1" data-sheet="Districts" title="Open in Excel view">
+         <svg aria-hidden="true" viewbox="0 0 24 24">
+          <rect height="18" rx="2" width="18" x="3" y="3">
+          </rect>
+          <path d="M3 9h18M3 15h18M9 3v18">
+          </path>
+         </svg>
+         Excel
+        </button>
+       </div>
+      </div>
+      <div class="tbl-wrap" style="border:0">
+       <table class="atbl">
+        <thead>
+         <tr>
+          <th>
+           District
+          </th>
+          <th class="num">
+           Screened
+          </th>
+          <th class="num">
+           Red
+          </th>
+          <th class="num">
+           Yellow
+          </th>
+          <th>
+           Red-flag rate
+          </th>
+          <th class="num">
+           First call
+          </th>
+          <th>
+           Status
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr data-a="ax-xl" data-k="Chh. Sambhajinagar" data-row="0" data-sheet="Districts">
+          <td>
+           <b>
+            Chh. Sambhajinagar
+           </b>
+          </td>
+          <td class="num">
+           2,102
+          </td>
+          <td class="num" style="color:var(--red);font-weight:700">
+           124
+          </td>
+          <td class="num" style="color:var(--amb);font-weight:700">
+           336
+          </td>
+          <td>
+           <div class="rate">
+            <span class="rbar">
+             <i style="width:84%">
+             </i>
+            </span>
+            <span class="mono">
+             5.9%
+            </span>
+           </div>
+          </td>
+          <td class="num">
+           52 min
+          </td>
+          <td>
+           <span class="pill bad">
+            High alert
+           </span>
+          </td>
+         </tr>
+         <tr data-a="ax-xl" data-k="Thane" data-row="1" data-sheet="Districts">
+          <td>
+           <b>
+            Thane
+           </b>
+          </td>
+          <td class="num">
+           2,701
+          </td>
+          <td class="num" style="color:var(--red);font-weight:700">
+           159
+          </td>
+          <td class="num" style="color:var(--amb);font-weight:700">
+           498
+          </td>
+          <td>
+           <div class="rate">
+            <span class="rbar">
+             <i style="width:84%">
+             </i>
+            </span>
+            <span class="mono">
+             5.9%
+            </span>
+           </div>
+          </td>
+          <td class="num">
+           40 min
+          </td>
+          <td>
+           <span class="pill bad">
+            High alert
+           </span>
+          </td>
+         </tr>
+         <tr data-a="ax-xl" data-k="Satara" data-row="2" data-sheet="Districts">
+          <td>
+           <b>
+            Satara
+           </b>
+          </td>
+          <td class="num">
+           1,216
+          </td>
+          <td class="num" style="color:var(--red);font-weight:700">
+           61
+          </td>
+          <td class="num" style="color:var(--amb);font-weight:700">
+           164
+          </td>
+          <td>
+           <div class="rate">
+            <span class="rbar">
+             <i style="width:72%">
+             </i>
+            </span>
+            <span class="mono">
+             5.0%
+            </span>
+           </div>
+          </td>
+          <td class="num">
+           15 min
+          </td>
+          <td>
+           <span class="pill bad">
+            High alert
+           </span>
+          </td>
+         </tr>
+         <tr data-a="ax-xl" data-k="Ratnagiri" data-row="3" data-sheet="Districts">
+          <td>
+           <b>
+            Ratnagiri
+           </b>
+          </td>
+          <td class="num">
+           1,704
+          </td>
+          <td class="num" style="color:var(--red);font-weight:700">
+           81
+          </td>
+          <td class="num" style="color:var(--amb);font-weight:700">
+           201
+          </td>
+          <td>
+           <div class="rate">
+            <span class="rbar">
+             <i style="width:68%">
+             </i>
+            </span>
+            <span class="mono">
+             4.7%
+            </span>
+           </div>
+          </td>
+          <td class="num">
+           26 min
+          </td>
+          <td>
+           <span class="pill warn">
+            Watch
+           </span>
+          </td>
+         </tr>
+         <tr data-a="ax-xl" data-k="Solapur" data-row="4" data-sheet="Districts">
+          <td>
+           <b>
+            Solapur
+           </b>
+          </td>
+          <td class="num">
+           1,922
+          </td>
+          <td class="num" style="color:var(--red);font-weight:700">
+           91
+          </td>
+          <td class="num" style="color:var(--amb);font-weight:700">
+           239
+          </td>
+          <td>
+           <div class="rate">
+            <span class="rbar">
+             <i style="width:67%">
+             </i>
+            </span>
+            <span class="mono">
+             4.7%
+            </span>
+           </div>
+          </td>
+          <td class="num">
+           33 min
+          </td>
+          <td>
+           <span class="pill warn">
+            Watch
+           </span>
+          </td>
+         </tr>
+         <tr data-a="ax-xl" data-k="Nanded" data-row="5" data-sheet="Districts">
+          <td>
+           <b>
+            Nanded
+           </b>
+          </td>
+          <td class="num">
+           1,875
+          </td>
+          <td class="num" style="color:var(--red);font-weight:700">
+           83
+          </td>
+          <td class="num" style="color:var(--amb);font-weight:700">
+           322
+          </td>
+          <td>
+           <div class="rate">
+            <span class="rbar">
+             <i style="width:63%">
+             </i>
+            </span>
+            <span class="mono">
+             4.4%
+            </span>
+           </div>
+          </td>
+          <td class="num">
+           52 min
+          </td>
+          <td>
+           <span class="pill warn">
+            Watch
+           </span>
+          </td>
+         </tr>
+         <tr data-a="ax-xl" data-k="Nagpur" data-row="6" data-sheet="Districts">
+          <td>
+           <b>
+            Nagpur
+           </b>
+          </td>
+          <td class="num">
+           2,873
+          </td>
+          <td class="num" style="color:var(--red);font-weight:700">
+           123
+          </td>
+          <td class="num" style="color:var(--amb);font-weight:700">
+           543
+          </td>
+          <td>
+           <div class="rate">
+            <span class="rbar">
+             <i style="width:61%">
+             </i>
+            </span>
+            <span class="mono">
+             4.3%
+            </span>
+           </div>
+          </td>
+          <td class="num">
+           50 min
+          </td>
+          <td>
+           <span class="pill warn">
+            Watch
+           </span>
+          </td>
+         </tr>
+         <tr data-a="ax-xl" data-k="Mumbai" data-row="7" data-sheet="Districts">
+          <td>
+           <b>
+            Mumbai
+           </b>
+          </td>
+          <td class="num">
+           2,981
+          </td>
+          <td class="num" style="color:var(--red);font-weight:700">
+           126
+          </td>
+          <td class="num" style="color:var(--amb);font-weight:700">
+           368
+          </td>
+          <td>
+           <div class="rate">
+            <span class="rbar">
+             <i style="width:61%">
+             </i>
+            </span>
+            <span class="mono">
+             4.2%
+            </span>
+           </div>
+          </td>
+          <td class="num">
+           29 min
+          </td>
+          <td>
+           <span class="pill warn">
+            Watch
+           </span>
+          </td>
+         </tr>
+         <tr data-a="ax-xl" data-k="Jalgaon" data-row="8" data-sheet="Districts">
+          <td>
+           <b>
+            Jalgaon
+           </b>
+          </td>
+          <td class="num">
+           2,414
+          </td>
+          <td class="num" style="color:var(--red);font-weight:700">
+           94
+          </td>
+          <td class="num" style="color:var(--amb);font-weight:700">
+           268
+          </td>
+          <td>
+           <div class="rate">
+            <span class="rbar">
+             <i style="width:56%">
+             </i>
+            </span>
+            <span class="mono">
+             3.9%
+            </span>
+           </div>
+          </td>
+          <td class="num">
+           18 min
+          </td>
+          <td>
+           <span class="pill warn">
+            Watch
+           </span>
+          </td>
+         </tr>
+         <tr data-a="ax-xl" data-k="Amravati" data-row="9" data-sheet="Districts">
+          <td>
+           <b>
+            Amravati
+           </b>
+          </td>
+          <td class="num">
+           2,535
+          </td>
+          <td class="num" style="color:var(--red);font-weight:700">
+           92
+          </td>
+          <td class="num" style="color:var(--amb);font-weight:700">
+           371
+          </td>
+          <td>
+           <div class="rate">
+            <span class="rbar">
+             <i style="width:52%">
+             </i>
+            </span>
+            <span class="mono">
+             3.6%
+            </span>
+           </div>
+          </td>
+          <td class="num">
+           49 min
+          </td>
+          <td>
+           <span class="pill ok">
+            Normal
+           </span>
+          </td>
+         </tr>
+         <tr data-a="ax-xl" data-k="Nashik" data-row="10" data-sheet="Districts">
+          <td>
+           <b>
+            Nashik
+           </b>
+          </td>
+          <td class="num">
+           2,652
+          </td>
+          <td class="num" style="color:var(--red);font-weight:700">
+           91
+          </td>
+          <td class="num" style="color:var(--amb);font-weight:700">
+           451
+          </td>
+          <td>
+           <div class="rate">
+            <span class="rbar">
+             <i style="width:49%">
+             </i>
+            </span>
+            <span class="mono">
+             3.4%
+            </span>
+           </div>
+          </td>
+          <td class="num">
+           44 min
+          </td>
+          <td>
+           <span class="pill ok">
+            Normal
+           </span>
+          </td>
+         </tr>
+         <tr data-a="ax-xl" data-k="Pune" data-row="11" data-sheet="Districts">
+          <td>
+           <b>
+            Pune
+           </b>
+          </td>
+          <td class="num">
+           2,876
+          </td>
+          <td class="num" style="color:var(--red);font-weight:700">
+           95
+          </td>
+          <td class="num" style="color:var(--amb);font-weight:700">
+           330
+          </td>
+          <td>
+           <div class="rate">
+            <span class="rbar">
+             <i style="width:47%">
+             </i>
+            </span>
+            <span class="mono">
+             3.3%
+            </span>
+           </div>
+          </td>
+          <td class="num">
+           39 min
+          </td>
+          <td>
+           <span class="pill ok">
+            Normal
+           </span>
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <button class="btn sm" data-a="ax-all" style="align-self:flex-start">
+       Show all 14
+      </button>
+     </section>
+     <div class="agrid g2">
+      <section class="apanel">
+       <div class="aph">
+        <h3>
+         Disease hotspots
+        </h3>
+        <div class="row">
+         <span class="small muted">
+          vs. Maharashtra average
+         </span>
+         <button class="xlbtn" data-a="ax-xl" data-row="-1" data-sheet="Hotspots" title="Open in Excel view">
+          <svg aria-hidden="true" viewbox="0 0 24 24">
+           <rect height="18" rx="2" width="18" x="3" y="3">
+           </rect>
+           <path d="M3 9h18M3 15h18M9 3v18">
+           </path>
+          </svg>
+          Excel
+         </button>
+        </div>
+       </div>
+       <div class="tbl-wrap" style="border:0">
+        <table class="heat">
+         <thead>
+          <tr>
+           <th>
+           </th>
+           <th>
+            Hypertension
+           </th>
+           <th>
+            Anaemia
+           </th>
+           <th>
+            Diabetes
+           </th>
+           <th>
+            Respiratory / COPD
+           </th>
+           <th>
+            Mental health
+           </th>
+           <th>
+            Child malnutrition
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr data-a="ax-xl" data-k="Latur" data-row="0" data-sheet="Hotspots">
+           <th>
+            Latur
+           </th>
+           <td style="background:color-mix(in srgb,var(--red) 28%,var(--surface));color:var(--fg)">
+            -2%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 70%,var(--surface));color:#fff">
+            +41%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 14%,var(--surface));color:var(--fg)">
+            -16%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 13%,var(--surface));color:var(--fg)">
+            -17%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 65%,var(--surface));color:#fff">
+            +35%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 37%,var(--surface));color:var(--fg)">
+            +7%
+           </td>
+          </tr>
+          <tr data-a="ax-xl" data-k="Mumbai" data-row="1" data-sheet="Hotspots">
+           <th>
+            Mumbai
+           </th>
+           <td style="background:color-mix(in srgb,var(--red) 44%,var(--surface));color:#fff">
+            +14%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 16%,var(--surface));color:var(--fg)">
+            -14%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 23%,var(--surface));color:var(--fg)">
+            -7%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 27%,var(--surface));color:var(--fg)">
+            -3%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 33%,var(--surface));color:var(--fg)">
+            +3%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 61%,var(--surface));color:#fff">
+            +31%
+           </td>
+          </tr>
+          <tr data-a="ax-xl" data-k="Pune" data-row="2" data-sheet="Hotspots">
+           <th>
+            Pune
+           </th>
+           <td style="background:color-mix(in srgb,var(--red) 39%,var(--surface));color:#fff">
+            +9%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 6%,var(--surface));color:var(--fg)">
+            -24%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 61%,var(--surface));color:#fff">
+            +31%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 61%,var(--surface));color:#fff">
+            +31%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 12%,var(--surface));color:var(--fg)">
+            -18%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 9%,var(--surface));color:var(--fg)">
+            -21%
+           </td>
+          </tr>
+          <tr data-a="ax-xl" data-k="Nagpur" data-row="3" data-sheet="Hotspots">
+           <th>
+            Nagpur
+           </th>
+           <td style="background:color-mix(in srgb,var(--red) 0%,var(--surface));color:var(--fg)">
+            -31%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 0%,var(--surface));color:var(--fg)">
+            -33%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 0%,var(--surface));color:var(--fg)">
+            -34%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 70%,var(--surface));color:#fff">
+            +44%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 51%,var(--surface));color:#fff">
+            +21%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 16%,var(--surface));color:var(--fg)">
+            -14%
+           </td>
+          </tr>
+          <tr data-a="ax-xl" data-k="Thane" data-row="4" data-sheet="Hotspots">
+           <th>
+            Thane
+           </th>
+           <td style="background:color-mix(in srgb,var(--red) 49%,var(--surface));color:#fff">
+            +19%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 12%,var(--surface));color:var(--fg)">
+            -18%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 59%,var(--surface));color:#fff">
+            +29%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 10%,var(--surface));color:var(--fg)">
+            -20%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 18%,var(--surface));color:var(--fg)">
+            -12%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 30%,var(--surface));color:var(--fg)">
+            0%
+           </td>
+          </tr>
+          <tr data-a="ax-xl" data-k="Kolhapur" data-row="5" data-sheet="Hotspots">
+           <th>
+            Kolhapur
+           </th>
+           <td style="background:color-mix(in srgb,var(--red) 40%,var(--surface));color:#fff">
+            +10%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 13%,var(--surface));color:var(--fg)">
+            -17%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 44%,var(--surface));color:#fff">
+            +14%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 70%,var(--surface));color:#fff">
+            +44%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 44%,var(--surface));color:#fff">
+            +14%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 13%,var(--surface));color:var(--fg)">
+            -17%
+           </td>
+          </tr>
+          <tr data-a="ax-xl" data-k="Nashik" data-row="6" data-sheet="Hotspots">
+           <th>
+            Nashik
+           </th>
+           <td style="background:color-mix(in srgb,var(--red) 68%,var(--surface));color:#fff">
+            +38%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 56%,var(--surface));color:#fff">
+            +26%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 69%,var(--surface));color:#fff">
+            +39%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 2%,var(--surface));color:var(--fg)">
+            -28%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 44%,var(--surface));color:#fff">
+            +14%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 67%,var(--surface));color:#fff">
+            +37%
+           </td>
+          </tr>
+          <tr data-a="ax-xl" data-k="Amravati" data-row="7" data-sheet="Hotspots">
+           <th>
+            Amravati
+           </th>
+           <td style="background:color-mix(in srgb,var(--red) 10%,var(--surface));color:var(--fg)">
+            -20%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 13%,var(--surface));color:var(--fg)">
+            -17%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 58%,var(--surface));color:#fff">
+            +28%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 57%,var(--surface));color:#fff">
+            +27%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 61%,var(--surface));color:#fff">
+            +31%
+           </td>
+           <td style="background:color-mix(in srgb,var(--red) 70%,var(--surface));color:#fff">
+            +44%
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </section>
+      <section class="apanel">
+       <div class="aph">
+        <h3>
+         Screenings per hour, today
+        </h3>
+        <button class="xlbtn" data-a="ax-xl" data-row="-1" data-sheet="Hourly" title="Open in Excel view">
+         <svg aria-hidden="true" viewbox="0 0 24 24">
+          <rect height="18" rx="2" width="18" x="3" y="3">
+          </rect>
+          <path d="M3 9h18M3 15h18M9 3v18">
+          </path>
+         </svg>
+         Excel
+        </button>
+       </div>
+       <svg aria-label="Screenings per hour today" class="chart hour" role="img" viewbox="0 0 640 170">
+        <line stroke="var(--line)" x1="44" x2="634" y1="146" y2="146">
+        </line>
+        <text text-anchor="end" x="38" y="150">
+         0
+        </text>
+        <line stroke="var(--line)" x1="44" x2="634" y1="78" y2="78">
+        </line>
+        <text text-anchor="end" x="38" y="82">
+         2,500
+        </text>
+        <line stroke="var(--line)" x1="44" x2="634" y1="10" y2="10">
+        </line>
+        <text text-anchor="end" x="38" y="14">
+         5,000
+        </text>
+        <rect data-a="ax-xl" data-row="0" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="4.3" rx="2" width="17.1" x="47.7" y="141.7">
+         <title>
+          00:00 &middot; 159
+         </title>
+        </rect>
+        <text text-anchor="middle" x="56.3" y="163">
+         00:00
+        </text>
+        <rect data-a="ax-xl" data-row="1" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="4.5" rx="2" width="17.1" x="72.2" y="141.5">
+         <title>
+          01:00 &middot; 164
+         </title>
+        </rect>
+        <rect data-a="ax-xl" data-row="2" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="4.5" rx="2" width="17.1" x="96.7" y="141.5">
+         <title>
+          02:00 &middot; 165
+         </title>
+        </rect>
+        <rect data-a="ax-xl" data-row="3" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="4.3" rx="2" width="17.1" x="121.2" y="141.7">
+         <title>
+          03:00 &middot; 157
+         </title>
+        </rect>
+        <text text-anchor="middle" x="129.8" y="163">
+         03:00
+        </text>
+        <rect data-a="ax-xl" data-row="4" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="4.3" rx="2" width="17.1" x="145.7" y="141.7">
+         <title>
+          04:00 &middot; 157
+         </title>
+        </rect>
+        <rect data-a="ax-xl" data-row="5" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="4.4" rx="2" width="17.1" x="170.2" y="141.6">
+         <title>
+          05:00 &middot; 163
+         </title>
+        </rect>
+        <rect data-a="ax-xl" data-row="6" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="59.6" rx="2" width="17.1" x="194.7" y="86.4">
+         <title>
+          06:00 &middot; 2,193
+         </title>
+        </rect>
+        <text text-anchor="middle" x="203.3" y="163">
+         06:00
+        </text>
+        <rect data-a="ax-xl" data-row="7" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="62.8" rx="2" width="17.1" x="219.2" y="83.2">
+         <title>
+          07:00 &middot; 2,310
+         </title>
+        </rect>
+        <rect data-a="ax-xl" data-row="8" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="60.5" rx="2" width="17.1" x="243.7" y="85.5">
+         <title>
+          08:00 &middot; 2,226
+         </title>
+        </rect>
+        <rect data-a="ax-xl" data-row="9" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="134.0" rx="2" width="17.1" x="268.2" y="12.0">
+         <title>
+          09:00 &middot; 4,926
+         </title>
+        </rect>
+        <text text-anchor="middle" x="276.8" y="163">
+         09:00
+        </text>
+        <rect data-a="ax-xl" data-row="10" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="122.8" rx="2" width="17.1" x="292.7" y="23.2">
+         <title>
+          10:00 &middot; 4,515
+         </title>
+        </rect>
+        <rect data-a="ax-xl" data-row="11" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="129.0" rx="2" width="17.1" x="317.2" y="17.0">
+         <title>
+          11:00 &middot; 4,742
+         </title>
+        </rect>
+        <rect data-a="ax-xl" data-row="12" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="122.2" rx="2" width="17.1" x="341.7" y="23.8">
+         <title>
+          12:00 &middot; 4,491
+         </title>
+        </rect>
+        <text text-anchor="middle" x="350.3" y="163">
+         12:00
+        </text>
+        <rect data-a="ax-xl" data-row="13" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="107.0" rx="2" width="17.1" x="366.2" y="39.0">
+         <title>
+          13:00 &middot; 3,932
+         </title>
+        </rect>
+        <rect data-a="ax-xl" data-row="14" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="105.6" rx="2" width="17.1" x="390.7" y="40.4">
+         <title>
+          14:00 &middot; 3,882
+         </title>
+        </rect>
+        <rect data-a="ax-xl" data-row="15" data-sheet="Hourly" fill="var(--core)" height="102.1" rx="2" width="17.1" x="415.2" y="43.9">
+         <title>
+          15:00 &middot; 3,753
+         </title>
+        </rect>
+        <text text-anchor="middle" x="423.8" y="163">
+         15:00
+        </text>
+        <rect data-a="ax-xl" data-row="16" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="0.0" rx="2" width="17.1" x="439.7" y="146.0">
+         <title>
+          16:00 &middot; 0
+         </title>
+        </rect>
+        <rect data-a="ax-xl" data-row="17" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="0.0" rx="2" width="17.1" x="464.2" y="146.0">
+         <title>
+          17:00 &middot; 0
+         </title>
+        </rect>
+        <rect data-a="ax-xl" data-row="18" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="0.0" rx="2" width="17.1" x="488.7" y="146.0">
+         <title>
+          18:00 &middot; 0
+         </title>
+        </rect>
+        <text text-anchor="middle" x="497.3" y="163">
+         18:00
+        </text>
+        <rect data-a="ax-xl" data-row="19" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="0.0" rx="2" width="17.1" x="513.2" y="146.0">
+         <title>
+          19:00 &middot; 0
+         </title>
+        </rect>
+        <rect data-a="ax-xl" data-row="20" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="0.0" rx="2" width="17.1" x="537.7" y="146.0">
+         <title>
+          20:00 &middot; 0
+         </title>
+        </rect>
+        <rect data-a="ax-xl" data-row="21" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="0.0" rx="2" width="17.1" x="562.2" y="146.0">
+         <title>
+          21:00 &middot; 0
+         </title>
+        </rect>
+        <text text-anchor="middle" x="570.8" y="163">
+         21:00
+        </text>
+        <rect data-a="ax-xl" data-row="22" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="0.0" rx="2" width="17.1" x="586.7" y="146.0">
+         <title>
+          22:00 &middot; 0
+         </title>
+        </rect>
+        <rect data-a="ax-xl" data-row="23" data-sheet="Hourly" fill="color-mix(in srgb,var(--core) 40%,var(--surface))" height="0.0" rx="2" width="17.1" x="611.2" y="146.0">
+         <title>
+          23:00 &middot; 0
+         </title>
+        </rect>
+       </svg>
+       <div class="aph" style="margin-top:8px">
+        <h3>
+         Care loop right now
+        </h3>
+       </div>
+       <div class="loopbars">
+        <div>
+         <span>
+          BPO calls in progress
+         </span>
+         <b class="mono">
+          84
+         </b>
+        </div>
+        <div>
+         <span>
+          KPO reviews
+         </span>
+         <b class="mono">
+          42
+         </b>
+        </div>
+        <div>
+         <span>
+          Command Centre queue
+         </span>
+         <b class="mono">
+          21
+         </b>
+        </div>
+        <div>
+         <span>
+          Doctor consultations live
+         </span>
+         <b class="mono">
+          36
+         </b>
+        </div>
+        <div>
+         <span>
+          Ambulances on duty
+         </span>
+         <b class="mono">
+          140
+         </b>
+        </div>
+       </div>
+      </section>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer id="contact">
+   <div class="wrapx in">
+    <div>
+     <b>
+      Bharat HIE Portal
+     </b>
+     <p>
+      One health card, one login and connected care for every citizen of Maharashtra. Hospitals, doctors, pharmacies, labs, blood banks and NGOs exchange records through a consent-based exchange aligned with ABDM.
+     </p>
+    </div>
+    <div>
+     <b>
+      Citizens
+     </b>
+     <ul>
+      <li>
+       My Health Record
+      </li>
+      <li>
+       <button class="flink" data-a="appt">
+        Book appointment
+       </button>
+      </li>
+      <li>
+       Scheme eligibility
+      </li>
+      <li>
+       Consent manager
+      </li>
+     </ul>
+    </div>
+    <div>
+     <b>
+      Providers
+     </b>
+     <ul>
+      <li>
+       Register facility
+      </li>
+      <li>
+       API documentation
+      </li>
+      <li>
+       Integration sandbox
+      </li>
+      <li>
+       Verification status
+      </li>
+     </ul>
+    </div>
+    <div>
+     <b>
+      Help
+     </b>
+     <ul>
+      <li>
+       Health helpline: 104
+      </li>
+      <li>
+       Ambulance: 108
+      </li>
+      <li>
+       Support desk: 9 am &ndash; 9 pm
+      </li>
+      <li>
+       <button class="flink" data-a="faq">
+        FAQ & help
+       </button>
+      </li>
+      <li>
+       <button class="flink" data-a="griev">
+        Complaints & feedback
+       </button>
+      </li>
+      <li>
+       <button class="flink" data-a="camps">
+        Health camps
+       </button>
+      </li>
+      <li>
+       Privacy policy
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="wrapx bt">
+    &copy; 2026 Bharat HIE Portal
+   </div>
+  </footer>
+  <div class="fab-sos">
+   <button aria-expanded="false" aria-label="Emergency SOS" class="sos-btn" data-a="sos">
+    SOS
+   </button>
+  </div>
+  <button aria-label="Open AI health assistant" class="fab-chat" data-a="chat-open">
+   <span>
+    💬
+   </span>
+   <b>
+    Health assistant
+   </b>
+  </button>
+</div>
+<script>window.START_VIEW="role:admin";</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="js/01-icons.js"></script>
+<script src="js/02-helpers.js"></script>
+<script src="js/03-country-data.js"></script>
+<script src="js/04-reference-data.js"></script>
+<script src="js/05-language.js"></script>
+<script src="js/06-state.js"></script>
+<script src="js/07-header-home.js"></script>
+<script src="js/08-services.js"></script>
+<script src="js/09-providers.js"></script>
+<script src="js/10-analytics.js"></script>
+<script src="js/11-role-dashboards.js"></script>
+<script src="js/12-health-card.js"></script>
+<script src="js/13-modals-login.js"></script>
+<script src="js/14-about.js"></script>
+<script src="js/15-find-near-me.js"></script>
+<script src="js/16-citizen-features.js"></script>
+<script src="js/17-module-dashboards.js"></script>
+<script src="js/18-app-render-events.js"></script>
+
+
+
+</body>
+</html>
