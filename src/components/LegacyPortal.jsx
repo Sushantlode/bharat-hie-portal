@@ -2,26 +2,28 @@ import { useEffect, useRef, useState } from 'react';
 import { enhancePortal, patchLegacyRender } from '../enhancePortal';
 import SkeletonScreen, { NavSkeleton } from './SkeletonScreen';
 
+const BASE = import.meta.env.BASE_URL || '/';
+
 const LEGACY_SCRIPTS = [
-  '/js/01-icons.js',
-  '/js/02-helpers.js',
-  '/js/03-country-data.js',
-  '/js/04-reference-data.js',
-  '/js/05-language.js',
-  '/js/06-state.js',
-  '/js/07-header-home.js',
-  '/js/08-services.js',
-  '/js/09-providers.js',
-  '/js/10-analytics.js',
-  '/js/11-role-dashboards.js',
-  '/js/12-health-card.js',
-  '/js/13-modals-login.js',
-  '/js/14-about.js',
-  '/js/15-find-near-me.js',
-  '/js/16-citizen-features.js',
-  '/js/17-module-dashboards.js',
-  '/js/18-app-render-events.js',
-];
+  'js/01-icons.js',
+  'js/02-helpers.js',
+  'js/03-country-data.js',
+  'js/04-reference-data.js',
+  'js/05-language.js',
+  'js/06-state.js',
+  'js/07-header-home.js',
+  'js/08-services.js',
+  'js/09-providers.js',
+  'js/10-analytics.js',
+  'js/11-role-dashboards.js',
+  'js/12-health-card.js',
+  'js/13-modals-login.js',
+  'js/14-about.js',
+  'js/15-find-near-me.js',
+  'js/16-citizen-features.js',
+  'js/17-module-dashboards.js',
+  'js/18-app-render-events.js',
+].map((path) => `${BASE.replace(/\/?$/, '/')}${path}`);
 
 function loadScript(src) {
   return new Promise((resolve, reject) => {
